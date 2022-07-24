@@ -13,8 +13,8 @@ extension String {
         self += "\n"
     }
     
-    mutating func addLine(_ string: String, indentCount: Int = 0) {
-        self += "\n" + String(repeating: "    ", count: indentCount) + string
+    mutating func addLine(_ string: String, newLineCount: Int = 1, indentCount: Int = 0) {
+        self += String(repeating: "\n", count: newLineCount) + String(repeating: "    ", count: indentCount) + string
     }
     
 }
