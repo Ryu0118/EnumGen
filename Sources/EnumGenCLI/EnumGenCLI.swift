@@ -23,7 +23,7 @@ struct Enumgen: ParsableCommand {
 
     mutating func run() throws {
         let currentDirectory = FileManager.default.currentDirectoryPath
-        if path.prefix(1) == "./" {
+        if path.prefix(2) == "./" {
             path.removeFirst(2)
             let url = URL(fileURLWithPath: currentDirectory).appendingPathComponent(path)
             try createEnumFile(url: url)
@@ -46,20 +46,14 @@ struct Enumgen: ParsableCommand {
         let original = String(data: try Data(contentsOf: url), encoding: .utf8)?.components(separatedBy: separator)
         let associate = original?.map { caseName -> String in
             guard caseName.contains(".") else { return caseName }
-            
             return caseName.components(separatedBy: ".").enumerated().map { index, string -> String in
-                if index != 0 {
-                    let lowercase = string.lowercased()
-                    let initial = string.prefix(1).uppercased()
-                    let dropped = lowercase.dropFirst()
-                    return initial + dropped
-                }
-                else {
-                    return string
-                }
+                guard index != 0 else { return string }
+                let lowercase = string.lowercased()
+                let initial = string.prefix(1).uppercased()
+                let dropped = lowercase.dropFirst()
+                return initial + dropped
             }
             .joined()
-            
         }
         
         guard let original = original else { throw EnumGen.EnumGenError.invalidFilePath }
