@@ -141,15 +141,30 @@ open class EnumGen {
         "willSet"
     ]
     
-    public let strings: [String]
+    public var strings: [String]?
     public let enumName: String
     public let fileURL: URL
     public let enumType: Any.Type?
+    public var associate: [(String, String)]?
     
     public init(strings: [String], enumName: String, enumType: Any.Type? = nil, path: String = #file) throws {
         guard enumName != "" else { throw EnumGenError.invalidName }
         
         self.strings = strings
+        self.enumName = enumName
+        self.enumType = enumType
+
+        let originalPath = URL(fileURLWithPath: path)
+        let directoryPath = originalPath.isDirectory ? originalPath : originalPath.deletingLastPathComponent()
+        self.fileURL = directoryPath
+            .appendingPathComponent(enumName, isDirectory: false)
+            .appendingPathExtension("swift")
+    }
+    
+    public init(associate: [(String, String)], enumName: String, enumType: Any.Type, path: String = #file) throws {
+        guard enumName != "" else { throw EnumGenError.invalidName }
+        
+        self.associate = associate
         self.enumName = enumName
         self.enumType = enumType
 
@@ -192,12 +207,21 @@ open class EnumGen {
         enumString.addLine(importString, newLineCount: 2)
         enumString.addLine(enumDefinition, newLineCount: 2)
         
-        strings.forEach {
+        strings?.forEach {
             if reservedWords.contains($0) {
                 enumString.addLine("case `\($0)`", indentCount: 1)
             }
             else {
                 enumString.addLine("case \($0)", indentCount: 1)
+            }
+        }
+        
+        associate?.forEach {
+            if reservedWords.contains($0) {
+                enumString.addLine("case `\($0)` = \"\($1)\"", indentCount: 1)
+            }
+            else {
+                enumString.addLine("case \($0) = \"\($1)\"", indentCount: 1)
             }
         }
         

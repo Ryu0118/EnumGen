@@ -43,31 +43,35 @@ struct Enumgen: ParsableCommand {
         let currentDirectory = FileManager.default.currentDirectoryPath
         let enumName = (enumName?.isEmpty ?? true) ? url.lastPathComponent : enumName ?? ""
         let separator = (separator?.isEmpty ?? true) ? "\n" : separator ?? "\n"
-        
-        let strings = String(data: try Data(contentsOf: url), encoding: .utf8)?.components(separatedBy: separator).map { caseName -> String in
-            if caseName.contains(".") {
-                return caseName.components(separatedBy: ".").enumerated().map { index, string -> String in
-                    if index != 0 {
-                        let lowercase = string.lowercased()
-                        let initial = string.prefix(1).uppercased()
-                        let dropped = lowercase.dropFirst()
-                        return initial + dropped
-                    }
-                    else {
-                        return string
-                    }
+        let original = String(data: try Data(contentsOf: url), encoding: .utf8)?.components(separatedBy: separator)
+        let associate = original?.map { caseName -> String in
+            guard caseName.contains(".") else { return caseName }
+            
+            return caseName.components(separatedBy: ".").enumerated().map { index, string -> String in
+                if index != 0 {
+                    let lowercase = string.lowercased()
+                    let initial = string.prefix(1).uppercased()
+                    let dropped = lowercase.dropFirst()
+                    return initial + dropped
                 }
-                .joined()
+                else {
+                    return string
+                }
             }
-            else {
-                return caseName
-            }
+            .joined()
+            
         }
         
-        guard let strings = strings else { throw EnumGen.EnumGenError.invalidFilePath }
+        guard let original = original else { throw EnumGen.EnumGenError.invalidFilePath }
         
-        let enumGen = try EnumGen(strings: strings, enumName: enumName, path: currentDirectory)
-        try enumGen.generate()
+        if let associate = associate, associate.count == original.count {
+            let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: String.self, path: currentDirectory)
+            try enumGen.generate()
+        }
+        else {
+            let enumGen = try EnumGen(strings: original, enumName: enumName, path: currentDirectory)
+            try enumGen.generate()
+        }
     }
     
 }
