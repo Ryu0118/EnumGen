@@ -23,7 +23,7 @@ struct Enumgen: ParsableCommand {
 
     mutating func run() throws {
         let currentDirectory = FileManager.default.currentDirectoryPath
-        if path.prefix(1) == "." && path.contains("/") {
+        if path.prefix(1) == "./" {
             path.removeFirst(2)
             let url = URL(fileURLWithPath: currentDirectory).appendingPathComponent(path)
             try createEnumFile(url: url)
