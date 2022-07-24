@@ -10,7 +10,7 @@ import EnumGen
 import ArgumentParser
 
 @main
-struct EnumGenCLI: ParsableCommand {
+struct Enumgen: ParsableCommand {
     
     @Option(name: .shortAndLong, help: "Separator to convert text files to enum cases")
     var separator: String?

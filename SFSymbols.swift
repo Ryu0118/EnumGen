@@ -4,9873 +4,3320 @@
 import Foundation
 
 enum SFSymbols {
-    case square
-    case and
-    case arrow
-    case up
-square
-    case and
-    case arrow
-    case up
-    case fill
-square
-    case and
-    case arrow
-    case up
-    case circle
-square
-    case and
-    case arrow
-    case up
-    case circle
-    case fill
-square
-    case and
-    case arrow
-    case up
-    case trianglebadge
-    case exclamationmark
-square
-    case and
-    case arrow
-    case down
-square
-    case and
-    case arrow
-    case down
-    case fill
-square
-    case and
-    case arrow
-    case up
-    case on
-    case square
-square
-    case and
-    case arrow
-    case up
-    case on
-    case square
-    case fill
-square
-    case and
-    case arrow
-    case down
-    case on
-    case square
-square
-    case and
-    case arrow
-    case down
-    case on
-    case square
-    case fill
-rectangle
-    case portrait
-    case and
-    case arrow
-    case right
-rectangle
-    case portrait
-    case and
-    case arrow
-    case `right`
-    case fill
-pencil
-pencil
-    case circle
-pencil
-    case circle
-    case fill
-pencil
-    case slash
-square
-    case and
+    case squareAndArrowUp
+    case squareAndArrowUpFill
+    case squareAndArrowUpCircle
+    case squareAndArrowUpCircleFill
+    case squareAndArrowUpTrianglebadgeExclamationmark
+    case squareAndArrowDown
+    case squareAndArrowDownFill
+    case squareAndArrowUpOnSquare
+    case squareAndArrowUpOnSquareFill
+    case squareAndArrowDownOnSquare
+    case squareAndArrowDownOnSquareFill
+    case rectanglePortraitAndArrowRight
+    case rectanglePortraitAndArrowRightFill
     case pencil
-rectangle
-    case and
-    case pencil
-    case and
-    case ellipsis
-scribble
-scribble
-    case variable
-highlighter
-pencil
-    case and
-    case outline
-pencil
-    case tip
-pencil
-    case tip
-    case crop
-    case circle
-pencil
-    case tip
-    case crop
-    case circle
-    case badge
-    case plus
-pencil
-    case tip
-    case crop
-    case circle
-    case badge
-    case minus
-pencil
-    case tip
-    case crop
-    case circle
-    case badge
-    case arrow
-    case forward
-lasso
-lasso
-    case and
-    case sparkles
-trash
-trash
-    case fill
-trash
-    case circle
-trash
-    case circle
-    case fill
-trash
-    case square
-trash
-    case square
-    case fill
-trash
-    case slash
-trash
-    case slash
-    case fill
-trash
-    case slash
-    case circle
-trash
-    case slash
-    case circle
-    case fill
-trash
-    case slash
-    case square
-trash
-    case slash
-    case square
-    case fill
-folder
-folder
-    case fill
-folder
-    case circle
-folder
-    case circle
-    case fill
-folder
-    case badge
-    case plus
-folder
-    case fill
-    case badge
-    case plus
-folder
-    case badge
-    case minus
-folder
-    case fill
-    case badge
-    case minus
-folder
-    case badge
-    case questionmark
-folder
-    case fill
-    case badge
-    case questionmark
-folder
-    case badge
-    case person
-    case crop
-folder
-    case fill
-    case badge
-    case person
-    case crop
-square
-    case grid
-    case 3x1
+    case pencilCircle
+    case pencilCircleFill
+    case pencilSlash
+    case squareAndPencil
+    case rectangleAndPencilAndEllipsis
+    case scribble
+    case scribbleVariable
+    case highlighter
+    case pencilAndOutline
+    case pencilTip
+    case pencilTipCropCircle
+    case pencilTipCropCircleBadgePlus
+    case pencilTipCropCircleBadgeMinus
+    case pencilTipCropCircleBadgeArrowForward
+    case lasso
+    case lassoAndSparkles
+    case trash
+    case trashFill
+    case trashCircle
+    case trashCircleFill
+    case trashSquare
+    case trashSquareFill
+    case trashSlash
+    case trashSlashFill
+    case trashSlashCircle
+    case trashSlashCircleFill
+    case trashSlashSquare
+    case trashSlashSquareFill
     case folder
-    case badge
-    case plus
-square
-    case grid
-    case 3x1
-    case folder
-    case fill
-    case badge
-    case plus
-folder
-    case badge
-    case gearshape
-folder
-    case fill
-    case badge
-    case gearshape
-plus
-    case rectangle
-    case on
-    case folder
-plus
-    case rectangle
-    case on
-    case folder
-    case fill
-questionmark
-    case folder
-questionmark
-    case folder
-    case fill
-paperplane
-paperplane
-    case fill
-paperplane
-    case circle
-paperplane
-    case circle
-    case fill
-tray
-tray
-    case fill
-tray
-    case circle
-tray
-    case circle
-    case fill
-tray
-    case and
-    case arrow
-    case up
-tray
-    case and
-    case arrow
-    case up
-    case fill
-tray
-    case and
-    case arrow
-    case down
-tray
-    case and
-    case arrow
-    case down
-    case fill
-tray
-    case 2
-tray
-    case 2
-    case fill
-tray
-    case full
-tray
-    case full
-    case fill
-externaldrive
-externaldrive
-    case fill
-externaldrive
-    case badge
-    case plus
-externaldrive
-    case fill
-    case badge
-    case plus
-externaldrive
-    case badge
-    case minus
-externaldrive
-    case fill
-    case badge
-    case minus
-externaldrive
-    case badge
-    case checkmark
-externaldrive
-    case fill
-    case badge
-    case checkmark
-externaldrive
-    case badge
-    case xmark
-externaldrive
-    case fill
-    case badge
-    case xmark
-externaldrive
-    case badge
-    case person
-    case crop
-externaldrive
-    case fill
-    case badge
-    case person
-    case crop
-externaldrive
-    case badge
-    case icloud
-externaldrive
-    case fill
-    case badge
-    case icloud
-externaldrive
-    case badge
-    case wifi
-externaldrive
-    case fill
-    case badge
-    case wifi
-externaldrive
-    case badge
-    case timemachine
-externaldrive
-    case fill
-    case badge
-    case timemachine
-internaldrive
-internaldrive
-    case fill
-opticaldiscdrive
-opticaldiscdrive
-    case fill
-externaldrive
-    case connected
-    case to
-    case line
-    case below
-externaldrive
-    case connected
-    case to
-    case line
-    case below
-    case fill
-archivebox
-archivebox
-    case fill
-archivebox
-    case circle
-archivebox
-    case circle
-    case fill
-xmark
-    case bin
-xmark
-    case bin
-    case fill
-xmark
-    case bin
-    case circle
-xmark
-    case bin
-    case circle
-    case fill
-arrow
-    case up
-    case bin
-arrow
-    case up
-    case bin
-    case fill
-doc
-doc
-    case fill
-doc
-    case circle
-doc
-    case circle
-    case fill
-doc
-    case badge
-    case plus
-doc
-    case fill
-    case badge
-    case plus
-doc
-    case badge
-    case gearshape
-doc
-    case badge
-    case gearshape
-    case fill
-doc
-    case badge
-    case ellipsis
-doc
-    case fill
-    case badge
-    case ellipsis
-lock
+    case folderFill
+    case folderCircle
+    case folderCircleFill
+    case folderBadgePlus
+    case folderFillBadgePlus
+    case folderBadgeMinus
+    case folderFillBadgeMinus
+    case folderBadgeQuestionmark
+    case folderFillBadgeQuestionmark
+    case folderBadgePersonCrop
+    case folderFillBadgePersonCrop
+    case squareGrid3x1FolderBadgePlus
+    case squareGrid3x1FolderFillBadgePlus
+    case folderBadgeGearshape
+    case folderFillBadgeGearshape
+    case plusRectangleOnFolder
+    case plusRectangleOnFolderFill
+    case questionmarkFolder
+    case questionmarkFolderFill
+    case paperplane
+    case paperplaneFill
+    case paperplaneCircle
+    case paperplaneCircleFill
+    case tray
+    case trayFill
+    case trayCircle
+    case trayCircleFill
+    case trayAndArrowUp
+    case trayAndArrowUpFill
+    case trayAndArrowDown
+    case trayAndArrowDownFill
+    case tray2
+    case tray2Fill
+    case trayFull
+    case trayFullFill
+    case externaldrive
+    case externaldriveFill
+    case externaldriveBadgePlus
+    case externaldriveFillBadgePlus
+    case externaldriveBadgeMinus
+    case externaldriveFillBadgeMinus
+    case externaldriveBadgeCheckmark
+    case externaldriveFillBadgeCheckmark
+    case externaldriveBadgeXmark
+    case externaldriveFillBadgeXmark
+    case externaldriveBadgePersonCrop
+    case externaldriveFillBadgePersonCrop
+    case externaldriveBadgeIcloud
+    case externaldriveFillBadgeIcloud
+    case externaldriveBadgeWifi
+    case externaldriveFillBadgeWifi
+    case externaldriveBadgeTimemachine
+    case externaldriveFillBadgeTimemachine
+    case internaldrive
+    case internaldriveFill
+    case opticaldiscdrive
+    case opticaldiscdriveFill
+    case externaldriveConnectedToLineBelow
+    case externaldriveConnectedToLineBelowFill
+    case archivebox
+    case archiveboxFill
+    case archiveboxCircle
+    case archiveboxCircleFill
+    case xmarkBin
+    case xmarkBinFill
+    case xmarkBinCircle
+    case xmarkBinCircleFill
+    case arrowUpBin
+    case arrowUpBinFill
     case doc
-lock
-    case doc
-    case fill
-arrow
-    case up
-    case doc
-arrow
-    case up
-    case doc
-    case fill
-arrow
-    case down
-    case doc
-arrow
-    case down
-    case doc
-    case fill
-doc
-    case text
-doc
-    case text
-    case fill
-doc
-    case zipper
-doc
-    case on
-    case doc
-doc
-    case on
-    case doc
-    case fill
-doc
-    case on
-    case clipboard
-arrow
-    case `right`
-    case doc
-    case on
-    case clipboard
-arrow
-    case up
-    case doc
-    case on
-    case clipboard
-arrow
-    case triangle
-    case 2
-    case circlepath
-    case doc
-    case on
-    case clipboard
-doc
-    case on
-    case clipboard
-    case fill
-doc
-    case richtext
-doc
-    case richtext
-    case fill
-doc
-    case plaintext
-doc
-    case plaintext
-    case fill
-doc
-    case append
-doc
-    case append
-    case fill
-doc
-    case text
-    case below
-    case ecg
-doc
-    case text
-    case below
-    case ecg
-    case fill
-chart
-    case bar
-    case doc
-    case horizontal
-chart
-    case bar
-    case doc
-    case horizontal
-    case fill
-list
-    case bullet
-    case rectangle
-    case portrait
-list
-    case bullet
-    case rectangle
-    case portrait
-    case fill
-doc
-    case text
-    case magnifyingglass
-list
-    case bullet
-    case rectangle
-list
-    case bullet
-    case rectangle
-    case fill
-list
-    case dash
-    case header
-    case rectangle
-terminal
-terminal
-    case fill
-note
-note
-    case text
-note
-    case text
-    case badge
-    case plus
-calendar
-calendar
-    case circle
-calendar
-    case circle
-    case fill
-calendar
-    case badge
-    case plus
-calendar
-    case badge
-    case minus
-calendar
-    case badge
-    case clock
-calendar
-    case badge
-    case exclamationmark
-calendar
-    case day
-    case timeline
-    case left
-calendar
-    case day
-    case timeline
-    case right
-calendar
-    case day
-    case timeline
-    case leading
-calendar
-    case day
-    case timeline
-    case trailing
-arrowshape
-    case turn
-    case up
-    case left
-arrowshape
-    case turn
-    case up
-    case `left`
-    case fill
-arrowshape
-    case turn
-    case up
-    case `left`
-    case circle
-arrowshape
-    case turn
-    case up
-    case `left`
-    case circle
-    case fill
-arrowshape
-    case turn
-    case up
-    case backward
-arrowshape
-    case turn
-    case up
-    case backward
-    case fill
-arrowshape
-    case turn
-    case up
-    case backward
-    case circle
-arrowshape
-    case turn
-    case up
-    case backward
-    case circle
-    case fill
-arrowshape
-    case turn
-    case up
-    case right
-arrowshape
-    case turn
-    case up
-    case `right`
-    case fill
-arrowshape
-    case turn
-    case up
-    case `right`
-    case circle
-arrowshape
-    case turn
-    case up
-    case `right`
-    case circle
-    case fill
-arrowshape
-    case turn
-    case up
-    case forward
-arrowshape
-    case turn
-    case up
-    case forward
-    case fill
-arrowshape
-    case turn
-    case up
-    case forward
-    case circle
-arrowshape
-    case turn
-    case up
-    case forward
-    case circle
-    case fill
-arrowshape
-    case turn
-    case up
-    case `left`
-    case 2
-arrowshape
-    case turn
-    case up
-    case `left`
-    case 2
-    case fill
-arrowshape
-    case turn
-    case up
-    case `left`
-    case 2
-    case circle
-arrowshape
-    case turn
-    case up
-    case `left`
-    case 2
-    case circle
-    case fill
-arrowshape
-    case turn
-    case up
-    case backward
-    case 2
-arrowshape
-    case turn
-    case up
-    case backward
-    case 2
-    case fill
-arrowshape
-    case turn
-    case up
-    case backward
-    case 2
-    case circle
-arrowshape
-    case turn
-    case up
-    case backward
-    case 2
-    case circle
-    case fill
-arrowshape
-    case zigzag
-    case right
-arrowshape
-    case zigzag
-    case `right`
-    case fill
-arrowshape
-    case zigzag
-    case forward
-arrowshape
-    case zigzag
-    case forward
-    case fill
-arrowshape
-    case bounce
-    case right
-arrowshape
-    case bounce
-    case `right`
-    case fill
-arrowshape
-    case bounce
-    case forward
-arrowshape
-    case bounce
-    case forward
-    case fill
-book
-book
-    case fill
-book
-    case circle
-book
-    case circle
-    case fill
-books
-    case vertical
-books
-    case vertical
-    case fill
-books
-    case vertical
-    case circle
-books
-    case vertical
-    case circle
-    case fill
-book
-    case closed
-book
-    case closed
-    case fill
-book
-    case closed
-    case circle
-book
-    case closed
-    case circle
-    case fill
-character
+    case docFill
+    case docCircle
+    case docCircleFill
+    case docBadgePlus
+    case docFillBadgePlus
+    case docBadgeGearshape
+    case docBadgeGearshapeFill
+    case docBadgeEllipsis
+    case docFillBadgeEllipsis
+    case lockDoc
+    case lockDocFill
+    case arrowUpDoc
+    case arrowUpDocFill
+    case arrowDownDoc
+    case arrowDownDocFill
+    case docText
+    case docTextFill
+    case docZipper
+    case docOnDoc
+    case docOnDocFill
+    case docOnClipboard
+    case arrowRightDocOnClipboard
+    case arrowUpDocOnClipboard
+    case arrowTriangle2CirclepathDocOnClipboard
+    case docOnClipboardFill
+    case docRichtext
+    case docRichtextFill
+    case docPlaintext
+    case docPlaintextFill
+    case docAppend
+    case docAppendFill
+    case docTextBelowEcg
+    case docTextBelowEcgFill
+    case chartBarDocHorizontal
+    case chartBarDocHorizontalFill
+    case listBulletRectanglePortrait
+    case listBulletRectanglePortraitFill
+    case docTextMagnifyingglass
+    case listBulletRectangle
+    case listBulletRectangleFill
+    case listDashHeaderRectangle
+    case terminal
+    case terminalFill
+    case note
+    case noteText
+    case noteTextBadgePlus
+    case calendar
+    case calendarCircle
+    case calendarCircleFill
+    case calendarBadgePlus
+    case calendarBadgeMinus
+    case calendarBadgeClock
+    case calendarBadgeExclamationmark
+    case calendarDayTimelineLeft
+    case calendarDayTimelineRight
+    case calendarDayTimelineLeading
+    case calendarDayTimelineTrailing
+    case arrowshapeTurnUpLeft
+    case arrowshapeTurnUpLeftFill
+    case arrowshapeTurnUpLeftCircle
+    case arrowshapeTurnUpLeftCircleFill
+    case arrowshapeTurnUpBackward
+    case arrowshapeTurnUpBackwardFill
+    case arrowshapeTurnUpBackwardCircle
+    case arrowshapeTurnUpBackwardCircleFill
+    case arrowshapeTurnUpRight
+    case arrowshapeTurnUpRightFill
+    case arrowshapeTurnUpRightCircle
+    case arrowshapeTurnUpRightCircleFill
+    case arrowshapeTurnUpForward
+    case arrowshapeTurnUpForwardFill
+    case arrowshapeTurnUpForwardCircle
+    case arrowshapeTurnUpForwardCircleFill
+    case arrowshapeTurnUpLeft2
+    case arrowshapeTurnUpLeft2Fill
+    case arrowshapeTurnUpLeft2Circle
+    case arrowshapeTurnUpLeft2CircleFill
+    case arrowshapeTurnUpBackward2
+    case arrowshapeTurnUpBackward2Fill
+    case arrowshapeTurnUpBackward2Circle
+    case arrowshapeTurnUpBackward2CircleFill
+    case arrowshapeZigzagRight
+    case arrowshapeZigzagRightFill
+    case arrowshapeZigzagForward
+    case arrowshapeZigzagForwardFill
+    case arrowshapeBounceRight
+    case arrowshapeBounceRightFill
+    case arrowshapeBounceForward
+    case arrowshapeBounceForwardFill
     case book
-    case closed
-character
-    case book
-    case closed
-    case fill
-text
-    case book
-    case closed
-text
-    case book
-    case closed
-    case fill
-menucard
-menucard
-    case fill
-greetingcard
-greetingcard
-    case fill
-magazine
-magazine
-    case fill
-newspaper
-newspaper
-    case fill
-newspaper
-    case circle
-newspaper
-    case circle
-    case fill
-heart
-    case text
-    case square
-heart
-    case text
-    case square
-    case fill
-square
-    case text
-    case square
-square
-    case text
-    case square
-    case fill
-doc
-    case text
-    case image
-doc
-    case text
-    case image
-    case fill
-bookmark
-bookmark
-    case fill
-bookmark
-    case circle
-bookmark
-    case circle
-    case fill
-bookmark
-    case square
-bookmark
-    case square
-    case fill
-bookmark
-    case slash
-bookmark
-    case slash
-    case fill
-rosette
-graduationcap
-graduationcap
-    case fill
-graduationcap
-    case circle
-graduationcap
-    case circle
-    case fill
-ticket
-ticket
-    case fill
-paperclip
-paperclip
-    case circle
-paperclip
-    case circle
-    case fill
-paperclip
-    case badge
-    case ellipsis
-rectangle
-    case and
+    case bookFill
+    case bookCircle
+    case bookCircleFill
+    case booksVertical
+    case booksVerticalFill
+    case booksVerticalCircle
+    case booksVerticalCircleFill
+    case bookClosed
+    case bookClosedFill
+    case bookClosedCircle
+    case bookClosedCircleFill
+    case characterBookClosed
+    case characterBookClosedFill
+    case textBookClosed
+    case textBookClosedFill
+    case menucard
+    case menucardFill
+    case greetingcard
+    case greetingcardFill
+    case magazine
+    case magazineFill
+    case newspaper
+    case newspaperFill
+    case newspaperCircle
+    case newspaperCircleFill
+    case heartTextSquare
+    case heartTextSquareFill
+    case squareTextSquare
+    case squareTextSquareFill
+    case docTextImage
+    case docTextImageFill
+    case bookmark
+    case bookmarkFill
+    case bookmarkCircle
+    case bookmarkCircleFill
+    case bookmarkSquare
+    case bookmarkSquareFill
+    case bookmarkSlash
+    case bookmarkSlashFill
+    case rosette
+    case graduationcap
+    case graduationcapFill
+    case graduationcapCircle
+    case graduationcapCircleFill
+    case ticket
+    case ticketFill
     case paperclip
-rectangle
-    case dashed
-    case and
-    case paperclip
-link
-link
-    case circle
-link
-    case circle
-    case fill
-link
-    case badge
-    case plus
-personalhotspot
-personalhotspot
-    case circle
-personalhotspot
-    case circle
-    case fill
-lineweight
-person
-person
-    case fill
-person
-    case fill
-    case turn
-    case right
-person
-    case fill
-    case turn
-    case down
-person
-    case fill
-    case turn
-    case left
-person
-    case fill
-    case checkmark
-person
-    case fill
-    case xmark
-person
-    case fill
-    case questionmark
-person
-    case circle
-person
-    case circle
-    case fill
-person
-    case badge
-    case plus
-person
-    case fill
-    case badge
-    case plus
-person
-    case badge
-    case minus
-person
-    case fill
-    case badge
-    case minus
-person
-    case badge
-    case clock
-person
-    case badge
-    case clock
-    case fill
-person
-    case badge
-    case key
-person
-    case badge
-    case key
-    case fill
-shareplay
-shareplay
-    case slash
-rectangle
-    case inset
-    case filled
-    case and
+    case paperclipCircle
+    case paperclipCircleFill
+    case paperclipBadgeEllipsis
+    case rectangleAndPaperclip
+    case rectangleDashedAndPaperclip
+    case link
+    case linkCircle
+    case linkCircleFill
+    case linkBadgePlus
+    case personalhotspot
+    case personalhotspotCircle
+    case personalhotspotCircleFill
+    case lineweight
     case person
-    case filled
-person
-    case and
-    case arrow
-    case `left`
-    case and
-    case arrow
-    case right
-person
-    case fill
-    case and
-    case arrow
-    case `left`
-    case and
-    case arrow
-    case right
-person
-    case 2
-person
-    case 2
-    case fill
-person
-    case 2
-    case circle
-person
-    case 2
-    case circle
-    case fill
-person
-    case wave
-    case 2
-person
-    case wave
-    case 2
-    case fill
-person
-    case 2
-    case wave
-    case 2
-person
-    case 2
-    case wave
-    case 2
-    case fill
-person
-    case 3
-person
-    case 3
-    case fill
-person
-    case 3
-    case sequence
-person
-    case 3
-    case sequence
-    case fill
-lanyardcard
-lanyardcard
-    case fill
-person
-    case crop
-    case circle
-person
-    case crop
-    case circle
-    case fill
-person
-    case crop
-    case circle
-    case badge
-    case plus
-person
-    case crop
-    case circle
-    case fill
-    case badge
-    case plus
-person
-    case crop
-    case circle
-    case badge
-    case minus
-person
-    case crop
-    case circle
-    case fill
-    case badge
-    case minus
-person
-    case crop
-    case circle
-    case badge
-    case checkmark
-person
-    case crop
-    case circle
-    case fill
-    case badge
-    case checkmark
-person
-    case crop
-    case circle
-    case badge
-    case xmark
-person
-    case crop
-    case circle
-    case fill
-    case badge
-    case xmark
-person
-    case crop
-    case circle
-    case badge
-    case questionmark
-person
-    case crop
-    case circle
-    case badge
-    case questionmark
-    case fill
-person
-    case crop
-    case circle
-    case badge
-    case exclamationmark
-person
-    case crop
-    case circle
-    case badge
-    case exclamationmark
-    case fill
-person
-    case crop
-    case circle
-    case badge
-    case moon
-person
-    case crop
-    case circle
-    case badge
-    case moon
-    case fill
-person
-    case crop
-    case circle
-    case badge
-    case clock
-person
-    case crop
-    case circle
-    case badge
-    case clock
-    case fill
-person
-    case crop
-    case circle
-    case badge
-person
-    case crop
-    case circle
-    case badge
-    case fill
-person
-    case crop
-    case square
-person
-    case crop
-    case square
-    case fill
-person
-    case crop
-    case artframe
-photo
-    case artframe
-person
-    case crop
-    case rectangle
-    case stack
-person
-    case crop
-    case rectangle
-    case stack
-    case fill
-person
-    case 2
-    case crop
-    case square
-    case stack
-person
-    case 2
-    case crop
-    case square
-    case stack
-    case fill
-person
-    case crop
-    case rectangle
-person
-    case crop
-    case rectangle
-    case fill
-arrow
-    case up
-    case and
-    case person
-    case rectangle
-    case portrait
-arrow
-    case up
-    case and
-    case person
-    case rectangle
-    case turn
-    case right
-arrow
-    case up
-    case and
-    case person
-    case rectangle
-    case turn
-    case left
-person
-    case crop
-    case square
-    case filled
-    case and
-    case at
-    case rectangle
-person
-    case crop
-    case square
-    case filled
-    case and
-    case at
-    case rectangle
-    case fill
-square
-    case and
-    case at
-    case rectangle
-square
-    case and
-    case at
-    case rectangle
-    case fill
-person
-    case text
-    case rectangle
-person
-    case text
-    case rectangle
-    case fill
-command
-command
-    case circle
-command
-    case circle
-    case fill
-command
-    case square
-command
-    case square
-    case fill
-option
-alt
-clear
-clear
-    case fill
-delete
-    case left
-delete
-    case `left`
-    case fill
-delete
-    case backward
-delete
-    case backward
-    case fill
-delete
-    case right
-delete
-    case `right`
-    case fill
-delete
-    case forward
-delete
-    case forward
-    case fill
-shift
-shift
-    case fill
-capslock
-capslock
-    case fill
-escape
-restart
-restart
-    case circle
-restart
-    case circle
-    case fill
-sleep
-sleep
-    case circle
-sleep
-    case circle
-    case fill
-wake
-wake
-    case circle
-wake
-    case circle
-    case fill
-power
-power
-    case circle
-power
-    case circle
-    case fill
-power
-    case dotted
-togglepower
-poweron
-poweroff
-powersleep
-directcurrent
-alternatingcurrent
-peacesign
-dot
-    case arrowtriangles
-    case up
-    case `right`
-    case down
-    case `left`
-    case circle
-globe
-globe
-    case badge
-    case chevron
-    case backward
-network
-network
-    case badge
-    case shield
-    case half
-    case filled
-globe
-    case americas
-globe
-    case americas
-    case fill
-globe
-    case europe
-    case africa
-globe
-    case europe
-    case africa
-    case fill
-globe
-    case asia
-    case australia
-globe
-    case asia
-    case australia
-    case fill
-sun
-    case min
-sun
-    case min
-    case fill
-sun
-    case max
-sun
-    case max
-    case fill
-sun
-    case max
-    case circle
-sun
-    case max
-    case circle
-    case fill
-sunrise
-sunrise
-    case fill
-sunset
-sunset
-    case fill
-sun
-    case and
-    case horizon
-sun
-    case and
-    case horizon
-    case fill
-sun
-    case dust
-sun
-    case dust
-    case fill
-sun
-    case haze
-sun
-    case haze
-    case fill
-moon
-moon
-    case fill
-moon
-    case circle
-moon
-    case circle
-    case fill
-zzz
-moon
-    case zzz
-moon
-    case zzz
-    case fill
-sparkle
-sparkles
-moon
-    case stars
-moon
-    case stars
-    case fill
-cloud
-cloud
-    case fill
-cloud
-    case drizzle
-cloud
-    case drizzle
-    case fill
-cloud
-    case rain
-cloud
-    case rain
-    case fill
-cloud
-    case heavyrain
-cloud
-    case heavyrain
-    case fill
-cloud
-    case fog
-cloud
-    case fog
-    case fill
-cloud
-    case hail
-cloud
-    case hail
-    case fill
-cloud
-    case snow
-cloud
-    case snow
-    case fill
-cloud
-    case sleet
-cloud
-    case sleet
-    case fill
-cloud
-    case bolt
-cloud
-    case bolt
-    case fill
-cloud
-    case bolt
-    case rain
-cloud
-    case bolt
-    case rain
-    case fill
-cloud
-    case sun
-cloud
-    case sun
-    case fill
-cloud
-    case sun
-    case rain
-cloud
-    case sun
-    case rain
-    case fill
-cloud
-    case sun
-    case bolt
-cloud
-    case sun
-    case bolt
-    case fill
-cloud
-    case moon
-cloud
-    case moon
-    case fill
-cloud
-    case moon
-    case rain
-cloud
-    case moon
-    case rain
-    case fill
-cloud
-    case moon
-    case bolt
-cloud
-    case moon
-    case bolt
-    case fill
-smoke
-smoke
-    case fill
-wind
-wind
-    case snow
-snowflake
-snowflake
-    case circle
-snowflake
-    case circle
-    case fill
-tornado
-tropicalstorm
-hurricane
-thermometer
-    case sun
-thermometer
-    case sun
-    case fill
-thermometer
-    case snowflake
-thermometer
-aqi
-    case low
-aqi
-    case medium
-aqi
-    case high
-humidity
-humidity
-    case fill
-umbrella
-umbrella
-    case fill
-flame
-flame
-    case fill
-flame
-    case circle
-flame
-    case circle
-    case fill
-light
-    case min
-light
-    case max
-rays
-slowmo
-timelapse
-cursorarrow
-    case rays
-cursorarrow
-cursorarrow
-    case square
-cursorarrow
-    case and
-    case square
-    case on
-    case square
-    case dashed
-cursorarrow
-    case click
-cursorarrow
-    case click
-    case 2
-contextualmenu
-    case and
-    case cursorarrow
-filemenu
-    case and
-    case cursorarrow
-filemenu
-    case and
-    case selection
-dots
-    case and
-    case line
-    case vertical
-    case and
-    case cursorarrow
-    case rectangle
-dot
-    case circle
-    case and
-    case hand
-    case point
-    case up
-    case `left`
-    case fill
-dot
-    case circle
-    case and
-    case cursorarrow
-cursorarrow
-    case motionlines
-cursorarrow
-    case motionlines
-    case click
-cursorarrow
-    case click
-    case badge
-    case clock
-keyboard
-keyboard
-    case fill
-keyboard
-    case badge
-    case ellipsis
-keyboard
-    case chevron
-    case compact
-    case down
-keyboard
-    case chevron
-    case compact
-    case left
-keyboard
-    case onehanded
-    case left
-keyboard
-    case onehanded
-    case right
-rectangle
-    case 3
-    case group
-rectangle
-    case 3
-    case group
-    case fill
-square
-    case grid
-    case 3x2
-square
-    case grid
-    case 3x2
-    case fill
-rectangle
-    case grid
-    case 3x2
-rectangle
-    case grid
-    case 3x2
-    case fill
-square
-    case grid
-    case 2x2
-square
-    case grid
-    case 2x2
-    case fill
-rectangle
-    case grid
-    case 2x2
-rectangle
-    case grid
-    case 2x2
-    case fill
-square
-    case grid
-    case 3x1
-    case below
-    case line
-    case grid
-    case 1x2
-square
-    case grid
-    case 3x1
-    case below
-    case line
-    case grid
-    case 1x2
-    case fill
-square
-    case grid
-    case 4x3
-    case fill
-rectangle
-    case grid
-    case 1x2
-rectangle
-    case grid
-    case 1x2
-    case fill
-circle
-    case grid
-    case 2x2
-circle
-    case grid
-    case 2x2
-    case fill
-circle
-    case grid
-    case 3x3
-circle
-    case grid
-    case 3x3
-    case fill
-circle
-    case grid
-    case 3x3
-    case circle
-circle
-    case grid
-    case 3x3
-    case circle
-    case fill
-square
-    case grid
-    case 3x3
-square
-    case grid
-    case 3x3
-    case fill
-square
-    case grid
-    case 3x3
-    case topleft
-    case filled
-square
-    case grid
-    case 3x3
-    case topmiddle
-    case filled
-square
-    case grid
-    case 3x3
-    case topright
-    case filled
-square
-    case grid
-    case 3x3
-    case middleleft
-    case filled
-square
-    case grid
-    case 3x3
-    case middle
-    case filled
-square
-    case grid
-    case 3x3
-    case middleright
-    case filled
-square
-    case grid
-    case 3x3
-    case bottomleft
-    case filled
-square
-    case grid
-    case 3x3
-    case bottommiddle
-    case filled
-square
-    case grid
-    case 3x3
-    case bottomright
-    case filled
-circle
-    case hexagongrid
-circle
-    case hexagongrid
-    case fill
-circle
-    case hexagongrid
-    case circle
-circle
-    case hexagongrid
-    case circle
-    case fill
-circle
-    case hexagonpath
-circle
-    case hexagonpath
-    case fill
-circle
-    case grid
-    case cross
-circle
-    case grid
-    case cross
-    case fill
-circle
-    case grid
-    case cross
-    case `left`
-    case filled
-circle
-    case grid
-    case cross
-    case up
-    case filled
-circle
-    case grid
-    case cross
-    case `right`
-    case filled
-circle
-    case grid
-    case cross
-    case down
-    case filled
-seal
-seal
-    case fill
-checkmark
-    case seal
-checkmark
-    case seal
-    case fill
-xmark
-    case seal
-xmark
-    case seal
-    case fill
-exclamationmark
-    case triangle
-exclamationmark
-    case triangle
-    case fill
-drop
-drop
-    case fill
-drop
-    case circle
-drop
-    case circle
-    case fill
-drop
-    case triangle
-drop
-    case triangle
-    case fill
-play
-play
-    case fill
-play
-    case circle
-play
-    case circle
-    case fill
-play
-    case square
-play
-    case square
-    case fill
-play
-    case rectangle
-play
-    case rectangle
-    case fill
-play
-    case slash
-play
-    case slash
-    case fill
-pause
-pause
-    case fill
-pause
-    case circle
-pause
-    case circle
-    case fill
-pause
-    case rectangle
-pause
-    case rectangle
-    case fill
-stop
-stop
-    case fill
-stop
-    case circle
-stop
-    case circle
-    case fill
-record
-    case circle
-record
-    case circle
-    case fill
-playpause
-playpause
-    case fill
-backward
-backward
-    case fill
-backward
-    case circle
-backward
-    case circle
-    case fill
-forward
-forward
-    case fill
-forward
-    case circle
-forward
-    case circle
-    case fill
-backward
-    case end
-backward
-    case end
-    case fill
-forward
-    case end
-forward
-    case end
-    case fill
-backward
-    case end
-    case alt
-backward
-    case end
-    case alt
-    case fill
-forward
-    case end
-    case alt
-forward
-    case end
-    case alt
-    case fill
-backward
-    case frame
-backward
-    case frame
-    case fill
-forward
-    case frame
-forward
-    case frame
-    case fill
-eject
-eject
-    case fill
-eject
-    case circle
-eject
-    case circle
-    case fill
-mount
-mount
-    case fill
-memories
-memories
-    case badge
-    case plus
-memories
-    case badge
-    case minus
-shuffle
-shuffle
-    case circle
-shuffle
-    case circle
-    case fill
-repeat
-repeat
-    case circle
-repeat
-    case circle
-    case fill
-repeat
-    case 1
-repeat
-    case 1
-    case circle
-repeat
-    case 1
-    case circle
-    case fill
-infinity
-infinity
-    case circle
-infinity
-    case circle
-    case fill
-megaphone
-megaphone
-    case fill
-speaker
-speaker
-    case fill
-speaker
-    case circle
-speaker
-    case circle
-    case fill
-speaker
-    case slash
-speaker
-    case slash
-    case fill
-speaker
-    case slash
-    case circle
-speaker
-    case slash
-    case circle
-    case fill
-speaker
-    case zzz
-speaker
-    case zzz
-    case fill
-speaker
-    case wave
-    case 1
-speaker
-    case wave
-    case 1
-    case fill
-speaker
-    case wave
-    case 2
-speaker
-    case wave
-    case 2
-    case fill
-speaker
-    case wave
-    case 2
-    case circle
-speaker
-    case wave
-    case 2
-    case circle
-    case fill
-speaker
-    case wave
-    case 3
-speaker
-    case wave
-    case 3
-    case fill
-speaker
-    case badge
-    case exclamationmark
-speaker
-    case badge
-    case exclamationmark
-    case fill
-badge
-    case plus
-    case radiowaves
-    case right
-badge
-    case plus
-    case radiowaves
-    case forward
-music
-    case note
-music
-    case note
-    case list
-music
-    case quarternote
-    case 3
-music
-    case mic
-music
-    case mic
-    case circle
-music
-    case mic
-    case circle
-    case fill
-arrow
-    case rectanglepath
-goforward
-gobackward
-goforward
-    case 5
-gobackward
-    case 5
-goforward
-    case 10
-gobackward
-    case 10
-goforward
-    case 15
-gobackward
-    case 15
-goforward
-    case 30
-gobackward
-    case 30
-goforward
-    case 45
-gobackward
-    case 45
-goforward
-    case 60
-gobackward
-    case 60
-goforward
-    case 75
-gobackward
-    case 75
-goforward
-    case 90
-gobackward
-    case 90
-goforward
-    case plus
-gobackward
-    case minus
-swift
-magnifyingglass
-magnifyingglass
-    case circle
-magnifyingglass
-    case circle
-    case fill
-plus
-    case magnifyingglass
-minus
-    case magnifyingglass
-1
-    case magnifyingglass
-arrow
-    case up
-    case `left`
-    case and
-    case down
-    case `right`
-    case magnifyingglass
-text
-    case magnifyingglass
-sparkle
-    case magnifyingglass
-location
-    case magnifyingglass
-loupe
-mic
-mic
-    case fill
-mic
-    case circle
-mic
-    case circle
-    case fill
-mic
-    case square
-mic
-    case square
-    case fill
-mic
-    case slash
-mic
-    case slash
-    case fill
-mic
-    case slash
-    case circle
-mic
-    case slash
-    case circle
-    case fill
-mic
-    case badge
-    case plus
-mic
-    case fill
-    case badge
-    case plus
-line
-    case diagonal
-line
-    case diagonal
-    case arrow
-circle
-circle
-    case fill
-circle
-    case slash
-circle
-    case slash
-    case fill
-circle
-    case lefthalf
-    case filled
-circle
-    case righthalf
-    case filled
-circle
-    case tophalf
-    case filled
-circle
-    case bottomhalf
-    case filled
-circle
-    case inset
-    case filled
-smallcircle
-    case filled
-    case circle
-smallcircle
-    case filled
-    case circle
-    case fill
-circle
-    case dashed
-circle
-    case dashed
-    case inset
-    case filled
-circle
-    case dotted
-circlebadge
-circlebadge
-    case fill
-circlebadge
-    case 2
-circlebadge
-    case 2
-    case fill
-smallcircle
-    case circle
-smallcircle
-    case circle
-    case fill
-target
-capsule
-capsule
-    case fill
-capsule
-    case lefthalf
-    case filled
-capsule
-    case righthalf
-    case filled
-capsule
-    case tophalf
-    case filled
-capsule
-    case bottomhalf
-    case filled
-capsule
-    case inset
-    case filled
-capsule
-    case portrait
-capsule
-    case portrait
-    case fill
-capsule
-    case portrait
-    case lefthalf
-    case filled
-capsule
-    case portrait
-    case righthalf
-    case filled
-capsule
-    case portrait
-    case tophalf
-    case filled
-capsule
-    case portrait
-    case bottomhalf
-    case filled
-capsule
-    case portrait
-    case inset
-    case filled
-oval
-oval
-    case fill
-oval
-    case lefthalf
-    case filled
-oval
-    case righthalf
-    case filled
-oval
-    case tophalf
-    case filled
-oval
-    case bottomhalf
-    case filled
-oval
-    case inset
-    case filled
-oval
-    case portrait
-oval
-    case portrait
-    case fill
-oval
-    case portrait
-    case lefthalf
-    case filled
-oval
-    case portrait
-    case righthalf
-    case filled
-oval
-    case portrait
-    case tophalf
-    case filled
-oval
-    case portrait
-    case bottomhalf
-    case filled
-oval
-    case portrait
-    case inset
-    case filled
-placeholdertext
-    case fill
-square
-square
-    case fill
-square
-    case slash
-square
-    case slash
-    case fill
-square
-    case lefthalf
-    case filled
-square
-    case righthalf
-    case filled
-square
-    case tophalf
-    case filled
-square
-    case bottomhalf
-    case filled
-square
-    case inset
-    case filled
-square
-    case split
-    case 2x1
-square
-    case split
-    case 2x1
-    case fill
-square
-    case split
-    case 1x2
-square
-    case split
-    case 1x2
-    case fill
-square
-    case split
-    case 2x2
-square
-    case split
-    case 2x2
-    case fill
-square
-    case split
-    case diagonal
-    case 2x2
-square
-    case split
-    case diagonal
-    case 2x2
-    case fill
-square
-    case split
-    case diagonal
-square
-    case split
-    case diagonal
-    case fill
-dot
-    case square
-dot
-    case square
-    case fill
-circle
-    case square
-circle
-    case square
-    case fill
-square
-    case dashed
-square
-    case dashed
-    case inset
-    case filled
-plus
-    case square
-    case dashed
-questionmark
-    case square
-    case dashed
-square
-    case on
-    case square
-square
-    case fill
-    case on
-    case square
-    case fill
-square
-    case filled
-    case on
-    case square
-hand
-    case raised
-    case square
-    case on
-    case square
-hand
-    case raised
-    case square
-    case on
-    case square
-    case fill
-sparkles
-    case square
-    case filled
-    case on
-    case square
-square
-    case on
-    case square
-    case dashed
-plus
-    case square
-    case on
-    case square
-plus
-    case square
-    case fill
-    case on
-    case square
-    case fill
-square
-    case on
-    case circle
-square
-    case fill
-    case on
-    case circle
-    case fill
-r
-    case square
-    case on
-    case square
-r
-    case square
-    case on
-    case square
-    case fill
-j
-    case square
-    case on
-    case square
-j
-    case square
-    case on
-    case square
-    case fill
-h
-    case square
-    case on
-    case square
-h
-    case square
-    case on
-    case square
-    case fill
-square
-    case stack
-square
-    case stack
-    case fill
-squareshape
-squareshape
-    case fill
-squareshape
-    case dashed
-    case squareshape
-squareshape
-    case squareshape
-    case dashed
-dot
-    case squareshape
-dot
-    case squareshape
-    case fill
-app
-app
-    case fill
-rectangle
-rectangle
-    case fill
-rectangle
-    case slash
-rectangle
-    case slash
-    case fill
-rectangle
-    case lefthalf
-    case filled
-rectangle
-    case righthalf
-    case filled
-rectangle
-    case leadinghalf
-    case filled
-rectangle
-    case trailinghalf
-    case filled
-rectangle
-    case tophalf
-    case filled
-rectangle
-    case bottomhalf
-    case filled
-rectangle
-    case split
-    case 2x1
-rectangle
-    case split
-    case 2x1
-    case fill
-rectangle
-    case split
-    case 2x1
-    case slash
-rectangle
-    case split
-    case 2x1
-    case slash
-    case fill
-rectangle
-    case split
-    case 1x2
-rectangle
-    case split
-    case 1x2
-    case fill
-rectangle
-    case split
-    case 3x1
-rectangle
-    case split
-    case 3x1
-    case fill
-rectangle
-    case split
-    case 2x2
-rectangle
-    case split
-    case 2x2
-    case fill
-tablecells
-tablecells
-    case fill
-tablecells
-    case badge
-    case ellipsis
-tablecells
-    case fill
-    case badge
-    case ellipsis
-rectangle
-    case split
-    case 3x3
-rectangle
-    case inset
-    case filled
-rectangle
-    case tophalf
-    case inset
-    case filled
-rectangle
-    case bottomhalf
-    case inset
-    case filled
-rectangle
-    case lefthalf
-    case inset
-    case filled
-rectangle
-    case righthalf
-    case inset
-    case filled
-rectangle
-    case leadinghalf
-    case inset
-    case filled
-rectangle
-    case trailinghalf
-    case inset
-    case filled
-rectangle
-    case lefthalf
-    case inset
-    case filled
-    case arrow
-    case left
-rectangle
-    case righthalf
-    case inset
-    case filled
-    case arrow
-    case right
-rectangle
-    case leadinghalf
-    case inset
-    case filled
-    case arrow
-    case leading
-rectangle
-    case trailinghalf
-    case inset
-    case filled
-    case arrow
-    case trailing
-rectangle
-    case topthird
-    case inset
-    case filled
-rectangle
-    case bottomthird
-    case inset
-    case filled
-rectangle
-    case leftthird
-    case inset
-    case filled
-rectangle
-    case rightthird
-    case inset
-    case filled
-rectangle
-    case leadingthird
-    case inset
-    case filled
-rectangle
-    case trailingthird
-    case inset
-    case filled
-rectangle
-    case center
-    case inset
-    case filled
-rectangle
-    case center
-    case inset
-    case filled
-    case badge
-    case plus
-rectangle
-    case inset
-    case topleft
-    case filled
-rectangle
-    case inset
-    case topright
-    case filled
-rectangle
-    case inset
-    case topleading
-    case filled
-rectangle
-    case inset
-    case toptrailing
-    case filled
-rectangle
-    case inset
-    case bottomleft
-    case filled
-rectangle
-    case inset
-    case bottomright
-    case filled
-rectangle
-    case inset
-    case bottomleading
-    case filled
-rectangle
-    case inset
-    case bottomtrailing
-    case filled
-rectangle
-    case on
-    case rectangle
-rectangle
-    case fill
-    case on
-    case rectangle
-    case fill
-rectangle
-    case on
-    case rectangle
-    case circle
-rectangle
-    case on
-    case rectangle
-    case circle
-    case fill
-rectangle
-    case on
-    case rectangle
-    case square
-rectangle
-    case on
-    case rectangle
-    case square
-    case fill
-rectangle
-    case inset
-    case filled
-    case on
-    case rectangle
-rectangle
-    case on
-    case rectangle
-    case slash
-rectangle
-    case on
-    case rectangle
-    case slash
-    case fill
-rectangle
-    case on
-    case rectangle
-    case slash
-    case circle
-rectangle
-    case on
-    case rectangle
-    case slash
-    case circle
-    case fill
-play
-    case rectangle
-    case on
-    case rectangle
-play
-    case rectangle
-    case on
-    case rectangle
-    case fill
-play
-    case rectangle
-    case on
-    case rectangle
-    case circle
-play
-    case rectangle
-    case on
-    case rectangle
-    case circle
-    case fill
-plus
-    case rectangle
-    case on
-    case rectangle
-plus
-    case rectangle
-    case fill
-    case on
-    case rectangle
-    case fill
-rectangle
-    case portrait
-rectangle
-    case portrait
-    case fill
-rectangle
-    case portrait
-    case slash
-rectangle
-    case portrait
-    case slash
-    case fill
-rectangle
-    case portrait
-    case lefthalf
-    case filled
-rectangle
-    case portrait
-    case righthalf
-    case filled
-rectangle
-    case portrait
-    case tophalf
-    case filled
-rectangle
-    case portrait
-    case bottomhalf
-    case filled
-rectangle
-    case portrait
-    case inset
-    case filled
-rectangle
-    case portrait
-    case tophalf
-    case inset
-    case filled
-rectangle
-    case portrait
-    case bottomhalf
-    case inset
-    case filled
-rectangle
-    case portrait
-    case lefthalf
-    case inset
-    case filled
-rectangle
-    case portrait
-    case righthalf
-    case inset
-    case filled
-rectangle
-    case portrait
-    case leadinghalf
-    case inset
-    case filled
-rectangle
-    case portrait
-    case trailinghalf
-    case inset
-    case filled
-rectangle
-    case portrait
-    case topthird
-    case inset
-    case filled
-rectangle
-    case portrait
-    case bottomthird
-    case inset
-    case filled
-rectangle
-    case portrait
-    case leftthird
-    case inset
-    case filled
-rectangle
-    case portrait
-    case rightthird
-    case inset
-    case filled
-rectangle
-    case portrait
-    case leadingthird
-    case inset
-    case filled
-rectangle
-    case portrait
-    case trailingthird
-    case inset
-    case filled
-rectangle
-    case portrait
-    case center
-    case inset
-    case filled
-rectangle
-    case portrait
-    case topleft
-    case inset
-    case filled
-rectangle
-    case portrait
-    case topright
-    case inset
-    case filled
-rectangle
-    case portrait
-    case topleading
-    case inset
-    case filled
-rectangle
-    case portrait
-    case toptrailing
-    case inset
-    case filled
-rectangle
-    case portrait
-    case bottomleft
-    case inset
-    case filled
-rectangle
-    case portrait
-    case bottomright
-    case inset
-    case filled
-rectangle
-    case portrait
-    case bottomleading
-    case inset
-    case filled
-rectangle
-    case portrait
-    case bottomtrailing
-    case inset
-    case filled
-rectangle
-    case portrait
-    case on
-    case rectangle
-    case portrait
-rectangle
-    case portrait
-    case on
-    case rectangle
-    case portrait
-    case fill
-rectangle
-    case portrait
-    case on
-    case rectangle
-    case portrait
-    case slash
-rectangle
-    case portrait
-    case on
-    case rectangle
-    case portrait
-    case slash
-    case fill
-rectangle
-    case portrait
-    case split
-    case 2x1
-rectangle
-    case portrait
-    case split
-    case 2x1
-    case fill
-rectangle
-    case portrait
-    case split
-    case 2x1
-    case slash
-rectangle
-    case portrait
-    case split
-    case 2x1
-    case slash
-    case fill
-triangle
-triangle
-    case fill
-triangle
-    case lefthalf
-    case filled
-triangle
-    case righthalf
-    case filled
-triangle
-    case tophalf
-    case filled
-triangle
-    case bottomhalf
-    case filled
-triangle
-    case inset
-    case filled
-diamond
-diamond
-    case fill
-diamond
-    case circle
-diamond
-    case circle
-    case fill
-diamond
-    case lefthalf
-    case filled
-diamond
-    case righthalf
-    case filled
-diamond
-    case tophalf
-    case filled
-diamond
-    case bottomhalf
-    case filled
-diamond
-    case inset
-    case filled
-octagon
-octagon
-    case fill
-octagon
-    case lefthalf
-    case filled
-octagon
-    case righthalf
-    case filled
-octagon
-    case tophalf
-    case filled
-octagon
-    case bottomhalf
-    case filled
-hexagon
-hexagon
-    case fill
-hexagon
-    case lefthalf
-    case filled
-hexagon
-    case righthalf
-    case filled
-hexagon
-    case tophalf
-    case filled
-hexagon
-    case bottomhalf
-    case filled
-pentagon
-pentagon
-    case fill
-pentagon
-    case lefthalf
-    case filled
-pentagon
-    case righthalf
-    case filled
-pentagon
-    case tophalf
-    case filled
-pentagon
-    case bottomhalf
-    case filled
-suit
-    case heart
-suit
-    case heart
-    case fill
-suit
-    case club
-suit
-    case club
-    case fill
-suit
-    case spade
-suit
-    case spade
-    case fill
-suit
-    case diamond
-suit
-    case diamond
-    case fill
-heart
-heart
-    case fill
-heart
-    case circle
-heart
-    case circle
-    case fill
-heart
-    case square
-heart
-    case square
-    case fill
-heart
-    case rectangle
-heart
-    case rectangle
-    case fill
-heart
-    case slash
-heart
-    case slash
-    case fill
-heart
-    case slash
-    case circle
-heart
-    case slash
-    case circle
-    case fill
-bolt
-    case heart
-bolt
-    case heart
-    case fill
-arrow
-    case up
-    case heart
-arrow
-    case up
-    case heart
-    case fill
-arrow
-    case down
-    case heart
-arrow
-    case down
-    case heart
-    case fill
-arrow
-    case clockwise
-    case heart
-arrow
-    case clockwise
-    case heart
-    case fill
-rhombus
-rhombus
-    case fill
-star
-star
-    case fill
-star
-    case leadinghalf
-    case filled
-star
-    case circle
-star
-    case circle
-    case fill
-star
-    case square
-star
-    case square
-    case fill
-star
-    case slash
-star
-    case slash
-    case fill
-line
-    case horizontal
-    case star
-    case fill
-    case line
-    case horizontal
-flag
-flag
-    case fill
-flag
-    case circle
-flag
-    case circle
-    case fill
-flag
-    case square
-flag
-    case square
-    case fill
-flag
-    case slash
-flag
-    case slash
-    case fill
-flag
-    case slash
-    case circle
-flag
-    case slash
-    case circle
-    case fill
-flag
-    case badge
-    case ellipsis
-flag
-    case badge
-    case ellipsis
-    case fill
-flag
-    case 2
-    case crossed
-flag
-    case 2
-    case crossed
-    case fill
-flag
-    case filled
-    case and
-    case flag
-    case crossed
-flag
-    case and
-    case flag
-    case filled
-    case crossed
-location
-location
-    case fill
-location
-    case circle
-location
-    case circle
-    case fill
-location
-    case square
-location
-    case square
-    case fill
-location
-    case slash
-location
-    case slash
-    case fill
-location
-    case north
-location
-    case north
-    case fill
-location
-    case north
-    case circle
-location
-    case north
-    case circle
-    case fill
-location
-    case north
-    case line
-location
-    case north
-    case line
-    case fill
-sensor
-    case tag
-    case radiowaves
-    case forward
-sensor
-    case tag
-    case radiowaves
-    case forward
-    case fill
-airtag
-    case radiowaves
-    case forward
-airtag
-    case radiowaves
-    case forward
-    case fill
-airtag
-airtag
-    case fill
-bell
-bell
-    case fill
-bell
-    case circle
-bell
-    case circle
-    case fill
-bell
-    case square
-bell
-    case square
-    case fill
-bell
-    case slash
-bell
-    case slash
-    case fill
-bell
-    case slash
-    case circle
-bell
-    case slash
-    case circle
-    case fill
-bell
-    case and
-    case waveform
-bell
-    case and
-    case waveform
-    case fill
-bell
-    case badge
-bell
-    case badge
-    case fill
-bell
-    case badge
-    case circle
-bell
-    case badge
-    case circle
-    case fill
-tag
-tag
-    case fill
-tag
-    case circle
-tag
-    case circle
-    case fill
-tag
-    case square
-tag
-    case square
-    case fill
-tag
-    case slash
-tag
-    case slash
-    case fill
-bolt
-bolt
-    case fill
-bolt
-    case circle
-bolt
-    case circle
-    case fill
-bolt
-    case square
-bolt
-    case square
-    case fill
-bolt
-    case ring
-    case closed
-bolt
-    case shield
-bolt
-    case shield
-    case fill
-bolt
-    case slash
-bolt
-    case slash
-    case fill
-bolt
-    case slash
-    case circle
-bolt
-    case slash
-    case circle
-    case fill
-bolt
-    case badge
-    case a
-bolt
-    case badge
-    case a
-    case fill
-bolt
-    case horizontal
-bolt
-    case horizontal
-    case fill
-bolt
-    case horizontal
-    case circle
-bolt
-    case horizontal
-    case circle
-    case fill
-eye
-eye
-    case fill
-eye
-    case circle
-eye
-    case circle
-    case fill
-eye
-    case square
-eye
-    case square
-    case fill
-eye
-    case slash
-eye
-    case slash
-    case fill
-eye
-    case slash
-    case circle
-eye
-    case slash
-    case circle
-    case fill
-eye
-    case trianglebadge
-    case exclamationmark
-eye
-    case trianglebadge
-    case exclamationmark
-    case fill
-tshirt
-tshirt
-    case fill
-eyes
-eyes
-    case inverse
-eyebrow
-nose
-nose
-    case fill
-mustache
-mustache
-    case fill
-mouth
-mouth
-    case fill
-eyeglasses
-facemask
-facemask
-    case fill
-brain
-    case head
-    case profile
-brain
-icloud
-icloud
-    case fill
-icloud
-    case circle
-icloud
-    case circle
-    case fill
-icloud
-    case square
-icloud
-    case square
-    case fill
-icloud
-    case slash
-icloud
-    case slash
-    case fill
-exclamationmark
-    case icloud
-exclamationmark
-    case icloud
-    case fill
-checkmark
-    case icloud
-checkmark
-    case icloud
-    case fill
-xmark
-    case icloud
-xmark
-    case icloud
-    case fill
-link
-    case icloud
-link
-    case icloud
-    case fill
-bolt
-    case horizontal
-    case icloud
-bolt
-    case horizontal
-    case icloud
-    case fill
-person
-    case icloud
-person
-    case icloud
-    case fill
-lock
-    case icloud
-lock
-    case icloud
-    case fill
-key
-    case icloud
-key
-    case icloud
-    case fill
-arrow
-    case clockwise
-    case icloud
-arrow
-    case clockwise
-    case icloud
-    case fill
-arrow
-    case counterclockwise
-    case icloud
-arrow
-    case counterclockwise
-    case icloud
-    case fill
-icloud
-    case and
-    case arrow
-    case down
-icloud
-    case and
-    case arrow
-    case down
-    case fill
-icloud
-    case and
-    case arrow
-    case up
-icloud
-    case and
-    case arrow
-    case up
-    case fill
-flashlight
-    case off
-    case fill
-flashlight
-    case on
-    case fill
-camera
-camera
-    case fill
-camera
-    case circle
-camera
-    case circle
-    case fill
-camera
-    case shutter
-    case button
-camera
-    case shutter
-    case button
-    case fill
-camera
-    case badge
-    case ellipsis
-camera
-    case fill
-    case badge
-    case ellipsis
-arrow
-    case triangle
-    case 2
-    case circlepath
-    case camera
-arrow
-    case triangle
-    case 2
-    case circlepath
-    case camera
-    case fill
-camera
-    case on
-    case rectangle
-camera
-    case on
-    case rectangle
-    case fill
-message
-message
-    case fill
-message
-    case circle
-message
-    case circle
-    case fill
-message
-    case and
-    case waveform
-message
-    case and
-    case waveform
-    case fill
-arrow
-    case up
-    case message
-arrow
-    case up
-    case message
-    case fill
-plus
-    case message
-plus
-    case message
-    case fill
-bubble
-    case right
-bubble
-    case `right`
-    case fill
-bubble
-    case `right`
-    case circle
-bubble
-    case `right`
-    case circle
-    case fill
-bubble
-    case left
-bubble
-    case `left`
-    case fill
-bubble
-    case `left`
-    case circle
-bubble
-    case `left`
-    case circle
-    case fill
-exclamationmark
-    case bubble
-exclamationmark
-    case bubble
-    case fill
-exclamationmark
-    case bubble
-    case circle
-exclamationmark
-    case bubble
-    case circle
-    case fill
-quote
-    case opening
-quote
-    case closing
-quote
-    case bubble
-quote
-    case bubble
-    case fill
-star
-    case bubble
-star
-    case bubble
-    case fill
-character
-    case bubble
-character
-    case bubble
-    case fill
-text
-    case bubble
-text
-    case bubble
-    case fill
-captions
-    case bubble
-captions
-    case bubble
-    case fill
-plus
-    case bubble
-plus
-    case bubble
-    case fill
-checkmark
-    case bubble
-checkmark
-    case bubble
-    case fill
-rectangle
-    case 3
-    case group
-    case bubble
-    case left
-rectangle
-    case 3
-    case group
-    case bubble
-    case `left`
-    case fill
-ellipsis
-    case bubble
-ellipsis
-    case bubble
-    case fill
-ellipsis
-    case vertical
-    case bubble
-ellipsis
-    case vertical
-    case bubble
-    case fill
-phone
-    case bubble
-    case left
-phone
-    case bubble
-    case `left`
-    case fill
-video
-    case bubble
-    case left
-video
-    case bubble
-    case `left`
-    case fill
-bubble
-    case middle
-    case bottom
-bubble
-    case middle
-    case bottom
-    case fill
-bubble
-    case middle
-    case top
-bubble
-    case middle
-    case top
-    case fill
-bubble
-    case `left`
-    case and
-    case bubble
-    case right
-bubble
-    case `left`
-    case and
-    case bubble
-    case `right`
-    case fill
-bubble
-    case `left`
-    case and
-    case exclamationmark
-    case bubble
-    case right
-bubble
-    case `left`
-    case and
-    case exclamationmark
-    case bubble
-    case `right`
-    case fill
-phone
-phone
-    case fill
-phone
-    case circle
-phone
-    case circle
-    case fill
-phone
-    case badge
-    case plus
-phone
-    case fill
-    case badge
-    case plus
-phone
-    case connection
-phone
-    case fill
-    case connection
-phone
-    case and
-    case waveform
-phone
-    case and
-    case waveform
-    case fill
-phone
-    case arrow
-    case up
-    case right
-phone
-    case fill
-    case arrow
-    case up
-    case right
-phone
-    case arrow
-    case down
-    case left
-phone
-    case fill
-    case arrow
-    case down
-    case left
-phone
-    case arrow
-    case right
-phone
-    case fill
-    case arrow
-    case right
-phone
-    case down
-phone
-    case down
-    case fill
-phone
-    case down
-    case circle
-phone
-    case down
-    case circle
-    case fill
-teletype
-teletype
-    case circle
-teletype
-    case circle
-    case fill
-teletype
-    case answer
-teletype
-    case answer
-    case circle
-teletype
-    case answer
-    case circle
-    case fill
-video
-video
-    case fill
-video
-    case circle
-video
-    case circle
-    case fill
-video
-    case square
-video
-    case square
-    case fill
-video
-    case slash
-video
-    case slash
-    case fill
-video
-    case badge
-    case plus
-video
-    case fill
-    case badge
-    case plus
-video
-    case badge
-    case checkmark
-video
-    case fill
-    case badge
-    case checkmark
-video
-    case badge
-    case ellipsis
-video
-    case fill
-    case badge
-    case ellipsis
-video
-    case and
-    case waveform
-video
-    case and
-    case waveform
-    case fill
-arrow
-    case up
-    case `right`
-    case video
-arrow
-    case up
-    case `right`
-    case video
-    case fill
-arrow
-    case down
-    case `left`
-    case video
-arrow
-    case down
-    case `left`
-    case video
-    case fill
-questionmark
-    case video
-questionmark
-    case video
-    case fill
-envelope
-envelope
-    case fill
-envelope
-    case circle
-envelope
-    case circle
-    case fill
-envelope
-    case arrow
-    case triangle
-    case branch
-envelope
-    case arrow
-    case triangle
-    case branch
-    case fill
-envelope
-    case open
-envelope
-    case `open`
-    case fill
-envelope
-    case badge
-envelope
-    case badge
-    case fill
-envelope
-    case badge
-    case shield
-    case half
-    case filled
-envelope
-    case badge
-    case shield
-    case half
-    case filled
-    case fill
-mail
-    case stack
-mail
-    case stack
-    case fill
-mail
-mail
-    case fill
-mail
-    case and
-    case text
-    case magnifyingglass
-rectangle
-    case and
-    case text
-    case magnifyingglass
-arrow
-    case up
-    case `right`
-    case and
-    case arrow
-    case down
-    case `left`
-    case rectangle
-arrow
-    case up
-    case `right`
-    case and
-    case arrow
-    case down
-    case `left`
-    case rectangle
-    case fill
-gear
-gear
-    case circle
-gear
-    case circle
-    case fill
-gear
-    case badge
-    case checkmark
-gear
-    case badge
-    case xmark
-gear
-    case badge
-    case questionmark
-gearshape
-gearshape
-    case fill
-gearshape
-    case circle
-gearshape
-    case circle
-    case fill
-gearshape
-    case 2
-gearshape
-    case 2
-    case fill
-signature
-line
-    case 3
-    case crossed
-    case swirl
-    case circle
-line
-    case 3
-    case crossed
-    case swirl
-    case circle
-    case fill
-scissors
-scissors
-    case circle
-scissors
-    case circle
-    case fill
-scissors
-    case badge
-    case ellipsis
-ellipsis
-ellipsis
-    case circle
-ellipsis
-    case circle
-    case fill
-ellipsis
-    case rectangle
-ellipsis
-    case rectangle
-    case fill
-bag
-bag
-    case fill
-bag
-    case circle
-bag
-    case circle
-    case fill
-bag
-    case badge
-    case plus
-bag
-    case fill
-    case badge
-    case plus
-bag
-    case badge
-    case minus
-bag
-    case fill
-    case badge
-    case minus
-cart
-cart
-    case fill
-cart
-    case circle
-cart
-    case circle
-    case fill
-cart
-    case badge
-    case plus
-cart
-    case fill
-    case badge
-    case plus
-cart
-    case badge
-    case minus
-cart
-    case fill
-    case badge
-    case minus
-creditcard
-creditcard
-    case fill
-creditcard
-    case circle
-creditcard
-    case circle
-    case fill
-creditcard
-    case and
-    case 123
-creditcard
-    case trianglebadge
-    case exclamationmark
-giftcard
-giftcard
-    case fill
-wallet
-    case pass
-wallet
-    case pass
-    case fill
-wand
-    case and
-    case rays
-wand
-    case and
-    case rays
-    case inverse
-wand
-    case and
-    case stars
-wand
-    case and
-    case stars
-    case inverse
-crop
-crop
-    case rotate
-dial
-    case min
-dial
-    case min
-    case fill
-dial
-    case max
-dial
-    case max
-    case fill
-gyroscope
-nosign
-gauge
-gauge
-    case badge
-    case plus
-gauge
-    case badge
-    case minus
-speedometer
-barometer
-metronome
-metronome
-    case fill
-amplifier
-dice
-dice
-    case fill
-die
-    case face
-    case 1
-die
-    case face
-    case 1
-    case fill
-die
-    case face
-    case 2
-die
-    case face
-    case 2
-    case fill
-die
-    case face
-    case 3
-die
-    case face
-    case 3
-    case fill
-die
-    case face
-    case 4
-die
-    case face
-    case 4
-    case fill
-die
-    case face
-    case 5
-die
-    case face
-    case 5
-    case fill
-die
-    case face
-    case 6
-die
-    case face
-    case 6
-    case fill
-square
-    case grid
-    case 3x3
-    case square
-pianokeys
-pianokeys
-    case inverse
-tuningfork
-paintbrush
-paintbrush
-    case fill
-paintbrush
-    case pointed
-paintbrush
-    case pointed
-    case fill
-bandage
-bandage
-    case fill
-ruler
-ruler
-    case fill
-level
-level
-    case fill
-lines
-    case measurement
-    case horizontal
-wrench
-wrench
-    case fill
-hammer
-hammer
-    case fill
-hammer
-    case circle
-hammer
-    case circle
-    case fill
-screwdriver
-screwdriver
-    case fill
-eyedropper
-eyedropper
-    case halffull
-eyedropper
-    case full
-wrench
-    case and
-    case screwdriver
-wrench
-    case and
-    case screwdriver
-    case fill
-applescript
-applescript
-    case fill
-scroll
-scroll
-    case fill
-stethoscope
-stethoscope
-    case circle
-stethoscope
-    case circle
-    case fill
-printer
-printer
-    case fill
-printer
-    case filled
-    case and
-    case paper
-printer
-    case dotmatrix
-printer
-    case dotmatrix
-    case fill
-printer
-    case dotmatrix
-    case filled
-    case and
-    case paper
-scanner
-scanner
-    case fill
-faxmachine
-briefcase
-briefcase
-    case fill
-briefcase
-    case circle
-briefcase
-    case circle
-    case fill
-case
-case
-    case fill
-latch
-    case 2
-    case case
-latch
-    case 2
-    case `case`
-    case fill
-cross
-    case case
-cross
-    case `case`
-    case fill
-suitcase
-suitcase
-    case fill
-suitcase
-    case cart
-suitcase
-    case cart
-    case fill
-theatermasks
-theatermasks
-    case fill
-theatermasks
-    case circle
-theatermasks
-    case circle
-    case fill
-puzzlepiece
-    case extension
-puzzlepiece
-    case `extension`
-    case fill
-puzzlepiece
-puzzlepiece
-    case fill
-homekit
-house
-house
-    case fill
-house
-    case circle
-house
-    case circle
-    case fill
-music
-    case note
-    case house
-music
-    case note
-    case house
-    case fill
-building
-    case columns
-building
-    case columns
-    case fill
-building
-    case columns
-    case circle
-building
-    case columns
-    case circle
-    case fill
-signpost
-    case left
-signpost
-    case `left`
-    case fill
-signpost
-    case right
-signpost
-    case `right`
-    case fill
-square
-    case split
-    case bottomrightquarter
-square
-    case split
-    case bottomrightquarter
-    case fill
-building
-building
-    case fill
-building
-    case 2
-building
-    case 2
-    case fill
-building
-    case 2
-    case crop
-    case circle
-building
-    case 2
-    case crop
-    case circle
-    case fill
-lock
-lock
-    case fill
-lock
-    case circle
-lock
-    case circle
-    case fill
-lock
-    case square
-lock
-    case square
-    case fill
-lock
-    case square
-    case stack
-lock
-    case square
-    case stack
-    case fill
-lock
-    case rectangle
-lock
-    case rectangle
-    case fill
-lock
-    case rectangle
-    case stack
-lock
-    case rectangle
-    case stack
-    case fill
-lock
-    case rectangle
-    case on
-    case rectangle
-lock
-    case rectangle
-    case on
-    case rectangle
-    case fill
-lock
-    case shield
-lock
-    case shield
-    case fill
-lock
-    case slash
-lock
-    case slash
-    case fill
-lock
-    case open
-lock
-    case `open`
-    case fill
-lock
-    case rotation
-lock
-    case rotation
-    case open
-key
-key
-    case fill
-wifi
-wifi
-    case circle
-wifi
-    case circle
-    case fill
-wifi
-    case square
-wifi
-    case square
-    case fill
-wifi
-    case slash
-wifi
-    case exclamationmark
-pin
-pin
-    case fill
-pin
-    case circle
-pin
-    case circle
-    case fill
-pin
-    case square
-pin
-    case square
-    case fill
-pin
-    case slash
-pin
-    case slash
-    case fill
-mappin
-mappin
-    case circle
-mappin
-    case circle
-    case fill
-mappin
-    case square
-mappin
-    case square
-    case fill
-mappin
-    case slash
-mappin
-    case slash
-    case circle
-mappin
-    case slash
-    case circle
-    case fill
-mappin
-    case and
-    case ellipse
-map
-map
-    case fill
-map
-    case circle
-map
-    case circle
-    case fill
-safari
-safari
-    case fill
-move
-    case 3d
-scale
-    case 3d
-rotate
-    case 3d
-torus
-rotate
-    case left
-rotate
-    case `left`
-    case fill
-rotate
-    case right
-rotate
-    case `right`
-    case fill
-selection
-    case pin
-    case `in`
-    case out
-powerplug
-powerplug
-    case fill
-timeline
-    case selection
-cpu
-cpu
-    case fill
-memorychip
-memorychip
-    case fill
-opticaldisc
-display
-lock
-    case display
-lock
-    case `open`
-    case display
-display
-    case and
-    case arrow
-    case down
-display
-    case trianglebadge
-    case exclamationmark
-display
-    case 2
-desktopcomputer
-lock
-    case desktopcomputer
-lock
-    case `open`
-    case desktopcomputer
-desktopcomputer
-    case and
-    case arrow
-    case down
-desktopcomputer
-    case trianglebadge
-    case exclamationmark
-pc
-macpro
-    case gen1
-macpro
-    case gen1
-    case fill
-macpro
-    case gen2
-macpro
-    case gen2
-    case fill
-macpro
-    case gen3
-macpro
-    case gen3
-    case fill
-macpro
-    case gen3
-    case server
-server
-    case rack
-xserve
-laptopcomputer
-lock
-    case laptopcomputer
-lock
-    case `open`
-    case laptopcomputer
-laptopcomputer
-    case and
-    case arrow
-    case down
-laptopcomputer
-    case trianglebadge
-    case exclamationmark
-laptopcomputer
-    case and
-    case iphone
-ipad
-    case and
-    case iphone
-macmini
-macmini
-    case fill
-airport
-    case express
-airport
-    case extreme
-airport
-    case extreme
-    case tower
-ipod
-ipodshuffle
-    case gen1
-ipodshuffle
-    case gen2
-ipodshuffle
-    case gen3
-ipodshuffle
-    case gen4
-ipodtouch
-ipodtouch
-    case slash
-ipodtouch
-    case landscape
-flipphone
-candybarphone
-iphone
-    case homebutton
-iphone
-    case homebutton
-    case circle
-iphone
-    case homebutton
-    case circle
-    case fill
-iphone
-    case homebutton
-    case landscape
-iphone
-    case homebutton
-    case radiowaves
-    case `left`
-    case and
-    case right
-iphone
-    case homebutton
-    case radiowaves
-    case `left`
-    case and
-    case `right`
-    case circle
-iphone
-    case homebutton
-    case radiowaves
-    case `left`
-    case and
-    case `right`
-    case circle
-    case fill
-iphone
-    case homebutton
-    case slash
-iphone
-    case homebutton
-    case slash
-    case circle
-iphone
-    case homebutton
-    case slash
-    case circle
-    case fill
-iphone
-    case homebutton
-    case badge
-    case play
-iphone
-iphone
-    case circle
-iphone
-    case circle
-    case fill
-iphone
-    case landscape
-iphone
-    case radiowaves
-    case `left`
-    case and
-    case right
-iphone
-    case radiowaves
-    case `left`
-    case and
-    case `right`
-    case circle
-iphone
-    case radiowaves
-    case `left`
-    case and
-    case `right`
-    case circle
-    case fill
-iphone
-    case slash
-iphone
-    case slash
-    case circle
-iphone
-    case slash
-    case circle
-    case fill
-iphone
-    case badge
-    case play
-lock
-    case iphone
-lock
-    case `open`
-    case iphone
-iphone
-    case and
-    case arrow
-    case forward
-arrow
-    case turn
-    case up
-    case forward
-    case iphone
-arrow
-    case turn
-    case up
-    case forward
-    case iphone
-    case fill
-iphone
-    case rear
-    case camera
-apps
-    case iphone
-apps
-    case iphone
-    case badge
-    case plus
-apps
-    case iphone
-    case landscape
-platter
-    case filled
-    case top
-    case iphone
-platter
-    case filled
-    case bottom
-    case iphone
-platter
-    case filled
-    case top
-    case and
-    case arrow
-    case up
-    case iphone
-platter
-    case filled
-    case bottom
-    case and
-    case arrow
-    case down
-    case iphone
-platter
-    case 2
-    case filled
-    case iphone
-platter
-    case 2
-    case filled
-    case iphone
-    case landscape
-iphone
-    case smartbatterycase
-    case gen2
-iphone
-    case smartbatterycase
-    case gen1
-ipad
-    case homebutton
-ipad
-    case homebutton
-    case badge
-    case play
-ipad
-    case homebutton
-    case landscape
-ipad
-    case homebutton
-    case landscape
-    case badge
-    case play
-ipad
-ipad
-    case badge
-    case play
-lock
-    case ipad
-lock
-    case `open`
-    case ipad
-ipad
-    case and
-    case arrow
-    case forward
-ipad
-    case landscape
-ipad
-    case landscape
-    case badge
-    case play
-ipad
-    case rear
-    case camera
-apps
-    case ipad
-apps
-    case ipad
-    case landscape
-platter
-    case 2
-    case filled
-    case ipad
-platter
-    case 2
-    case filled
-    case ipad
-    case landscape
-applepencil
-magicmouse
-magicmouse
-    case fill
-computermouse
-computermouse
-    case fill
-applewatch
-applewatch
-    case watchface
-exclamationmark
-    case applewatch
-lock
-    case applewatch
-lock
-    case `open`
-    case applewatch
-applewatch
-    case radiowaves
-    case `left`
-    case and
-    case right
-applewatch
-    case slash
-applewatch
-    case side
-    case right
-watchface
-    case applewatch
-    case case
-applewatch
-    case `case`
-    case inset
-    case filled
-platter
-    case filled
-    case top
-    case applewatch
-    case case
-platter
-    case filled
-    case bottom
-    case applewatch
-    case case
-platter
-    case top
-    case applewatch
-    case case
-platter
-    case bottom
-    case applewatch
-    case case
-digitalcrown
-    case arrow
-    case clockwise
-digitalcrown
-    case arrow
-    case clockwise
-    case fill
-digitalcrown
-    case arrow
-    case counterclockwise
-digitalcrown
-    case arrow
-    case counterclockwise
-    case fill
-digitalcrown
-    case press
-digitalcrown
-    case press
-    case fill
-digitalcrown
-    case horizontal
-    case arrow
-    case clockwise
-digitalcrown
-    case horizontal
-    case arrow
-    case clockwise
-    case fill
-digitalcrown
-    case horizontal
-    case arrow
-    case counterclockwise
-digitalcrown
-    case horizontal
-    case arrow
-    case counterclockwise
-    case fill
-digitalcrown
-    case horizontal
-    case press
-digitalcrown
-    case horizontal
-    case press
-    case fill
-airpodsmax
-beats
-    case headphones
-headphones
-headphones
-    case circle
-headphones
-    case circle
-    case fill
-earbuds
-earbuds
-    case case
-earbuds
-    case `case`
-    case fill
-earpods
-airpods
-airpod
-    case right
-airpod
-    case left
-airpods
-    case chargingcase
-airpods
-    case chargingcase
-    case fill
-airpods
-    case chargingcase
-    case wireless
-airpods
-    case chargingcase
-    case wireless
-    case fill
-airpodspro
-airpodpro
-    case right
-airpodpro
-    case left
-airpodspro
-    case chargingcase
-    case wireless
-airpodspro
-    case chargingcase
-    case wireless
-    case fill
-airpods
-    case gen3
-airpod
-    case gen3
-    case right
-airpod
-    case gen3
-    case left
-airpods
-    case gen3
-    case chargingcase
-    case wireless
-airpods
-    case gen3
-    case chargingcase
-    case wireless
-    case fill
-beats
-    case earphones
-beats
-    case powerbeatspro
-beats
-    case powerbeatspro
-    case right
-beats
-    case powerbeatspro
-    case left
-beats
-    case powerbeats
-beats
-    case powerbeats3
-beats
-    case studiobuds
-beats
-    case studiobud
-    case left
-beats
-    case studiobud
-    case right
-beats
-    case studiobuds
-    case chargingcase
-beats
-    case studiobuds
-    case chargingcase
-    case fill
-beats
-    case fit
-    case pro
-beats
-    case fit
-    case pro
-    case left
-beats
-    case fit
-    case pro
-    case right
-beats
-    case fit
-    case pro
-    case chargingcase
-beats
-    case fit
-    case pro
-    case chargingcase
-    case fill
-beats
-    case powerbeatspro
-    case chargingcase
-beats
-    case powerbeatspro
-    case chargingcase
-    case fill
-homepodmini
-homepodmini
-    case fill
-homepodmini
-    case 2
-homepodmini
-    case 2
-    case fill
-homepod
-    case and
-    case homepodmini
-homepod
-    case and
-    case homepodmini
-    case fill
-hifispeaker
-    case and
-    case homepodmini
-hifispeaker
-    case and
-    case homepodmini
-    case fill
-homepod
-homepod
-    case fill
-homepod
-    case 2
-homepod
-    case 2
-    case fill
-hifispeaker
-    case and
-    case homepod
-hifispeaker
-    case and
-    case homepod
-    case fill
-hifispeaker
-hifispeaker
-    case fill
-hifispeaker
-    case 2
-hifispeaker
-    case 2
-    case fill
-appletv
-appletv
-    case fill
-homepod
-    case and
-    case appletv
-homepod
-    case and
-    case appletv
-    case fill
-homepodmini
-    case and
-    case appletv
-homepodmini
-    case and
-    case appletv
-    case fill
-hifispeaker
-    case and
-    case appletv
-hifispeaker
-    case and
-    case appletv
-    case fill
-appletvremote
-    case gen1
-appletvremote
-    case gen1
-    case fill
-appletvremote
-    case gen2
-appletvremote
-    case gen2
-    case fill
-appletvremote
-    case gen3
-appletvremote
-    case gen3
-    case fill
-appletvremote
-    case gen4
-appletvremote
-    case gen4
-    case fill
-magsafe
-    case batterypack
-magsafe
-    case batterypack
-    case fill
-mediastick
-cable
-    case connector
-cable
-    case connector
-    case horizontal
-radio
-radio
-    case fill
-tv
-tv
-    case fill
-tv
-    case inset
-    case filled
-tv
-    case circle
-tv
-    case circle
-    case fill
-sparkles
-    case tv
-sparkles
-    case tv
-    case fill
-4k
-    case tv
-4k
-    case tv
-    case fill
-music
-    case note
-    case tv
-music
-    case note
-    case tv
-    case fill
-play
-    case tv
-play
-    case tv
-    case fill
-photo
-    case tv
-tv
-    case and
-    case hifispeaker
-    case fill
-tv
-    case and
-    case mediabox
-airplayvideo
-airplayvideo
-    case circle
-airplayvideo
-    case circle
-    case fill
-airplayvideo
-    case badge
-    case exclamationmark
-airplayaudio
-airplayaudio
-    case circle
-airplayaudio
-    case circle
-    case fill
-airplayaudio
-    case badge
-    case exclamationmark
-dot
-    case radiowaves
-    case `left`
-    case and
-    case right
-dot
-    case radiowaves
-    case right
-dot
-    case radiowaves
-    case forward
-wave
-    case 3
-    case left
-wave
-    case 3
-    case `left`
-    case circle
-wave
-    case 3
-    case `left`
-    case circle
-    case fill
-wave
-    case 3
-    case backward
-wave
-    case 3
-    case backward
-    case circle
-wave
-    case 3
-    case backward
-    case circle
-    case fill
-wave
-    case 3
-    case right
-wave
-    case 3
-    case `right`
-    case circle
-wave
-    case 3
-    case `right`
-    case circle
-    case fill
-wave
-    case 3
-    case forward
-wave
-    case 3
-    case forward
-    case circle
-wave
-    case 3
-    case forward
-    case circle
-    case fill
-dot
-    case radiowaves
-    case up
-    case forward
-antenna
-    case radiowaves
-    case `left`
-    case and
-    case right
-antenna
-    case radiowaves
-    case `left`
-    case and
-    case `right`
-    case slash
-antenna
-    case radiowaves
-    case `left`
-    case and
-    case `right`
-    case circle
-antenna
-    case radiowaves
-    case `left`
-    case and
-    case `right`
-    case circle
-    case fill
-pip
-pip
-    case fill
-pip
-    case exit
-pip
-    case enter
-pip
-    case swap
-pip
-    case remove
-rectangle
-    case arrowtriangle
-    case 2
-    case outward
-rectangle
-    case arrowtriangle
-    case 2
-    case inward
-rectangle
-    case portrait
-    case arrowtriangle
-    case 2
-    case outward
-rectangle
-    case portrait
-    case arrowtriangle
-    case 2
-    case inward
-rectangle
-    case 2
-    case swap
-guitars
-guitars
-    case fill
-airplane
-airplane
-    case circle
-airplane
-    case circle
-    case fill
-airplane
-    case arrival
-airplane
-    case departure
-car
-car
-    case fill
-car
-    case circle
-car
-    case circle
-    case fill
-bolt
-    case car
-bolt
-    case car
-    case fill
-bolt
-    case car
-    case circle
-bolt
-    case car
-    case circle
-    case fill
-car
-    case 2
-car
-    case 2
-    case fill
-bus
-bus
-    case fill
-bus
-    case doubledecker
-bus
-    case doubledecker
-    case fill
-tram
-tram
-    case fill
-tram
-    case circle
-tram
-    case circle
-    case fill
-tram
-    case fill
-    case tunnel
-cablecar
-cablecar
-    case fill
-ferry
-ferry
-    case fill
-car
-    case ferry
-car
-    case ferry
-    case fill
-train
-    case side
-    case front
-    case car
-train
-    case side
-    case middle
-    case car
-train
-    case side
-    case rear
-    case car
-bicycle
-bicycle
-    case circle
-bicycle
-    case circle
-    case fill
-scooter
-parkingsign
-parkingsign
-    case circle
-parkingsign
-    case circle
-    case fill
-fuelpump
-fuelpump
-    case fill
-fuelpump
-    case circle
-fuelpump
-    case circle
-    case fill
-fanblades
-fanblades
-    case fill
-bed
-    case double
-bed
-    case double
-    case fill
-bed
-    case double
-    case circle
-bed
-    case double
-    case circle
-    case fill
-lungs
-lungs
-    case fill
-allergens
-pills
-pills
-    case fill
-pills
-    case circle
-pills
-    case circle
-    case fill
-testtube
-    case 2
-ivfluid
-    case bag
-ivfluid
-    case bag
-    case fill
-cross
-    case vial
-cross
-    case vial
-    case fill
-cross
-cross
-    case fill
-cross
-    case circle
-cross
-    case circle
-    case fill
-hare
-hare
-    case fill
-tortoise
-tortoise
-    case fill
-pawprint
-pawprint
-    case fill
-pawprint
-    case circle
-pawprint
-    case circle
-    case fill
-ant
-ant
-    case fill
-ant
-    case circle
-ant
-    case circle
-    case fill
-ladybug
-ladybug
-    case fill
-leaf
-leaf
-    case fill
-leaf
-    case circle
-leaf
-    case circle
-    case fill
-leaf
-    case arrow
-    case triangle
-    case circlepath
-camera
-    case macro
-camera
-    case macro
-    case circle
-camera
-    case macro
-    case circle
-    case fill
-film
-film
-    case fill
-film
-    case circle
-film
-    case circle
-    case fill
-sportscourt
-sportscourt
-    case fill
-face
-    case smiling
-face
-    case smiling
-    case fill
-face
-    case dashed
-face
-    case dashed
-    case fill
-crown
-crown
-    case fill
-comb
-comb
-    case fill
-qrcode
-barcode
-viewfinder
-viewfinder
-    case circle
-viewfinder
-    case circle
-    case fill
-barcode
-    case viewfinder
-qrcode
-    case viewfinder
-plus
-    case viewfinder
-camera
-    case viewfinder
-faceid
-doc
-    case viewfinder
-doc
-    case viewfinder
-    case fill
-location
-    case viewfinder
-location
-    case fill
-    case viewfinder
-person
-    case fill
-    case viewfinder
-text
-    case viewfinder
-dot
-    case viewfinder
-dot
-    case circle
-    case viewfinder
-key
-    case viewfinder
-photo
-photo
-    case fill
-photo
-    case circle
-photo
-    case circle
-    case fill
-text
-    case below
-    case photo
-text
-    case below
-    case photo
-    case fill
-checkerboard
-    case rectangle
-camera
-    case metering
-    case center
-    case weighted
-    case average
-camera
-    case metering
-    case center
-    case weighted
-camera
-    case metering
-    case matrix
-camera
-    case metering
-    case multispot
-camera
-    case metering
-    case none
-camera
-    case metering
-    case partial
-camera
-    case metering
-    case spot
-camera
-    case metering
-    case unknown
-camera
-    case aperture
-rectangle
-    case dashed
-rectangle
-    case dashed
-    case badge
-    case record
-rectangle
-    case badge
-    case plus
-rectangle
-    case fill
-    case badge
-    case plus
-rectangle
-    case badge
-    case minus
-rectangle
-    case fill
-    case badge
-    case minus
-rectangle
-    case badge
-    case checkmark
-rectangle
-    case fill
-    case badge
-    case checkmark
-rectangle
-    case badge
-    case xmark
-rectangle
-    case fill
-    case badge
-    case xmark
-rectangle
-    case badge
-    case person
-    case crop
-rectangle
-    case fill
-    case badge
-    case person
-    case crop
-photo
-    case on
-    case rectangle
-photo
-    case fill
-    case on
-    case rectangle
-    case fill
-rectangle
-    case on
-    case rectangle
-    case angled
-rectangle
-    case fill
-    case on
-    case rectangle
-    case angled
-    case fill
-photo
-    case on
-    case rectangle
-    case angled
-rectangle
-    case stack
-rectangle
-    case stack
-    case fill
-rectangle
-    case stack
-    case badge
-    case plus
-rectangle
-    case stack
-    case fill
-    case badge
-    case plus
-rectangle
-    case stack
-    case badge
-    case minus
-rectangle
-    case stack
-    case fill
-    case badge
-    case minus
-rectangle
-    case stack
-    case badge
-    case person
-    case crop
-rectangle
-    case stack
-    case badge
-    case person
-    case crop
-    case fill
-rectangle
-    case stack
-    case badge
-    case play
-rectangle
-    case stack
-    case badge
-    case play
-    case fill
-sparkles
-    case rectangle
-    case stack
-sparkles
-    case rectangle
-    case stack
-    case fill
-sidebar
-    case left
-sidebar
-    case right
-sidebar
-    case leading
-sidebar
-    case trailing
-sidebar
-    case squares
-    case left
-sidebar
-    case squares
-    case right
-sidebar
-    case squares
-    case leading
-sidebar
-    case squares
-    case trailing
-macwindow
-macwindow
-    case badge
-    case plus
-slider
-    case horizontal
-    case 2
-    case rectangle
-    case and
-    case arrow
-    case triangle
-    case 2
-    case circlepath
-dock
-    case rectangle
-dock
-    case arrow
-    case up
-    case rectangle
-dock
-    case arrow
-    case down
-    case rectangle
-menubar
-    case rectangle
-menubar
-    case dock
-    case rectangle
-menubar
-    case dock
-    case rectangle
-    case badge
-    case record
-menubar
-    case arrow
-    case up
-    case rectangle
-menubar
-    case arrow
-    case down
-    case rectangle
-macwindow
-    case on
-    case rectangle
-text
-    case and
+    case personFill
+    case personFillTurnRight
+    case personFillTurnDown
+    case personFillTurnLeft
+    case personFillCheckmark
+    case personFillXmark
+    case personFillQuestionmark
+    case personCircle
+    case personCircleFill
+    case personBadgePlus
+    case personFillBadgePlus
+    case personBadgeMinus
+    case personFillBadgeMinus
+    case personBadgeClock
+    case personBadgeClockFill
+    case personBadgeKey
+    case personBadgeKeyFill
+    case shareplay
+    case shareplaySlash
+    case rectangleInsetFilledAndPersonFilled
+    case personAndArrowLeftAndArrowRight
+    case personFillAndArrowLeftAndArrowRight
+    case person2
+    case person2Fill
+    case person2Circle
+    case person2CircleFill
+    case personWave2
+    case personWave2Fill
+    case person2Wave2
+    case person2Wave2Fill
+    case person3
+    case person3Fill
+    case person3Sequence
+    case person3SequenceFill
+    case lanyardcard
+    case lanyardcardFill
+    case personCropCircle
+    case personCropCircleFill
+    case personCropCircleBadgePlus
+    case personCropCircleFillBadgePlus
+    case personCropCircleBadgeMinus
+    case personCropCircleFillBadgeMinus
+    case personCropCircleBadgeCheckmark
+    case personCropCircleFillBadgeCheckmark
+    case personCropCircleBadgeXmark
+    case personCropCircleFillBadgeXmark
+    case personCropCircleBadgeQuestionmark
+    case personCropCircleBadgeQuestionmarkFill
+    case personCropCircleBadgeExclamationmark
+    case personCropCircleBadgeExclamationmarkFill
+    case personCropCircleBadgeMoon
+    case personCropCircleBadgeMoonFill
+    case personCropCircleBadgeClock
+    case personCropCircleBadgeClockFill
+    case personCropCircleBadge
+    case personCropCircleBadgeFill
+    case personCropSquare
+    case personCropSquareFill
+    case personCropArtframe
+    case photoArtframe
+    case personCropRectangleStack
+    case personCropRectangleStackFill
+    case person2CropSquareStack
+    case person2CropSquareStackFill
+    case personCropRectangle
+    case personCropRectangleFill
+    case arrowUpAndPersonRectanglePortrait
+    case arrowUpAndPersonRectangleTurnRight
+    case arrowUpAndPersonRectangleTurnLeft
+    case personCropSquareFilledAndAtRectangle
+    case personCropSquareFilledAndAtRectangleFill
+    case squareAndAtRectangle
+    case squareAndAtRectangleFill
+    case personTextRectangle
+    case personTextRectangleFill
     case command
-    case macwindow
-keyboard
-    case macwindow
-uiwindow
-    case split
-    case 2x1
-mosaic
-mosaic
-    case fill
-squares
-    case below
-    case rectangle
-rectangle
-    case split
-    case 3x3
-    case fill
-square
-    case on
-    case square
-    case squareshape
-    case controlhandles
-squareshape
-    case controlhandles
-    case on
-    case squareshape
-    case controlhandles
-pano
-pano
-    case fill
-circle
-    case grid
-    case 2x1
-circle
-    case grid
-    case 2x1
-    case fill
-circle
-    case grid
-    case 2x1
-    case `left`
-    case filled
-circle
-    case grid
-    case 2x1
-    case `right`
-    case filled
-square
-    case and
-    case line
-    case vertical
-    case and
-    case square
-square
-    case fill
-    case and
-    case line
-    case vertical
-    case and
-    case square
-    case fill
-square
-    case filled
-    case and
-    case line
-    case vertical
-    case and
-    case square
-square
-    case and
-    case line
-    case vertical
-    case and
-    case square
-    case filled
-flowchart
-flowchart
-    case fill
-rectangle
-    case connected
-    case to
-    case line
-    case below
-align
-    case horizontal
-    case left
-align
-    case horizontal
-    case `left`
-    case fill
-align
-    case horizontal
-    case center
-align
-    case horizontal
-    case center
-    case fill
-align
-    case horizontal
-    case right
-align
-    case horizontal
-    case `right`
-    case fill
-align
-    case vertical
-    case top
-align
-    case vertical
-    case top
-    case fill
-align
-    case vertical
-    case center
-align
-    case vertical
-    case center
-    case fill
-align
-    case vertical
-    case bottom
-align
-    case vertical
-    case bottom
-    case fill
-shield
-shield
-    case fill
-shield
-    case lefthalf
-    case filled
-shield
-    case righthalf
-    case filled
-shield
-    case slash
-shield
-    case slash
-    case fill
-shield
-    case lefthalf
-    case filled
-    case slash
-checkerboard
-    case shield
-switch
-    case 2
-point
-    case topleft
-    case down
-    case curvedto
-    case point
-    case bottomright
-    case up
-point
-    case topleft
-    case down
-    case curvedto
-    case point
-    case bottomright
-    case up
-    case fill
-point
-    case topleft
-    case down
-    case curvedto
-    case point
-    case filled
-    case bottomright
-    case up
-point
-    case filled
-    case topleft
-    case down
-    case curvedto
-    case point
-    case bottomright
-    case up
-app
-    case connected
-    case to
-    case app
-    case below
-    case fill
-slider
-    case horizontal
-    case 3
-slider
-    case horizontal
-    case below
-    case rectangle
-slider
-    case horizontal
-    case below
-    case square
-    case filled
-    case and
-    case square
-slider
-    case vertical
-    case 3
-cube
-cube
-    case fill
-cube
-    case transparent
-cube
-    case transparent
-    case fill
-shippingbox
-shippingbox
-    case fill
-shippingbox
-    case circle
-shippingbox
-    case circle
-    case fill
-arkit
-arkit
-    case badge
-    case xmark
-cone
-cone
-    case fill
-pyramid
-pyramid
-    case fill
-square
-    case stack
-    case 3d
-    case down
-    case right
-square
-    case stack
-    case 3d
-    case down
-    case `right`
-    case fill
-square
-    case stack
-    case 3d
-    case down
-    case forward
-square
-    case stack
-    case 3d
-    case down
-    case forward
-    case fill
-square
-    case stack
-    case 3d
-    case up
-square
-    case stack
-    case 3d
-    case up
-    case fill
-square
-    case stack
-    case 3d
-    case up
-    case slash
-square
-    case stack
-    case 3d
-    case up
-    case slash
-    case fill
-square
-    case stack
-    case 3d
-    case up
-    case badge
-    case a
-square
-    case stack
-    case 3d
-    case up
-    case badge
-    case a
-    case fill
-square
-    case stack
-    case 3d
-    case forward
-    case dottedline
-square
-    case stack
-    case 3d
-    case forward
-    case dottedline
-    case fill
-livephoto
-livephoto
-    case slash
-livephoto
-    case badge
-    case a
-livephoto
-    case play
-scope
-helm
-clock
-clock
-    case fill
-clock
-    case circle
-clock
-    case circle
-    case fill
-clock
-    case badge
-    case checkmark
-clock
-    case badge
-    case checkmark
-    case fill
-clock
-    case badge
-    case exclamationmark
-clock
-    case badge
-    case exclamationmark
-    case fill
-deskclock
-deskclock
-    case fill
-alarm
-alarm
-    case fill
-stopwatch
-stopwatch
-    case fill
-chart
-    case xyaxis
-    case line
-timer
-timer
-    case square
-clock
-    case arrow
-    case circlepath
-exclamationmark
-    case arrow
-    case circlepath
-clock
-    case arrow
-    case 2
-    case circlepath
-gamecontroller
-gamecontroller
-    case fill
-l
-    case joystick
-l
-    case joystick
-    case fill
-r
-    case joystick
-r
-    case joystick
-    case fill
-l
-    case joystick
-    case press
-    case down
-l
-    case joystick
-    case press
-    case down
-    case fill
-r
-    case joystick
-    case press
-    case down
-r
-    case joystick
-    case press
-    case down
-    case fill
-l
-    case joystick
-    case tilt
-    case left
-l
-    case joystick
-    case tilt
-    case `left`
-    case fill
-l
-    case joystick
-    case tilt
-    case right
-l
-    case joystick
-    case tilt
-    case `right`
-    case fill
-l
-    case joystick
-    case tilt
-    case up
-l
-    case joystick
-    case tilt
-    case up
-    case fill
-l
-    case joystick
-    case tilt
-    case down
-l
-    case joystick
-    case tilt
-    case down
-    case fill
-r
-    case joystick
-    case tilt
-    case left
-r
-    case joystick
-    case tilt
-    case `left`
-    case fill
-r
-    case joystick
-    case tilt
-    case right
-r
-    case joystick
-    case tilt
-    case `right`
-    case fill
-r
-    case joystick
-    case tilt
-    case up
-r
-    case joystick
-    case tilt
-    case up
-    case fill
-r
-    case joystick
-    case tilt
-    case down
-r
-    case joystick
-    case tilt
-    case down
-    case fill
-dpad
-dpad
-    case fill
-dpad
-    case `left`
-    case filled
-dpad
-    case up
-    case filled
-dpad
-    case `right`
-    case filled
-dpad
-    case down
-    case filled
-circle
-    case circle
-circle
-    case circle
-    case fill
-square
-    case circle
-square
-    case circle
-    case fill
-triangle
-    case circle
-triangle
-    case circle
-    case fill
-rectangle
-    case roundedtop
-rectangle
-    case roundedtop
-    case fill
-rectangle
-    case roundedbottom
-rectangle
-    case roundedbottom
-    case fill
-l
-    case rectangle
-    case roundedbottom
-l
-    case rectangle
-    case roundedbottom
-    case fill
-l1
-    case rectangle
-    case roundedbottom
-l1
-    case rectangle
-    case roundedbottom
-    case fill
-l2
-    case rectangle
-    case roundedtop
-l2
-    case rectangle
-    case roundedtop
-    case fill
-r
-    case rectangle
-    case roundedbottom
-r
-    case rectangle
-    case roundedbottom
-    case fill
-r1
-    case rectangle
-    case roundedbottom
-r1
-    case rectangle
-    case roundedbottom
-    case fill
-r2
-    case rectangle
-    case roundedtop
-r2
-    case rectangle
-    case roundedtop
-    case fill
-lb
-    case rectangle
-    case roundedbottom
-lb
-    case rectangle
-    case roundedbottom
-    case fill
-rb
-    case rectangle
-    case roundedbottom
-rb
-    case rectangle
-    case roundedbottom
-    case fill
-lt
-    case rectangle
-    case roundedtop
-lt
-    case rectangle
-    case roundedtop
-    case fill
-rt
-    case rectangle
-    case roundedtop
-rt
-    case rectangle
-    case roundedtop
-    case fill
-zl
-    case rectangle
-    case roundedtop
-zl
-    case rectangle
-    case roundedtop
-    case fill
-zr
-    case rectangle
-    case roundedtop
-zr
-    case rectangle
-    case roundedtop
-    case fill
-logo
-    case playstation
-logo
-    case xbox
-paintpalette
-paintpalette
-    case fill
-cup
-    case and
-    case saucer
-cup
-    case and
-    case saucer
-    case fill
-takeoutbag
-    case and
-    case cup
-    case and
-    case straw
-takeoutbag
-    case and
-    case cup
-    case and
-    case straw
-    case fill
-fork
-    case knife
-fork
-    case knife
-    case circle
-fork
-    case knife
-    case circle
-    case fill
-figure
-    case walk
-figure
-    case walk
-    case circle
-figure
-    case walk
-    case circle
-    case fill
-figure
-    case walk
-    case diamond
-figure
-    case walk
-    case diamond
-    case fill
-figure
-    case stand
-figure
-    case stand
-    case line
-    case dotted
-    case figure
-    case stand
-figure
-    case wave
-figure
-    case wave
-    case circle
-figure
-    case wave
-    case circle
-    case fill
-figure
-    case roll
-ear
-ear
-    case badge
-    case checkmark
-ear
-    case trianglebadge
-    case exclamationmark
-ear
-    case and
-    case waveform
-ear
-    case fill
-hearingdevice
-    case ear
-hand
-    case raised
-hand
-    case raised
-    case fill
-hand
-    case raised
-    case circle
-hand
-    case raised
-    case circle
-    case fill
-hand
-    case raised
-    case square
-hand
-    case raised
-    case square
-    case fill
-hand
-    case raised
-    case slash
-hand
-    case raised
-    case slash
-    case fill
-hand
-    case thumbsup
-hand
-    case thumbsup
-    case fill
-hand
-    case thumbsup
-    case circle
-hand
-    case thumbsup
-    case circle
-    case fill
-hand
-    case thumbsdown
-hand
-    case thumbsdown
-    case fill
-hand
-    case thumbsdown
-    case circle
-hand
-    case thumbsdown
-    case circle
-    case fill
-hand
-    case point
-    case up
-    case left
-hand
-    case point
-    case up
-    case `left`
-    case fill
-hand
-    case draw
-hand
-    case draw
-    case fill
-hand
-    case tap
-hand
-    case tap
-    case fill
-rectangle
-    case and
-    case hand
-    case point
-    case up
-    case left
-rectangle
-    case and
-    case hand
-    case point
-    case up
-    case `left`
-    case fill
-rectangle
-    case filled
-    case and
-    case hand
-    case point
-    case up
-    case left
-rectangle
-    case and
-    case hand
-    case point
-    case up
-    case `left`
-    case filled
-hand
-    case point
-    case left
-hand
-    case point
-    case `left`
-    case fill
-hand
-    case point
-    case right
-hand
-    case point
-    case `right`
-    case fill
-hand
-    case point
-    case up
-hand
-    case point
-    case up
-    case fill
-hand
-    case point
-    case up
-    case braille
-hand
-    case point
-    case up
-    case braille
-    case fill
-hand
-    case point
-    case down
-hand
-    case point
-    case down
-    case fill
-hand
-    case wave
-hand
-    case wave
-    case fill
-hands
-    case clap
-hands
-    case clap
-    case fill
-hands
-    case sparkles
-hands
-    case sparkles
-    case fill
-rectangle
-    case compress
-    case vertical
-rectangle
-    case expand
-    case vertical
-rectangle
-    case and
-    case arrow
-    case up
-    case `right`
-    case and
-    case arrow
-    case down
-    case left
-rectangle
-    case and
-    case arrow
-    case up
-    case `right`
-    case and
-    case arrow
-    case down
-    case `left`
-    case slash
-square
-    case 2
-    case stack
-    case 3d
-square
-    case 2
-    case stack
-    case 3d
-    case top
-    case filled
-square
-    case 2
-    case stack
-    case 3d
-    case bottom
-    case filled
-square
-    case 3
-    case layers
-    case 3d
-    case down
-    case right
-square
-    case 3
-    case layers
-    case 3d
-    case down
-    case `right`
-    case slash
-square
-    case 3
-    case layers
-    case 3d
-    case down
-    case left
-square
-    case 3
-    case layers
-    case 3d
-    case down
-    case `left`
-    case slash
-square
-    case 3
-    case layers
-    case 3d
-    case down
-    case forward
-square
-    case 3
-    case layers
-    case 3d
-    case down
-    case backward
-square
-    case 3
-    case stack
-    case 3d
-square
-    case 3
-    case stack
-    case 3d
-    case slash
-square
-    case 3
-    case stack
-    case 3d
-    case top
-    case filled
-square
-    case 3
-    case stack
-    case 3d
-    case middle
-    case filled
-square
-    case 3
-    case stack
-    case 3d
-    case bottom
-    case filled
-cylinder
-cylinder
-    case fill
-cylinder
-    case split
-    case 1x2
-cylinder
-    case split
-    case 1x2
-    case fill
-chart
-    case bar
-chart
-    case bar
-    case fill
-chart
-    case pie
-chart
-    case pie
-    case fill
-chart
-    case bar
-    case xaxis
-chart
-    case line
-    case uptrend
-    case xyaxis
-chart
-    case line
-    case uptrend
-    case xyaxis
-    case circle
-chart
-    case line
-    case uptrend
-    case xyaxis
-    case circle
-    case fill
-dot
-    case squareshape
-    case split
-    case 2x2
-squareshape
-    case split
-    case 2x2
-    case dotted
-squareshape
-    case split
-    case 2x2
-squareshape
-    case split
-    case 3x3
-burst
-burst
-    case fill
-waveform
-    case path
-    case ecg
-waveform
-    case path
-    case ecg
-    case rectangle
-waveform
-    case path
-    case ecg
-    case rectangle
-    case fill
-waveform
-    case path
-waveform
-    case path
-    case badge
-    case plus
-waveform
-    case path
-    case badge
-    case minus
-point
-    case 3
-    case connected
-    case trianglepath
-    case dotted
-point
-    case 3
-    case filled
-    case connected
-    case trianglepath
-    case dotted
-waveform
-waveform
-    case circle
-waveform
-    case circle
-    case fill
-waveform
-    case badge
-    case plus
-waveform
-    case badge
-    case minus
-waveform
-    case badge
-    case exclamationmark
-waveform
-    case and
-    case magnifyingglass
-waveform
-    case and
-    case mic
-staroflife
-staroflife
-    case fill
-staroflife
-    case circle
-staroflife
-    case circle
-    case fill
-simcard
-simcard
-    case fill
-simcard
-    case 2
-simcard
-    case 2
-    case fill
-sdcard
-sdcard
-    case fill
-esim
-esim
-    case fill
-touchid
-bonjour
-atom
-scalemass
-scalemass
-    case fill
-gift
-gift
-    case fill
-gift
-    case circle
-gift
-    case circle
-    case fill
-plus
-    case app
-plus
-    case app
-    case fill
-arrow
-    case down
-    case app
-arrow
-    case down
-    case app
-    case fill
-arrow
-    case up
-    case forward
-    case app
-arrow
-    case up
-    case forward
-    case app
-    case fill
-xmark
-    case app
-xmark
-    case app
-    case fill
-questionmark
-    case app
-questionmark
-    case app
-    case fill
-app
-    case badge
-app
-    case badge
-    case fill
-app
-    case badge
-    case checkmark
-app
-    case badge
-    case checkmark
-    case fill
-app
-    case dashed
-questionmark
-    case app
-    case dashed
-appclip
-app
-    case gift
-app
-    case gift
-    case fill
-studentdesk
-hourglass
-hourglass
-    case circle
-hourglass
-    case circle
-    case fill
-hourglass
-    case badge
-    case plus
-hourglass
-    case bottomhalf
-    case filled
-hourglass
-    case tophalf
-    case filled
-banknote
-banknote
-    case fill
-paragraphsign
-purchased
-purchased
-    case circle
-purchased
-    case circle
-    case fill
-perspective
-circle
-    case and
-    case line
-    case horizontal
-circle
-    case and
-    case line
-    case horizontal
-    case fill
-trapezoid
-    case and
-    case line
-    case vertical
-trapezoid
-    case and
-    case line
-    case vertical
-    case fill
-trapezoid
-    case and
-    case line
-    case horizontal
-trapezoid
-    case and
-    case line
-    case horizontal
-    case fill
-aspectratio
-aspectratio
-    case fill
-camera
-    case filters
-skew
-arrow
-    case `left`
-    case and
-    case `right`
-    case righttriangle
-    case `left`
-    case righttriangle
-    case right
-arrow
-    case `left`
-    case and
-    case `right`
-    case righttriangle
-    case `left`
-    case righttriangle
-    case `right`
-    case fill
-arrow
-    case up
-    case and
-    case down
-    case righttriangle
-    case up
-    case righttriangle
-    case down
-arrow
-    case up
-    case and
-    case down
-    case righttriangle
-    case up
-    case righttriangle
-    case down
-    case fill
-arrowtriangle
-    case `left`
-    case and
-    case line
-    case vertical
-    case and
-    case arrowtriangle
-    case right
-arrowtriangle
-    case `left`
-    case and
-    case line
-    case vertical
-    case and
-    case arrowtriangle
-    case `right`
-    case fill
-arrowtriangle
-    case `right`
-    case and
-    case line
-    case vertical
-    case and
-    case arrowtriangle
-    case left
-arrowtriangle
-    case `right`
-    case and
-    case line
-    case vertical
-    case and
-    case arrowtriangle
-    case `left`
-    case fill
-grid
-grid
-    case circle
-grid
-    case circle
-    case fill
-burn
-lifepreserver
-lifepreserver
-    case fill
-recordingtape
-binoculars
-binoculars
-    case fill
-battery
-    case 100
-battery
-    case 75
-battery
-    case 50
-battery
-    case 25
-battery
-    case 0
-battery
-    case 100
-    case bolt
-minus
-    case plus
-    case batteryblock
-minus
-    case plus
-    case batteryblock
-    case fill
-bolt
-    case batteryblock
-bolt
-    case batteryblock
-    case fill
-lightbulb
-lightbulb
-    case fill
-lightbulb
-    case circle
-lightbulb
-    case circle
-    case fill
-lightbulb
-    case slash
-lightbulb
-    case slash
-    case fill
-fibrechannel
-checklist
-square
-    case fill
-    case text
-    case grid
-    case 1x2
-list
-    case dash
-list
-    case bullet
-list
-    case bullet
-    case circle
-list
-    case bullet
-    case circle
-    case fill
-list
-    case triangle
-list
-    case bullet
-    case indent
-list
-    case number
-list
-    case star
-increase
-    case indent
-decrease
-    case indent
-decrease
-    case quotelevel
-increase
-    case quotelevel
-list
-    case bullet
-    case below
-    case rectangle
-text
-    case badge
-    case plus
-text
-    case badge
-    case minus
-text
-    case badge
-    case checkmark
-text
-    case badge
-    case xmark
-text
-    case badge
-    case star
-text
-    case insert
-text
-    case append
-text
-    case quote
-text
-    case alignleft
-text
-    case aligncenter
-text
-    case alignright
-text
-    case justify
-text
-    case justify
-    case left
-text
-    case justify
-    case right
-text
-    case justify
-    case leading
-text
-    case justify
-    case trailing
-text
-    case redaction
-list
-    case and
-    case film
-line
-    case 3
-    case horizontal
-line
-    case 3
-    case horizontal
-    case decrease
-line
-    case 3
-    case horizontal
-    case decrease
-    case circle
-line
-    case 3
-    case horizontal
-    case decrease
-    case circle
-    case fill
-line
-    case 3
-    case horizontal
-    case circle
-line
-    case 3
-    case horizontal
-    case circle
-    case fill
-line
-    case 2
-    case horizontal
-    case decrease
-    case circle
-line
-    case 2
-    case horizontal
-    case decrease
-    case circle
-    case fill
-character
-textformat
-    case size
-    case smaller
-textformat
-    case size
-    case larger
-textformat
-    case size
-textformat
-textformat
+    case commandCircle
+    case commandCircleFill
+    case commandSquare
+    case commandSquareFill
+    case option
     case alt
-textformat
-    case superscript
-textformat
-    case subscript
-abc
-textformat
+    case clear
+    case clearFill
+    case deleteLeft
+    case deleteLeftFill
+    case deleteBackward
+    case deleteBackwardFill
+    case deleteRight
+    case deleteRightFill
+    case deleteForward
+    case deleteForwardFill
+    case shift
+    case shiftFill
+    case capslock
+    case capslockFill
+    case escape
+    case restart
+    case restartCircle
+    case restartCircleFill
+    case sleep
+    case sleepCircle
+    case sleepCircleFill
+    case wake
+    case wakeCircle
+    case wakeCircleFill
+    case power
+    case powerCircle
+    case powerCircleFill
+    case powerDotted
+    case togglepower
+    case poweron
+    case poweroff
+    case powersleep
+    case directcurrent
+    case alternatingcurrent
+    case peacesign
+    case dotArrowtrianglesUpRightDownLeftCircle
+    case globe
+    case globeBadgeChevronBackward
+    case network
+    case networkBadgeShieldHalfFilled
+    case globeAmericas
+    case globeAmericasFill
+    case globeEuropeAfrica
+    case globeEuropeAfricaFill
+    case globeAsiaAustralia
+    case globeAsiaAustraliaFill
+    case sunMin
+    case sunMinFill
+    case sunMax
+    case sunMaxFill
+    case sunMaxCircle
+    case sunMaxCircleFill
+    case sunrise
+    case sunriseFill
+    case sunset
+    case sunsetFill
+    case sunAndHorizon
+    case sunAndHorizonFill
+    case sunDust
+    case sunDustFill
+    case sunHaze
+    case sunHazeFill
+    case moon
+    case moonFill
+    case moonCircle
+    case moonCircleFill
+    case zzz
+    case moonZzz
+    case moonZzzFill
+    case sparkle
+    case sparkles
+    case moonStars
+    case moonStarsFill
+    case cloud
+    case cloudFill
+    case cloudDrizzle
+    case cloudDrizzleFill
+    case cloudRain
+    case cloudRainFill
+    case cloudHeavyrain
+    case cloudHeavyrainFill
+    case cloudFog
+    case cloudFogFill
+    case cloudHail
+    case cloudHailFill
+    case cloudSnow
+    case cloudSnowFill
+    case cloudSleet
+    case cloudSleetFill
+    case cloudBolt
+    case cloudBoltFill
+    case cloudBoltRain
+    case cloudBoltRainFill
+    case cloudSun
+    case cloudSunFill
+    case cloudSunRain
+    case cloudSunRainFill
+    case cloudSunBolt
+    case cloudSunBoltFill
+    case cloudMoon
+    case cloudMoonFill
+    case cloudMoonRain
+    case cloudMoonRainFill
+    case cloudMoonBolt
+    case cloudMoonBoltFill
+    case smoke
+    case smokeFill
+    case wind
+    case windSnow
+    case snowflake
+    case snowflakeCircle
+    case snowflakeCircleFill
+    case tornado
+    case tropicalstorm
+    case hurricane
+    case thermometerSun
+    case thermometerSunFill
+    case thermometerSnowflake
+    case thermometer
+    case aqiLow
+    case aqiMedium
+    case aqiHigh
+    case humidity
+    case humidityFill
+    case umbrella
+    case umbrellaFill
+    case flame
+    case flameFill
+    case flameCircle
+    case flameCircleFill
+    case lightMin
+    case lightMax
+    case rays
+    case slowmo
+    case timelapse
+    case cursorarrowRays
+    case cursorarrow
+    case cursorarrowSquare
+    case cursorarrowAndSquareOnSquareDashed
+    case cursorarrowClick
+    case cursorarrowClick2
+    case contextualmenuAndCursorarrow
+    case filemenuAndCursorarrow
+    case filemenuAndSelection
+    case dotsAndLineVerticalAndCursorarrowRectangle
+    case dotCircleAndHandPointUpLeftFill
+    case dotCircleAndCursorarrow
+    case cursorarrowMotionlines
+    case cursorarrowMotionlinesClick
+    case cursorarrowClickBadgeClock
+    case keyboard
+    case keyboardFill
+    case keyboardBadgeEllipsis
+    case keyboardChevronCompactDown
+    case keyboardChevronCompactLeft
+    case keyboardOnehandedLeft
+    case keyboardOnehandedRight
+    case rectangle3Group
+    case rectangle3GroupFill
+    case squareGrid3x2
+    case squareGrid3x2Fill
+    case rectangleGrid3x2
+    case rectangleGrid3x2Fill
+    case squareGrid2x2
+    case squareGrid2x2Fill
+    case rectangleGrid2x2
+    case rectangleGrid2x2Fill
+    case squareGrid3x1BelowLineGrid1x2
+    case squareGrid3x1BelowLineGrid1x2Fill
+    case squareGrid4x3Fill
+    case rectangleGrid1x2
+    case rectangleGrid1x2Fill
+    case circleGrid2x2
+    case circleGrid2x2Fill
+    case circleGrid3x3
+    case circleGrid3x3Fill
+    case circleGrid3x3Circle
+    case circleGrid3x3CircleFill
+    case squareGrid3x3
+    case squareGrid3x3Fill
+    case squareGrid3x3TopleftFilled
+    case squareGrid3x3TopmiddleFilled
+    case squareGrid3x3ToprightFilled
+    case squareGrid3x3MiddleleftFilled
+    case squareGrid3x3MiddleFilled
+    case squareGrid3x3MiddlerightFilled
+    case squareGrid3x3BottomleftFilled
+    case squareGrid3x3BottommiddleFilled
+    case squareGrid3x3BottomrightFilled
+    case circleHexagongrid
+    case circleHexagongridFill
+    case circleHexagongridCircle
+    case circleHexagongridCircleFill
+    case circleHexagonpath
+    case circleHexagonpathFill
+    case circleGridCross
+    case circleGridCrossFill
+    case circleGridCrossLeftFilled
+    case circleGridCrossUpFilled
+    case circleGridCrossRightFilled
+    case circleGridCrossDownFilled
+    case seal
+    case sealFill
+    case checkmarkSeal
+    case checkmarkSealFill
+    case xmarkSeal
+    case xmarkSealFill
+    case exclamationmarkTriangle
+    case exclamationmarkTriangleFill
+    case drop
+    case dropFill
+    case dropCircle
+    case dropCircleFill
+    case dropTriangle
+    case dropTriangleFill
+    case play
+    case playFill
+    case playCircle
+    case playCircleFill
+    case playSquare
+    case playSquareFill
+    case playRectangle
+    case playRectangleFill
+    case playSlash
+    case playSlashFill
+    case pause
+    case pauseFill
+    case pauseCircle
+    case pauseCircleFill
+    case pauseRectangle
+    case pauseRectangleFill
+    case stop
+    case stopFill
+    case stopCircle
+    case stopCircleFill
+    case recordCircle
+    case recordCircleFill
+    case playpause
+    case playpauseFill
+    case backward
+    case backwardFill
+    case backwardCircle
+    case backwardCircleFill
+    case forward
+    case forwardFill
+    case forwardCircle
+    case forwardCircleFill
+    case backwardEnd
+    case backwardEndFill
+    case forwardEnd
+    case forwardEndFill
+    case backwardEndAlt
+    case backwardEndAltFill
+    case forwardEndAlt
+    case forwardEndAltFill
+    case backwardFrame
+    case backwardFrameFill
+    case forwardFrame
+    case forwardFrameFill
+    case eject
+    case ejectFill
+    case ejectCircle
+    case ejectCircleFill
+    case mount
+    case mountFill
+    case memories
+    case memoriesBadgePlus
+    case memoriesBadgeMinus
+    case shuffle
+    case shuffleCircle
+    case shuffleCircleFill
+    case `repeat`
+    case repeatCircle
+    case repeatCircleFill
+    case repeat1
+    case repeat1Circle
+    case repeat1CircleFill
+    case infinity
+    case infinityCircle
+    case infinityCircleFill
+    case megaphone
+    case megaphoneFill
+    case speaker
+    case speakerFill
+    case speakerCircle
+    case speakerCircleFill
+    case speakerSlash
+    case speakerSlashFill
+    case speakerSlashCircle
+    case speakerSlashCircleFill
+    case speakerZzz
+    case speakerZzzFill
+    case speakerWave1
+    case speakerWave1Fill
+    case speakerWave2
+    case speakerWave2Fill
+    case speakerWave2Circle
+    case speakerWave2CircleFill
+    case speakerWave3
+    case speakerWave3Fill
+    case speakerBadgeExclamationmark
+    case speakerBadgeExclamationmarkFill
+    case badgePlusRadiowavesRight
+    case badgePlusRadiowavesForward
+    case musicNote
+    case musicNoteList
+    case musicQuarternote3
+    case musicMic
+    case musicMicCircle
+    case musicMicCircleFill
+    case arrowRectanglepath
+    case goforward
+    case gobackward
+    case goforward5
+    case gobackward5
+    case goforward10
+    case gobackward10
+    case goforward15
+    case gobackward15
+    case goforward30
+    case gobackward30
+    case goforward45
+    case gobackward45
+    case goforward60
+    case gobackward60
+    case goforward75
+    case gobackward75
+    case goforward90
+    case gobackward90
+    case goforwardPlus
+    case gobackwardMinus
+    case swift
+    case magnifyingglass
+    case magnifyingglassCircle
+    case magnifyingglassCircleFill
+    case plusMagnifyingglass
+    case minusMagnifyingglass
+    case 1Magnifyingglass
+    case arrowUpLeftAndDownRightMagnifyingglass
+    case textMagnifyingglass
+    case sparkleMagnifyingglass
+    case locationMagnifyingglass
+    case loupe
+    case mic
+    case micFill
+    case micCircle
+    case micCircleFill
+    case micSquare
+    case micSquareFill
+    case micSlash
+    case micSlashFill
+    case micSlashCircle
+    case micSlashCircleFill
+    case micBadgePlus
+    case micFillBadgePlus
+    case lineDiagonal
+    case lineDiagonalArrow
+    case circle
+    case circleFill
+    case circleSlash
+    case circleSlashFill
+    case circleLefthalfFilled
+    case circleRighthalfFilled
+    case circleTophalfFilled
+    case circleBottomhalfFilled
+    case circleInsetFilled
+    case smallcircleFilledCircle
+    case smallcircleFilledCircleFill
+    case circleDashed
+    case circleDashedInsetFilled
+    case circleDotted
+    case circlebadge
+    case circlebadgeFill
+    case circlebadge2
+    case circlebadge2Fill
+    case smallcircleCircle
+    case smallcircleCircleFill
+    case target
+    case capsule
+    case capsuleFill
+    case capsuleLefthalfFilled
+    case capsuleRighthalfFilled
+    case capsuleTophalfFilled
+    case capsuleBottomhalfFilled
+    case capsuleInsetFilled
+    case capsulePortrait
+    case capsulePortraitFill
+    case capsulePortraitLefthalfFilled
+    case capsulePortraitRighthalfFilled
+    case capsulePortraitTophalfFilled
+    case capsulePortraitBottomhalfFilled
+    case capsulePortraitInsetFilled
+    case oval
+    case ovalFill
+    case ovalLefthalfFilled
+    case ovalRighthalfFilled
+    case ovalTophalfFilled
+    case ovalBottomhalfFilled
+    case ovalInsetFilled
+    case ovalPortrait
+    case ovalPortraitFill
+    case ovalPortraitLefthalfFilled
+    case ovalPortraitRighthalfFilled
+    case ovalPortraitTophalfFilled
+    case ovalPortraitBottomhalfFilled
+    case ovalPortraitInsetFilled
+    case placeholdertextFill
+    case square
+    case squareFill
+    case squareSlash
+    case squareSlashFill
+    case squareLefthalfFilled
+    case squareRighthalfFilled
+    case squareTophalfFilled
+    case squareBottomhalfFilled
+    case squareInsetFilled
+    case squareSplit2x1
+    case squareSplit2x1Fill
+    case squareSplit1x2
+    case squareSplit1x2Fill
+    case squareSplit2x2
+    case squareSplit2x2Fill
+    case squareSplitDiagonal2x2
+    case squareSplitDiagonal2x2Fill
+    case squareSplitDiagonal
+    case squareSplitDiagonalFill
+    case dotSquare
+    case dotSquareFill
+    case circleSquare
+    case circleSquareFill
+    case squareDashed
+    case squareDashedInsetFilled
+    case plusSquareDashed
+    case questionmarkSquareDashed
+    case squareOnSquare
+    case squareFillOnSquareFill
+    case squareFilledOnSquare
+    case handRaisedSquareOnSquare
+    case handRaisedSquareOnSquareFill
+    case sparklesSquareFilledOnSquare
+    case squareOnSquareDashed
+    case plusSquareOnSquare
+    case plusSquareFillOnSquareFill
+    case squareOnCircle
+    case squareFillOnCircleFill
+    case rSquareOnSquare
+    case rSquareOnSquareFill
+    case jSquareOnSquare
+    case jSquareOnSquareFill
+    case hSquareOnSquare
+    case hSquareOnSquareFill
+    case squareStack
+    case squareStackFill
+    case squareshape
+    case squareshapeFill
+    case squareshapeDashedSquareshape
+    case squareshapeSquareshapeDashed
+    case dotSquareshape
+    case dotSquareshapeFill
+    case app
+    case appFill
+    case rectangle
+    case rectangleFill
+    case rectangleSlash
+    case rectangleSlashFill
+    case rectangleLefthalfFilled
+    case rectangleRighthalfFilled
+    case rectangleLeadinghalfFilled
+    case rectangleTrailinghalfFilled
+    case rectangleTophalfFilled
+    case rectangleBottomhalfFilled
+    case rectangleSplit2x1
+    case rectangleSplit2x1Fill
+    case rectangleSplit2x1Slash
+    case rectangleSplit2x1SlashFill
+    case rectangleSplit1x2
+    case rectangleSplit1x2Fill
+    case rectangleSplit3x1
+    case rectangleSplit3x1Fill
+    case rectangleSplit2x2
+    case rectangleSplit2x2Fill
+    case tablecells
+    case tablecellsFill
+    case tablecellsBadgeEllipsis
+    case tablecellsFillBadgeEllipsis
+    case rectangleSplit3x3
+    case rectangleInsetFilled
+    case rectangleTophalfInsetFilled
+    case rectangleBottomhalfInsetFilled
+    case rectangleLefthalfInsetFilled
+    case rectangleRighthalfInsetFilled
+    case rectangleLeadinghalfInsetFilled
+    case rectangleTrailinghalfInsetFilled
+    case rectangleLefthalfInsetFilledArrowLeft
+    case rectangleRighthalfInsetFilledArrowRight
+    case rectangleLeadinghalfInsetFilledArrowLeading
+    case rectangleTrailinghalfInsetFilledArrowTrailing
+    case rectangleTopthirdInsetFilled
+    case rectangleBottomthirdInsetFilled
+    case rectangleLeftthirdInsetFilled
+    case rectangleRightthirdInsetFilled
+    case rectangleLeadingthirdInsetFilled
+    case rectangleTrailingthirdInsetFilled
+    case rectangleCenterInsetFilled
+    case rectangleCenterInsetFilledBadgePlus
+    case rectangleInsetTopleftFilled
+    case rectangleInsetToprightFilled
+    case rectangleInsetTopleadingFilled
+    case rectangleInsetToptrailingFilled
+    case rectangleInsetBottomleftFilled
+    case rectangleInsetBottomrightFilled
+    case rectangleInsetBottomleadingFilled
+    case rectangleInsetBottomtrailingFilled
+    case rectangleOnRectangle
+    case rectangleFillOnRectangleFill
+    case rectangleOnRectangleCircle
+    case rectangleOnRectangleCircleFill
+    case rectangleOnRectangleSquare
+    case rectangleOnRectangleSquareFill
+    case rectangleInsetFilledOnRectangle
+    case rectangleOnRectangleSlash
+    case rectangleOnRectangleSlashFill
+    case rectangleOnRectangleSlashCircle
+    case rectangleOnRectangleSlashCircleFill
+    case playRectangleOnRectangle
+    case playRectangleOnRectangleFill
+    case playRectangleOnRectangleCircle
+    case playRectangleOnRectangleCircleFill
+    case plusRectangleOnRectangle
+    case plusRectangleFillOnRectangleFill
+    case rectanglePortrait
+    case rectanglePortraitFill
+    case rectanglePortraitSlash
+    case rectanglePortraitSlashFill
+    case rectanglePortraitLefthalfFilled
+    case rectanglePortraitRighthalfFilled
+    case rectanglePortraitTophalfFilled
+    case rectanglePortraitBottomhalfFilled
+    case rectanglePortraitInsetFilled
+    case rectanglePortraitTophalfInsetFilled
+    case rectanglePortraitBottomhalfInsetFilled
+    case rectanglePortraitLefthalfInsetFilled
+    case rectanglePortraitRighthalfInsetFilled
+    case rectanglePortraitLeadinghalfInsetFilled
+    case rectanglePortraitTrailinghalfInsetFilled
+    case rectanglePortraitTopthirdInsetFilled
+    case rectanglePortraitBottomthirdInsetFilled
+    case rectanglePortraitLeftthirdInsetFilled
+    case rectanglePortraitRightthirdInsetFilled
+    case rectanglePortraitLeadingthirdInsetFilled
+    case rectanglePortraitTrailingthirdInsetFilled
+    case rectanglePortraitCenterInsetFilled
+    case rectanglePortraitTopleftInsetFilled
+    case rectanglePortraitToprightInsetFilled
+    case rectanglePortraitTopleadingInsetFilled
+    case rectanglePortraitToptrailingInsetFilled
+    case rectanglePortraitBottomleftInsetFilled
+    case rectanglePortraitBottomrightInsetFilled
+    case rectanglePortraitBottomleadingInsetFilled
+    case rectanglePortraitBottomtrailingInsetFilled
+    case rectanglePortraitOnRectanglePortrait
+    case rectanglePortraitOnRectanglePortraitFill
+    case rectanglePortraitOnRectanglePortraitSlash
+    case rectanglePortraitOnRectanglePortraitSlashFill
+    case rectanglePortraitSplit2x1
+    case rectanglePortraitSplit2x1Fill
+    case rectanglePortraitSplit2x1Slash
+    case rectanglePortraitSplit2x1SlashFill
+    case triangle
+    case triangleFill
+    case triangleLefthalfFilled
+    case triangleRighthalfFilled
+    case triangleTophalfFilled
+    case triangleBottomhalfFilled
+    case triangleInsetFilled
+    case diamond
+    case diamondFill
+    case diamondCircle
+    case diamondCircleFill
+    case diamondLefthalfFilled
+    case diamondRighthalfFilled
+    case diamondTophalfFilled
+    case diamondBottomhalfFilled
+    case diamondInsetFilled
+    case octagon
+    case octagonFill
+    case octagonLefthalfFilled
+    case octagonRighthalfFilled
+    case octagonTophalfFilled
+    case octagonBottomhalfFilled
+    case hexagon
+    case hexagonFill
+    case hexagonLefthalfFilled
+    case hexagonRighthalfFilled
+    case hexagonTophalfFilled
+    case hexagonBottomhalfFilled
+    case pentagon
+    case pentagonFill
+    case pentagonLefthalfFilled
+    case pentagonRighthalfFilled
+    case pentagonTophalfFilled
+    case pentagonBottomhalfFilled
+    case suitHeart
+    case suitHeartFill
+    case suitClub
+    case suitClubFill
+    case suitSpade
+    case suitSpadeFill
+    case suitDiamond
+    case suitDiamondFill
+    case heart
+    case heartFill
+    case heartCircle
+    case heartCircleFill
+    case heartSquare
+    case heartSquareFill
+    case heartRectangle
+    case heartRectangleFill
+    case heartSlash
+    case heartSlashFill
+    case heartSlashCircle
+    case heartSlashCircleFill
+    case boltHeart
+    case boltHeartFill
+    case arrowUpHeart
+    case arrowUpHeartFill
+    case arrowDownHeart
+    case arrowDownHeartFill
+    case arrowClockwiseHeart
+    case arrowClockwiseHeartFill
+    case rhombus
+    case rhombusFill
+    case star
+    case starFill
+    case starLeadinghalfFilled
+    case starCircle
+    case starCircleFill
+    case starSquare
+    case starSquareFill
+    case starSlash
+    case starSlashFill
+    case lineHorizontalStarFillLineHorizontal
+    case flag
+    case flagFill
+    case flagCircle
+    case flagCircleFill
+    case flagSquare
+    case flagSquareFill
+    case flagSlash
+    case flagSlashFill
+    case flagSlashCircle
+    case flagSlashCircleFill
+    case flagBadgeEllipsis
+    case flagBadgeEllipsisFill
+    case flag2Crossed
+    case flag2CrossedFill
+    case flagFilledAndFlagCrossed
+    case flagAndFlagFilledCrossed
+    case location
+    case locationFill
+    case locationCircle
+    case locationCircleFill
+    case locationSquare
+    case locationSquareFill
+    case locationSlash
+    case locationSlashFill
+    case locationNorth
+    case locationNorthFill
+    case locationNorthCircle
+    case locationNorthCircleFill
+    case locationNorthLine
+    case locationNorthLineFill
+    case sensorTagRadiowavesForward
+    case sensorTagRadiowavesForwardFill
+    case airtagRadiowavesForward
+    case airtagRadiowavesForwardFill
+    case airtag
+    case airtagFill
+    case bell
+    case bellFill
+    case bellCircle
+    case bellCircleFill
+    case bellSquare
+    case bellSquareFill
+    case bellSlash
+    case bellSlashFill
+    case bellSlashCircle
+    case bellSlashCircleFill
+    case bellAndWaveform
+    case bellAndWaveformFill
+    case bellBadge
+    case bellBadgeFill
+    case bellBadgeCircle
+    case bellBadgeCircleFill
+    case tag
+    case tagFill
+    case tagCircle
+    case tagCircleFill
+    case tagSquare
+    case tagSquareFill
+    case tagSlash
+    case tagSlashFill
+    case bolt
+    case boltFill
+    case boltCircle
+    case boltCircleFill
+    case boltSquare
+    case boltSquareFill
+    case boltRingClosed
+    case boltShield
+    case boltShieldFill
+    case boltSlash
+    case boltSlashFill
+    case boltSlashCircle
+    case boltSlashCircleFill
+    case boltBadgeA
+    case boltBadgeAFill
+    case boltHorizontal
+    case boltHorizontalFill
+    case boltHorizontalCircle
+    case boltHorizontalCircleFill
+    case eye
+    case eyeFill
+    case eyeCircle
+    case eyeCircleFill
+    case eyeSquare
+    case eyeSquareFill
+    case eyeSlash
+    case eyeSlashFill
+    case eyeSlashCircle
+    case eyeSlashCircleFill
+    case eyeTrianglebadgeExclamationmark
+    case eyeTrianglebadgeExclamationmarkFill
+    case tshirt
+    case tshirtFill
+    case eyes
+    case eyesInverse
+    case eyebrow
+    case nose
+    case noseFill
+    case mustache
+    case mustacheFill
+    case mouth
+    case mouthFill
+    case eyeglasses
+    case facemask
+    case facemaskFill
+    case brainHeadProfile
+    case brain
+    case icloud
+    case icloudFill
+    case icloudCircle
+    case icloudCircleFill
+    case icloudSquare
+    case icloudSquareFill
+    case icloudSlash
+    case icloudSlashFill
+    case exclamationmarkIcloud
+    case exclamationmarkIcloudFill
+    case checkmarkIcloud
+    case checkmarkIcloudFill
+    case xmarkIcloud
+    case xmarkIcloudFill
+    case linkIcloud
+    case linkIcloudFill
+    case boltHorizontalIcloud
+    case boltHorizontalIcloudFill
+    case personIcloud
+    case personIcloudFill
+    case lockIcloud
+    case lockIcloudFill
+    case keyIcloud
+    case keyIcloudFill
+    case arrowClockwiseIcloud
+    case arrowClockwiseIcloudFill
+    case arrowCounterclockwiseIcloud
+    case arrowCounterclockwiseIcloudFill
+    case icloudAndArrowDown
+    case icloudAndArrowDownFill
+    case icloudAndArrowUp
+    case icloudAndArrowUpFill
+    case flashlightOffFill
+    case flashlightOnFill
+    case camera
+    case cameraFill
+    case cameraCircle
+    case cameraCircleFill
+    case cameraShutterButton
+    case cameraShutterButtonFill
+    case cameraBadgeEllipsis
+    case cameraFillBadgeEllipsis
+    case arrowTriangle2CirclepathCamera
+    case arrowTriangle2CirclepathCameraFill
+    case cameraOnRectangle
+    case cameraOnRectangleFill
+    case message
+    case messageFill
+    case messageCircle
+    case messageCircleFill
+    case messageAndWaveform
+    case messageAndWaveformFill
+    case arrowUpMessage
+    case arrowUpMessageFill
+    case plusMessage
+    case plusMessageFill
+    case bubbleRight
+    case bubbleRightFill
+    case bubbleRightCircle
+    case bubbleRightCircleFill
+    case bubbleLeft
+    case bubbleLeftFill
+    case bubbleLeftCircle
+    case bubbleLeftCircleFill
+    case exclamationmarkBubble
+    case exclamationmarkBubbleFill
+    case exclamationmarkBubbleCircle
+    case exclamationmarkBubbleCircleFill
+    case quoteOpening
+    case quoteClosing
+    case quoteBubble
+    case quoteBubbleFill
+    case starBubble
+    case starBubbleFill
+    case characterBubble
+    case characterBubbleFill
+    case textBubble
+    case textBubbleFill
+    case captionsBubble
+    case captionsBubbleFill
+    case plusBubble
+    case plusBubbleFill
+    case checkmarkBubble
+    case checkmarkBubbleFill
+    case rectangle3GroupBubbleLeft
+    case rectangle3GroupBubbleLeftFill
+    case ellipsisBubble
+    case ellipsisBubbleFill
+    case ellipsisVerticalBubble
+    case ellipsisVerticalBubbleFill
+    case phoneBubbleLeft
+    case phoneBubbleLeftFill
+    case videoBubbleLeft
+    case videoBubbleLeftFill
+    case bubbleMiddleBottom
+    case bubbleMiddleBottomFill
+    case bubbleMiddleTop
+    case bubbleMiddleTopFill
+    case bubbleLeftAndBubbleRight
+    case bubbleLeftAndBubbleRightFill
+    case bubbleLeftAndExclamationmarkBubbleRight
+    case bubbleLeftAndExclamationmarkBubbleRightFill
+    case phone
+    case phoneFill
+    case phoneCircle
+    case phoneCircleFill
+    case phoneBadgePlus
+    case phoneFillBadgePlus
+    case phoneConnection
+    case phoneFillConnection
+    case phoneAndWaveform
+    case phoneAndWaveformFill
+    case phoneArrowUpRight
+    case phoneFillArrowUpRight
+    case phoneArrowDownLeft
+    case phoneFillArrowDownLeft
+    case phoneArrowRight
+    case phoneFillArrowRight
+    case phoneDown
+    case phoneDownFill
+    case phoneDownCircle
+    case phoneDownCircleFill
+    case teletype
+    case teletypeCircle
+    case teletypeCircleFill
+    case teletypeAnswer
+    case teletypeAnswerCircle
+    case teletypeAnswerCircleFill
+    case video
+    case videoFill
+    case videoCircle
+    case videoCircleFill
+    case videoSquare
+    case videoSquareFill
+    case videoSlash
+    case videoSlashFill
+    case videoBadgePlus
+    case videoFillBadgePlus
+    case videoBadgeCheckmark
+    case videoFillBadgeCheckmark
+    case videoBadgeEllipsis
+    case videoFillBadgeEllipsis
+    case videoAndWaveform
+    case videoAndWaveformFill
+    case arrowUpRightVideo
+    case arrowUpRightVideoFill
+    case arrowDownLeftVideo
+    case arrowDownLeftVideoFill
+    case questionmarkVideo
+    case questionmarkVideoFill
+    case envelope
+    case envelopeFill
+    case envelopeCircle
+    case envelopeCircleFill
+    case envelopeArrowTriangleBranch
+    case envelopeArrowTriangleBranchFill
+    case envelopeOpen
+    case envelopeOpenFill
+    case envelopeBadge
+    case envelopeBadgeFill
+    case envelopeBadgeShieldHalfFilled
+    case envelopeBadgeShieldHalfFilledFill
+    case mailStack
+    case mailStackFill
+    case mail
+    case mailFill
+    case mailAndTextMagnifyingglass
+    case rectangleAndTextMagnifyingglass
+    case arrowUpRightAndArrowDownLeftRectangle
+    case arrowUpRightAndArrowDownLeftRectangleFill
+    case gear
+    case gearCircle
+    case gearCircleFill
+    case gearBadgeCheckmark
+    case gearBadgeXmark
+    case gearBadgeQuestionmark
+    case gearshape
+    case gearshapeFill
+    case gearshapeCircle
+    case gearshapeCircleFill
+    case gearshape2
+    case gearshape2Fill
+    case signature
+    case line3CrossedSwirlCircle
+    case line3CrossedSwirlCircleFill
+    case scissors
+    case scissorsCircle
+    case scissorsCircleFill
+    case scissorsBadgeEllipsis
+    case ellipsis
+    case ellipsisCircle
+    case ellipsisCircleFill
+    case ellipsisRectangle
+    case ellipsisRectangleFill
+    case bag
+    case bagFill
+    case bagCircle
+    case bagCircleFill
+    case bagBadgePlus
+    case bagFillBadgePlus
+    case bagBadgeMinus
+    case bagFillBadgeMinus
+    case cart
+    case cartFill
+    case cartCircle
+    case cartCircleFill
+    case cartBadgePlus
+    case cartFillBadgePlus
+    case cartBadgeMinus
+    case cartFillBadgeMinus
+    case creditcard
+    case creditcardFill
+    case creditcardCircle
+    case creditcardCircleFill
+    case creditcardAnd123
+    case creditcardTrianglebadgeExclamationmark
+    case giftcard
+    case giftcardFill
+    case walletPass
+    case walletPassFill
+    case wandAndRays
+    case wandAndRaysInverse
+    case wandAndStars
+    case wandAndStarsInverse
+    case crop
+    case cropRotate
+    case dialMin
+    case dialMinFill
+    case dialMax
+    case dialMaxFill
+    case gyroscope
+    case nosign
+    case gauge
+    case gaugeBadgePlus
+    case gaugeBadgeMinus
+    case speedometer
+    case barometer
+    case metronome
+    case metronomeFill
+    case amplifier
+    case dice
+    case diceFill
+    case dieFace1
+    case dieFace1Fill
+    case dieFace2
+    case dieFace2Fill
+    case dieFace3
+    case dieFace3Fill
+    case dieFace4
+    case dieFace4Fill
+    case dieFace5
+    case dieFace5Fill
+    case dieFace6
+    case dieFace6Fill
+    case squareGrid3x3Square
+    case pianokeys
+    case pianokeysInverse
+    case tuningfork
+    case paintbrush
+    case paintbrushFill
+    case paintbrushPointed
+    case paintbrushPointedFill
+    case bandage
+    case bandageFill
+    case ruler
+    case rulerFill
+    case level
+    case levelFill
+    case linesMeasurementHorizontal
+    case wrench
+    case wrenchFill
+    case hammer
+    case hammerFill
+    case hammerCircle
+    case hammerCircleFill
+    case screwdriver
+    case screwdriverFill
+    case eyedropper
+    case eyedropperHalffull
+    case eyedropperFull
+    case wrenchAndScrewdriver
+    case wrenchAndScrewdriverFill
+    case applescript
+    case applescriptFill
+    case scroll
+    case scrollFill
+    case stethoscope
+    case stethoscopeCircle
+    case stethoscopeCircleFill
+    case printer
+    case printerFill
+    case printerFilledAndPaper
+    case printerDotmatrix
+    case printerDotmatrixFill
+    case printerDotmatrixFilledAndPaper
+    case scanner
+    case scannerFill
+    case faxmachine
+    case briefcase
+    case briefcaseFill
+    case briefcaseCircle
+    case briefcaseCircleFill
+    case `case`
+    case caseFill
+    case latch2Case
+    case latch2CaseFill
+    case crossCase
+    case crossCaseFill
+    case suitcase
+    case suitcaseFill
+    case suitcaseCart
+    case suitcaseCartFill
+    case theatermasks
+    case theatermasksFill
+    case theatermasksCircle
+    case theatermasksCircleFill
+    case puzzlepieceExtension
+    case puzzlepieceExtensionFill
+    case puzzlepiece
+    case puzzlepieceFill
+    case homekit
+    case house
+    case houseFill
+    case houseCircle
+    case houseCircleFill
+    case musicNoteHouse
+    case musicNoteHouseFill
+    case buildingColumns
+    case buildingColumnsFill
+    case buildingColumnsCircle
+    case buildingColumnsCircleFill
+    case signpostLeft
+    case signpostLeftFill
+    case signpostRight
+    case signpostRightFill
+    case squareSplitBottomrightquarter
+    case squareSplitBottomrightquarterFill
+    case building
+    case buildingFill
+    case building2
+    case building2Fill
+    case building2CropCircle
+    case building2CropCircleFill
+    case lock
+    case lockFill
+    case lockCircle
+    case lockCircleFill
+    case lockSquare
+    case lockSquareFill
+    case lockSquareStack
+    case lockSquareStackFill
+    case lockRectangle
+    case lockRectangleFill
+    case lockRectangleStack
+    case lockRectangleStackFill
+    case lockRectangleOnRectangle
+    case lockRectangleOnRectangleFill
+    case lockShield
+    case lockShieldFill
+    case lockSlash
+    case lockSlashFill
+    case lockOpen
+    case lockOpenFill
+    case lockRotation
+    case lockRotationOpen
+    case key
+    case keyFill
+    case wifi
+    case wifiCircle
+    case wifiCircleFill
+    case wifiSquare
+    case wifiSquareFill
+    case wifiSlash
+    case wifiExclamationmark
+    case pin
+    case pinFill
+    case pinCircle
+    case pinCircleFill
+    case pinSquare
+    case pinSquareFill
+    case pinSlash
+    case pinSlashFill
+    case mappin
+    case mappinCircle
+    case mappinCircleFill
+    case mappinSquare
+    case mappinSquareFill
+    case mappinSlash
+    case mappinSlashCircle
+    case mappinSlashCircleFill
+    case mappinAndEllipse
+    case map
+    case mapFill
+    case mapCircle
+    case mapCircleFill
+    case safari
+    case safariFill
+    case move3d
+    case scale3d
+    case rotate3d
+    case torus
+    case rotateLeft
+    case rotateLeftFill
+    case rotateRight
+    case rotateRightFill
+    case selectionPinInOut
+    case powerplug
+    case powerplugFill
+    case timelineSelection
+    case cpu
+    case cpuFill
+    case memorychip
+    case memorychipFill
+    case opticaldisc
+    case display
+    case lockDisplay
+    case lockOpenDisplay
+    case displayAndArrowDown
+    case displayTrianglebadgeExclamationmark
+    case display2
+    case desktopcomputer
+    case lockDesktopcomputer
+    case lockOpenDesktopcomputer
+    case desktopcomputerAndArrowDown
+    case desktopcomputerTrianglebadgeExclamationmark
+    case pc
+    case macproGen1
+    case macproGen1Fill
+    case macproGen2
+    case macproGen2Fill
+    case macproGen3
+    case macproGen3Fill
+    case macproGen3Server
+    case serverRack
+    case xserve
+    case laptopcomputer
+    case lockLaptopcomputer
+    case lockOpenLaptopcomputer
+    case laptopcomputerAndArrowDown
+    case laptopcomputerTrianglebadgeExclamationmark
+    case laptopcomputerAndIphone
+    case ipadAndIphone
+    case macmini
+    case macminiFill
+    case airportExpress
+    case airportExtreme
+    case airportExtremeTower
+    case ipod
+    case ipodshuffleGen1
+    case ipodshuffleGen2
+    case ipodshuffleGen3
+    case ipodshuffleGen4
+    case ipodtouch
+    case ipodtouchSlash
+    case ipodtouchLandscape
+    case flipphone
+    case candybarphone
+    case iphoneHomebutton
+    case iphoneHomebuttonCircle
+    case iphoneHomebuttonCircleFill
+    case iphoneHomebuttonLandscape
+    case iphoneHomebuttonRadiowavesLeftAndRight
+    case iphoneHomebuttonRadiowavesLeftAndRightCircle
+    case iphoneHomebuttonRadiowavesLeftAndRightCircleFill
+    case iphoneHomebuttonSlash
+    case iphoneHomebuttonSlashCircle
+    case iphoneHomebuttonSlashCircleFill
+    case iphoneHomebuttonBadgePlay
+    case iphone
+    case iphoneCircle
+    case iphoneCircleFill
+    case iphoneLandscape
+    case iphoneRadiowavesLeftAndRight
+    case iphoneRadiowavesLeftAndRightCircle
+    case iphoneRadiowavesLeftAndRightCircleFill
+    case iphoneSlash
+    case iphoneSlashCircle
+    case iphoneSlashCircleFill
+    case iphoneBadgePlay
+    case lockIphone
+    case lockOpenIphone
+    case iphoneAndArrowForward
+    case arrowTurnUpForwardIphone
+    case arrowTurnUpForwardIphoneFill
+    case iphoneRearCamera
+    case appsIphone
+    case appsIphoneBadgePlus
+    case appsIphoneLandscape
+    case platterFilledTopIphone
+    case platterFilledBottomIphone
+    case platterFilledTopAndArrowUpIphone
+    case platterFilledBottomAndArrowDownIphone
+    case platter2FilledIphone
+    case platter2FilledIphoneLandscape
+    case iphoneSmartbatterycaseGen2
+    case iphoneSmartbatterycaseGen1
+    case ipadHomebutton
+    case ipadHomebuttonBadgePlay
+    case ipadHomebuttonLandscape
+    case ipadHomebuttonLandscapeBadgePlay
+    case ipad
+    case ipadBadgePlay
+    case lockIpad
+    case lockOpenIpad
+    case ipadAndArrowForward
+    case ipadLandscape
+    case ipadLandscapeBadgePlay
+    case ipadRearCamera
+    case appsIpad
+    case appsIpadLandscape
+    case platter2FilledIpad
+    case platter2FilledIpadLandscape
+    case applepencil
+    case magicmouse
+    case magicmouseFill
+    case computermouse
+    case computermouseFill
+    case applewatch
+    case applewatchWatchface
+    case exclamationmarkApplewatch
+    case lockApplewatch
+    case lockOpenApplewatch
+    case applewatchRadiowavesLeftAndRight
+    case applewatchSlash
+    case applewatchSideRight
+    case watchfaceApplewatchCase
+    case applewatchCaseInsetFilled
+    case platterFilledTopApplewatchCase
+    case platterFilledBottomApplewatchCase
+    case platterTopApplewatchCase
+    case platterBottomApplewatchCase
+    case digitalcrownArrowClockwise
+    case digitalcrownArrowClockwiseFill
+    case digitalcrownArrowCounterclockwise
+    case digitalcrownArrowCounterclockwiseFill
+    case digitalcrownPress
+    case digitalcrownPressFill
+    case digitalcrownHorizontalArrowClockwise
+    case digitalcrownHorizontalArrowClockwiseFill
+    case digitalcrownHorizontalArrowCounterclockwise
+    case digitalcrownHorizontalArrowCounterclockwiseFill
+    case digitalcrownHorizontalPress
+    case digitalcrownHorizontalPressFill
+    case airpodsmax
+    case beatsHeadphones
+    case headphones
+    case headphonesCircle
+    case headphonesCircleFill
+    case earbuds
+    case earbudsCase
+    case earbudsCaseFill
+    case earpods
+    case airpods
+    case airpodRight
+    case airpodLeft
+    case airpodsChargingcase
+    case airpodsChargingcaseFill
+    case airpodsChargingcaseWireless
+    case airpodsChargingcaseWirelessFill
+    case airpodspro
+    case airpodproRight
+    case airpodproLeft
+    case airpodsproChargingcaseWireless
+    case airpodsproChargingcaseWirelessFill
+    case airpodsGen3
+    case airpodGen3Right
+    case airpodGen3Left
+    case airpodsGen3ChargingcaseWireless
+    case airpodsGen3ChargingcaseWirelessFill
+    case beatsEarphones
+    case beatsPowerbeatspro
+    case beatsPowerbeatsproRight
+    case beatsPowerbeatsproLeft
+    case beatsPowerbeats
+    case beatsPowerbeats3
+    case beatsStudiobuds
+    case beatsStudiobudLeft
+    case beatsStudiobudRight
+    case beatsStudiobudsChargingcase
+    case beatsStudiobudsChargingcaseFill
+    case beatsFitPro
+    case beatsFitProLeft
+    case beatsFitProRight
+    case beatsFitProChargingcase
+    case beatsFitProChargingcaseFill
+    case beatsPowerbeatsproChargingcase
+    case beatsPowerbeatsproChargingcaseFill
+    case homepodmini
+    case homepodminiFill
+    case homepodmini2
+    case homepodmini2Fill
+    case homepodAndHomepodmini
+    case homepodAndHomepodminiFill
+    case hifispeakerAndHomepodmini
+    case hifispeakerAndHomepodminiFill
+    case homepod
+    case homepodFill
+    case homepod2
+    case homepod2Fill
+    case hifispeakerAndHomepod
+    case hifispeakerAndHomepodFill
+    case hifispeaker
+    case hifispeakerFill
+    case hifispeaker2
+    case hifispeaker2Fill
+    case appletv
+    case appletvFill
+    case homepodAndAppletv
+    case homepodAndAppletvFill
+    case homepodminiAndAppletv
+    case homepodminiAndAppletvFill
+    case hifispeakerAndAppletv
+    case hifispeakerAndAppletvFill
+    case appletvremoteGen1
+    case appletvremoteGen1Fill
+    case appletvremoteGen2
+    case appletvremoteGen2Fill
+    case appletvremoteGen3
+    case appletvremoteGen3Fill
+    case appletvremoteGen4
+    case appletvremoteGen4Fill
+    case magsafeBatterypack
+    case magsafeBatterypackFill
+    case mediastick
+    case cableConnector
+    case cableConnectorHorizontal
+    case radio
+    case radioFill
+    case tv
+    case tvFill
+    case tvInsetFilled
+    case tvCircle
+    case tvCircleFill
+    case sparklesTv
+    case sparklesTvFill
+    case 4kTv
+    case 4kTvFill
+    case musicNoteTv
+    case musicNoteTvFill
+    case playTv
+    case playTvFill
+    case photoTv
+    case tvAndHifispeakerFill
+    case tvAndMediabox
+    case airplayvideo
+    case airplayvideoCircle
+    case airplayvideoCircleFill
+    case airplayvideoBadgeExclamationmark
+    case airplayaudio
+    case airplayaudioCircle
+    case airplayaudioCircleFill
+    case airplayaudioBadgeExclamationmark
+    case dotRadiowavesLeftAndRight
+    case dotRadiowavesRight
+    case dotRadiowavesForward
+    case wave3Left
+    case wave3LeftCircle
+    case wave3LeftCircleFill
+    case wave3Backward
+    case wave3BackwardCircle
+    case wave3BackwardCircleFill
+    case wave3Right
+    case wave3RightCircle
+    case wave3RightCircleFill
+    case wave3Forward
+    case wave3ForwardCircle
+    case wave3ForwardCircleFill
+    case dotRadiowavesUpForward
+    case antennaRadiowavesLeftAndRight
+    case antennaRadiowavesLeftAndRightSlash
+    case antennaRadiowavesLeftAndRightCircle
+    case antennaRadiowavesLeftAndRightCircleFill
+    case pip
+    case pipFill
+    case pipExit
+    case pipEnter
+    case pipSwap
+    case pipRemove
+    case rectangleArrowtriangle2Outward
+    case rectangleArrowtriangle2Inward
+    case rectanglePortraitArrowtriangle2Outward
+    case rectanglePortraitArrowtriangle2Inward
+    case rectangle2Swap
+    case guitars
+    case guitarsFill
+    case airplane
+    case airplaneCircle
+    case airplaneCircleFill
+    case airplaneArrival
+    case airplaneDeparture
+    case car
+    case carFill
+    case carCircle
+    case carCircleFill
+    case boltCar
+    case boltCarFill
+    case boltCarCircle
+    case boltCarCircleFill
+    case car2
+    case car2Fill
+    case bus
+    case busFill
+    case busDoubledecker
+    case busDoubledeckerFill
+    case tram
+    case tramFill
+    case tramCircle
+    case tramCircleFill
+    case tramFillTunnel
+    case cablecar
+    case cablecarFill
+    case ferry
+    case ferryFill
+    case carFerry
+    case carFerryFill
+    case trainSideFrontCar
+    case trainSideMiddleCar
+    case trainSideRearCar
+    case bicycle
+    case bicycleCircle
+    case bicycleCircleFill
+    case scooter
+    case parkingsign
+    case parkingsignCircle
+    case parkingsignCircleFill
+    case fuelpump
+    case fuelpumpFill
+    case fuelpumpCircle
+    case fuelpumpCircleFill
+    case fanblades
+    case fanbladesFill
+    case bedDouble
+    case bedDoubleFill
+    case bedDoubleCircle
+    case bedDoubleCircleFill
+    case lungs
+    case lungsFill
+    case allergens
+    case pills
+    case pillsFill
+    case pillsCircle
+    case pillsCircleFill
+    case testtube2
+    case ivfluidBag
+    case ivfluidBagFill
+    case crossVial
+    case crossVialFill
+    case cross
+    case crossFill
+    case crossCircle
+    case crossCircleFill
+    case hare
+    case hareFill
+    case tortoise
+    case tortoiseFill
+    case pawprint
+    case pawprintFill
+    case pawprintCircle
+    case pawprintCircleFill
+    case ant
+    case antFill
+    case antCircle
+    case antCircleFill
+    case ladybug
+    case ladybugFill
+    case leaf
+    case leafFill
+    case leafCircle
+    case leafCircleFill
+    case leafArrowTriangleCirclepath
+    case cameraMacro
+    case cameraMacroCircle
+    case cameraMacroCircleFill
+    case film
+    case filmFill
+    case filmCircle
+    case filmCircleFill
+    case sportscourt
+    case sportscourtFill
+    case faceSmiling
+    case faceSmilingFill
+    case faceDashed
+    case faceDashedFill
+    case crown
+    case crownFill
+    case comb
+    case combFill
+    case qrcode
+    case barcode
+    case viewfinder
+    case viewfinderCircle
+    case viewfinderCircleFill
+    case barcodeViewfinder
+    case qrcodeViewfinder
+    case plusViewfinder
+    case cameraViewfinder
+    case faceid
+    case docViewfinder
+    case docViewfinderFill
+    case locationViewfinder
+    case locationFillViewfinder
+    case personFillViewfinder
+    case textViewfinder
+    case dotViewfinder
+    case dotCircleViewfinder
+    case keyViewfinder
+    case photo
+    case photoFill
+    case photoCircle
+    case photoCircleFill
+    case textBelowPhoto
+    case textBelowPhotoFill
+    case checkerboardRectangle
+    case cameraMeteringCenterWeightedAverage
+    case cameraMeteringCenterWeighted
+    case cameraMeteringMatrix
+    case cameraMeteringMultispot
+    case cameraMeteringNone
+    case cameraMeteringPartial
+    case cameraMeteringSpot
+    case cameraMeteringUnknown
+    case cameraAperture
+    case rectangleDashed
+    case rectangleDashedBadgeRecord
+    case rectangleBadgePlus
+    case rectangleFillBadgePlus
+    case rectangleBadgeMinus
+    case rectangleFillBadgeMinus
+    case rectangleBadgeCheckmark
+    case rectangleFillBadgeCheckmark
+    case rectangleBadgeXmark
+    case rectangleFillBadgeXmark
+    case rectangleBadgePersonCrop
+    case rectangleFillBadgePersonCrop
+    case photoOnRectangle
+    case photoFillOnRectangleFill
+    case rectangleOnRectangleAngled
+    case rectangleFillOnRectangleAngledFill
+    case photoOnRectangleAngled
+    case rectangleStack
+    case rectangleStackFill
+    case rectangleStackBadgePlus
+    case rectangleStackFillBadgePlus
+    case rectangleStackBadgeMinus
+    case rectangleStackFillBadgeMinus
+    case rectangleStackBadgePersonCrop
+    case rectangleStackBadgePersonCropFill
+    case rectangleStackBadgePlay
+    case rectangleStackBadgePlayFill
+    case sparklesRectangleStack
+    case sparklesRectangleStackFill
+    case sidebarLeft
+    case sidebarRight
+    case sidebarLeading
+    case sidebarTrailing
+    case sidebarSquaresLeft
+    case sidebarSquaresRight
+    case sidebarSquaresLeading
+    case sidebarSquaresTrailing
+    case macwindow
+    case macwindowBadgePlus
+    case sliderHorizontal2RectangleAndArrowTriangle2Circlepath
+    case dockRectangle
+    case dockArrowUpRectangle
+    case dockArrowDownRectangle
+    case menubarRectangle
+    case menubarDockRectangle
+    case menubarDockRectangleBadgeRecord
+    case menubarArrowUpRectangle
+    case menubarArrowDownRectangle
+    case macwindowOnRectangle
+    case textAndCommandMacwindow
+    case keyboardMacwindow
+    case uiwindowSplit2x1
+    case mosaic
+    case mosaicFill
+    case squaresBelowRectangle
+    case rectangleSplit3x3Fill
+    case squareOnSquareSquareshapeControlhandles
+    case squareshapeControlhandlesOnSquareshapeControlhandles
+    case pano
+    case panoFill
+    case circleGrid2x1
+    case circleGrid2x1Fill
+    case circleGrid2x1LeftFilled
+    case circleGrid2x1RightFilled
+    case squareAndLineVerticalAndSquare
+    case squareFillAndLineVerticalAndSquareFill
+    case squareFilledAndLineVerticalAndSquare
+    case squareAndLineVerticalAndSquareFilled
+    case flowchart
+    case flowchartFill
+    case rectangleConnectedToLineBelow
+    case alignHorizontalLeft
+    case alignHorizontalLeftFill
+    case alignHorizontalCenter
+    case alignHorizontalCenterFill
+    case alignHorizontalRight
+    case alignHorizontalRightFill
+    case alignVerticalTop
+    case alignVerticalTopFill
+    case alignVerticalCenter
+    case alignVerticalCenterFill
+    case alignVerticalBottom
+    case alignVerticalBottomFill
+    case shield
+    case shieldFill
+    case shieldLefthalfFilled
+    case shieldRighthalfFilled
+    case shieldSlash
+    case shieldSlashFill
+    case shieldLefthalfFilledSlash
+    case checkerboardShield
+    case switch2
+    case pointTopleftDownCurvedtoPointBottomrightUp
+    case pointTopleftDownCurvedtoPointBottomrightUpFill
+    case pointTopleftDownCurvedtoPointFilledBottomrightUp
+    case pointFilledTopleftDownCurvedtoPointBottomrightUp
+    case appConnectedToAppBelowFill
+    case sliderHorizontal3
+    case sliderHorizontalBelowRectangle
+    case sliderHorizontalBelowSquareFilledAndSquare
+    case sliderVertical3
+    case cube
+    case cubeFill
+    case cubeTransparent
+    case cubeTransparentFill
+    case shippingbox
+    case shippingboxFill
+    case shippingboxCircle
+    case shippingboxCircleFill
+    case arkit
+    case arkitBadgeXmark
+    case cone
+    case coneFill
+    case pyramid
+    case pyramidFill
+    case squareStack3dDownRight
+    case squareStack3dDownRightFill
+    case squareStack3dDownForward
+    case squareStack3dDownForwardFill
+    case squareStack3dUp
+    case squareStack3dUpFill
+    case squareStack3dUpSlash
+    case squareStack3dUpSlashFill
+    case squareStack3dUpBadgeA
+    case squareStack3dUpBadgeAFill
+    case squareStack3dForwardDottedline
+    case squareStack3dForwardDottedlineFill
+    case livephoto
+    case livephotoSlash
+    case livephotoBadgeA
+    case livephotoPlay
+    case scope
+    case helm
+    case clock
+    case clockFill
+    case clockCircle
+    case clockCircleFill
+    case clockBadgeCheckmark
+    case clockBadgeCheckmarkFill
+    case clockBadgeExclamationmark
+    case clockBadgeExclamationmarkFill
+    case deskclock
+    case deskclockFill
+    case alarm
+    case alarmFill
+    case stopwatch
+    case stopwatchFill
+    case chartXyaxisLine
+    case timer
+    case timerSquare
+    case clockArrowCirclepath
+    case exclamationmarkArrowCirclepath
+    case clockArrow2Circlepath
+    case gamecontroller
+    case gamecontrollerFill
+    case lJoystick
+    case lJoystickFill
+    case rJoystick
+    case rJoystickFill
+    case lJoystickPressDown
+    case lJoystickPressDownFill
+    case rJoystickPressDown
+    case rJoystickPressDownFill
+    case lJoystickTiltLeft
+    case lJoystickTiltLeftFill
+    case lJoystickTiltRight
+    case lJoystickTiltRightFill
+    case lJoystickTiltUp
+    case lJoystickTiltUpFill
+    case lJoystickTiltDown
+    case lJoystickTiltDownFill
+    case rJoystickTiltLeft
+    case rJoystickTiltLeftFill
+    case rJoystickTiltRight
+    case rJoystickTiltRightFill
+    case rJoystickTiltUp
+    case rJoystickTiltUpFill
+    case rJoystickTiltDown
+    case rJoystickTiltDownFill
+    case dpad
+    case dpadFill
+    case dpadLeftFilled
+    case dpadUpFilled
+    case dpadRightFilled
+    case dpadDownFilled
+    case circleCircle
+    case circleCircleFill
+    case squareCircle
+    case squareCircleFill
+    case triangleCircle
+    case triangleCircleFill
+    case rectangleRoundedtop
+    case rectangleRoundedtopFill
+    case rectangleRoundedbottom
+    case rectangleRoundedbottomFill
+    case lRectangleRoundedbottom
+    case lRectangleRoundedbottomFill
+    case l1RectangleRoundedbottom
+    case l1RectangleRoundedbottomFill
+    case l2RectangleRoundedtop
+    case l2RectangleRoundedtopFill
+    case rRectangleRoundedbottom
+    case rRectangleRoundedbottomFill
+    case r1RectangleRoundedbottom
+    case r1RectangleRoundedbottomFill
+    case r2RectangleRoundedtop
+    case r2RectangleRoundedtopFill
+    case lbRectangleRoundedbottom
+    case lbRectangleRoundedbottomFill
+    case rbRectangleRoundedbottom
+    case rbRectangleRoundedbottomFill
+    case ltRectangleRoundedtop
+    case ltRectangleRoundedtopFill
+    case rtRectangleRoundedtop
+    case rtRectangleRoundedtopFill
+    case zlRectangleRoundedtop
+    case zlRectangleRoundedtopFill
+    case zrRectangleRoundedtop
+    case zrRectangleRoundedtopFill
+    case logoPlaystation
+    case logoXbox
+    case paintpalette
+    case paintpaletteFill
+    case cupAndSaucer
+    case cupAndSaucerFill
+    case takeoutbagAndCupAndStraw
+    case takeoutbagAndCupAndStrawFill
+    case forkKnife
+    case forkKnifeCircle
+    case forkKnifeCircleFill
+    case figureWalk
+    case figureWalkCircle
+    case figureWalkCircleFill
+    case figureWalkDiamond
+    case figureWalkDiamondFill
+    case figureStand
+    case figureStandLineDottedFigureStand
+    case figureWave
+    case figureWaveCircle
+    case figureWaveCircleFill
+    case figureRoll
+    case ear
+    case earBadgeCheckmark
+    case earTrianglebadgeExclamationmark
+    case earAndWaveform
+    case earFill
+    case hearingdeviceEar
+    case handRaised
+    case handRaisedFill
+    case handRaisedCircle
+    case handRaisedCircleFill
+    case handRaisedSquare
+    case handRaisedSquareFill
+    case handRaisedSlash
+    case handRaisedSlashFill
+    case handThumbsup
+    case handThumbsupFill
+    case handThumbsupCircle
+    case handThumbsupCircleFill
+    case handThumbsdown
+    case handThumbsdownFill
+    case handThumbsdownCircle
+    case handThumbsdownCircleFill
+    case handPointUpLeft
+    case handPointUpLeftFill
+    case handDraw
+    case handDrawFill
+    case handTap
+    case handTapFill
+    case rectangleAndHandPointUpLeft
+    case rectangleAndHandPointUpLeftFill
+    case rectangleFilledAndHandPointUpLeft
+    case rectangleAndHandPointUpLeftFilled
+    case handPointLeft
+    case handPointLeftFill
+    case handPointRight
+    case handPointRightFill
+    case handPointUp
+    case handPointUpFill
+    case handPointUpBraille
+    case handPointUpBrailleFill
+    case handPointDown
+    case handPointDownFill
+    case handWave
+    case handWaveFill
+    case handsClap
+    case handsClapFill
+    case handsSparkles
+    case handsSparklesFill
+    case rectangleCompressVertical
+    case rectangleExpandVertical
+    case rectangleAndArrowUpRightAndArrowDownLeft
+    case rectangleAndArrowUpRightAndArrowDownLeftSlash
+    case square2Stack3d
+    case square2Stack3dTopFilled
+    case square2Stack3dBottomFilled
+    case square3Layers3dDownRight
+    case square3Layers3dDownRightSlash
+    case square3Layers3dDownLeft
+    case square3Layers3dDownLeftSlash
+    case square3Layers3dDownForward
+    case square3Layers3dDownBackward
+    case square3Stack3d
+    case square3Stack3dSlash
+    case square3Stack3dTopFilled
+    case square3Stack3dMiddleFilled
+    case square3Stack3dBottomFilled
+    case cylinder
+    case cylinderFill
+    case cylinderSplit1x2
+    case cylinderSplit1x2Fill
+    case chartBar
+    case chartBarFill
+    case chartPie
+    case chartPieFill
+    case chartBarXaxis
+    case chartLineUptrendXyaxis
+    case chartLineUptrendXyaxisCircle
+    case chartLineUptrendXyaxisCircleFill
+    case dotSquareshapeSplit2x2
+    case squareshapeSplit2x2Dotted
+    case squareshapeSplit2x2
+    case squareshapeSplit3x3
+    case burst
+    case burstFill
+    case waveformPathEcg
+    case waveformPathEcgRectangle
+    case waveformPathEcgRectangleFill
+    case waveformPath
+    case waveformPathBadgePlus
+    case waveformPathBadgeMinus
+    case point3ConnectedTrianglepathDotted
+    case point3FilledConnectedTrianglepathDotted
+    case waveform
+    case waveformCircle
+    case waveformCircleFill
+    case waveformBadgePlus
+    case waveformBadgeMinus
+    case waveformBadgeExclamationmark
+    case waveformAndMagnifyingglass
+    case waveformAndMic
+    case staroflife
+    case staroflifeFill
+    case staroflifeCircle
+    case staroflifeCircleFill
+    case simcard
+    case simcardFill
+    case simcard2
+    case simcard2Fill
+    case sdcard
+    case sdcardFill
+    case esim
+    case esimFill
+    case touchid
+    case bonjour
+    case atom
+    case scalemass
+    case scalemassFill
+    case gift
+    case giftFill
+    case giftCircle
+    case giftCircleFill
+    case plusApp
+    case plusAppFill
+    case arrowDownApp
+    case arrowDownAppFill
+    case arrowUpForwardApp
+    case arrowUpForwardAppFill
+    case xmarkApp
+    case xmarkAppFill
+    case questionmarkApp
+    case questionmarkAppFill
+    case appBadge
+    case appBadgeFill
+    case appBadgeCheckmark
+    case appBadgeCheckmarkFill
+    case appDashed
+    case questionmarkAppDashed
+    case appclip
+    case appGift
+    case appGiftFill
+    case studentdesk
+    case hourglass
+    case hourglassCircle
+    case hourglassCircleFill
+    case hourglassBadgePlus
+    case hourglassBottomhalfFilled
+    case hourglassTophalfFilled
+    case banknote
+    case banknoteFill
+    case paragraphsign
+    case purchased
+    case purchasedCircle
+    case purchasedCircleFill
+    case perspective
+    case circleAndLineHorizontal
+    case circleAndLineHorizontalFill
+    case trapezoidAndLineVertical
+    case trapezoidAndLineVerticalFill
+    case trapezoidAndLineHorizontal
+    case trapezoidAndLineHorizontalFill
+    case aspectratio
+    case aspectratioFill
+    case cameraFilters
+    case skew
+    case arrowLeftAndRightRighttriangleLeftRighttriangleRight
+    case arrowLeftAndRightRighttriangleLeftRighttriangleRightFill
+    case arrowUpAndDownRighttriangleUpRighttriangleDown
+    case arrowUpAndDownRighttriangleUpRighttriangleDownFill
+    case arrowtriangleLeftAndLineVerticalAndArrowtriangleRight
+    case arrowtriangleLeftAndLineVerticalAndArrowtriangleRightFill
+    case arrowtriangleRightAndLineVerticalAndArrowtriangleLeft
+    case arrowtriangleRightAndLineVerticalAndArrowtriangleLeftFill
+    case grid
+    case gridCircle
+    case gridCircleFill
+    case burn
+    case lifepreserver
+    case lifepreserverFill
+    case recordingtape
+    case binoculars
+    case binocularsFill
+    case battery100
+    case battery75
+    case battery50
+    case battery25
+    case battery0
+    case battery100Bolt
+    case minusPlusBatteryblock
+    case minusPlusBatteryblockFill
+    case boltBatteryblock
+    case boltBatteryblockFill
+    case lightbulb
+    case lightbulbFill
+    case lightbulbCircle
+    case lightbulbCircleFill
+    case lightbulbSlash
+    case lightbulbSlashFill
+    case fibrechannel
+    case checklist
+    case squareFillTextGrid1x2
+    case listDash
+    case listBullet
+    case listBulletCircle
+    case listBulletCircleFill
+    case listTriangle
+    case listBulletIndent
+    case listNumber
+    case listStar
+    case increaseIndent
+    case decreaseIndent
+    case decreaseQuotelevel
+    case increaseQuotelevel
+    case listBulletBelowRectangle
+    case textBadgePlus
+    case textBadgeMinus
+    case textBadgeCheckmark
+    case textBadgeXmark
+    case textBadgeStar
+    case textInsert
+    case textAppend
+    case textQuote
+    case textAlignleft
+    case textAligncenter
+    case textAlignright
+    case textJustify
+    case textJustifyLeft
+    case textJustifyRight
+    case textJustifyLeading
+    case textJustifyTrailing
+    case textRedaction
+    case listAndFilm
+    case line3Horizontal
+    case line3HorizontalDecrease
+    case line3HorizontalDecreaseCircle
+    case line3HorizontalDecreaseCircleFill
+    case line3HorizontalCircle
+    case line3HorizontalCircleFill
+    case line2HorizontalDecreaseCircle
+    case line2HorizontalDecreaseCircleFill
+    case character
+    case textformatSizeSmaller
+    case textformatSizeLarger
+    case textformatSize
+    case textformat
+    case textformatAlt
+    case textformatSuperscript
+    case textformatSubscript
     case abc
-textformat
-    case abc
-    case dottedunderline
-bold
-italic
-underline
-strikethrough
-shadow
-bold
+    case textformatAbc
+    case textformatAbcDottedunderline
+    case bold
     case italic
     case underline
-bold
-    case underline
-view
-    case 2d
-view
-    case 3d
-character
-    case cursor
-    case ibeam
-fx
-f
-    case cursive
-f
-    case cursive
-    case circle
-f
-    case cursive
-    case circle
-    case fill
-k
-sum
-percent
-function
-fn
-textformat
-    case 123
-123
-    case rectangle
-123
-    case rectangle
-    case fill
-character
-    case textbox
-a
-    case magnify
-info
-info
-    case circle
-info
-    case circle
-    case fill
-at
-at
-    case circle
-at
-    case circle
-    case fill
-at
-    case badge
-    case plus
-at
-    case badge
-    case minus
-questionmark
-questionmark
-    case circle
-questionmark
-    case circle
-    case fill
-questionmark
-    case square
-questionmark
-    case square
-    case fill
-questionmark
-    case diamond
-questionmark
-    case diamond
-    case fill
-exclamationmark
-exclamationmark
-    case 2
-exclamationmark
-    case 3
-exclamationmark
-    case circle
-exclamationmark
-    case circle
-    case fill
-exclamationmark
-    case square
-exclamationmark
-    case square
-    case fill
-exclamationmark
-    case octagon
-exclamationmark
-    case octagon
-    case fill
-exclamationmark
-    case shield
-exclamationmark
-    case shield
-    case fill
-plus
-plus
-    case circle
-plus
-    case circle
-    case fill
-plus
-    case square
-plus
-    case square
-    case fill
-plus
-    case rectangle
-plus
-    case rectangle
-    case fill
-plus
-    case rectangle
-    case portrait
-plus
-    case rectangle
-    case portrait
-    case fill
-plus
-    case diamond
-plus
-    case diamond
-    case fill
-minus
-minus
-    case circle
-minus
-    case circle
-    case fill
-minus
-    case square
-minus
-    case square
-    case fill
-minus
-    case rectangle
-minus
-    case rectangle
-    case fill
-minus
-    case rectangle
-    case portrait
-minus
-    case rectangle
-    case portrait
-    case fill
-minus
-    case diamond
-minus
-    case diamond
-    case fill
-plusminus
-plusminus
-    case circle
-plusminus
-    case circle
-    case fill
-plus
-    case forwardslash
-    case minus
-minus
-    case forwardslash
-    case plus
-multiply
-multiply
-    case circle
-multiply
-    case circle
-    case fill
-multiply
-    case square
-multiply
-    case square
-    case fill
-xmark
-    case rectangle
-xmark
-    case rectangle
-    case fill
-xmark
-    case rectangle
-    case portrait
-xmark
-    case rectangle
-    case portrait
-    case fill
-xmark
-    case diamond
-xmark
-    case diamond
-    case fill
-xmark
-    case shield
-xmark
-    case shield
-    case fill
-xmark
-    case octagon
-xmark
-    case octagon
-    case fill
-divide
-divide
-    case circle
-divide
-    case circle
-    case fill
-divide
-    case square
-divide
-    case square
-    case fill
-equal
-equal
-    case circle
-equal
-    case circle
-    case fill
-equal
-    case square
-equal
-    case square
-    case fill
-lessthan
-lessthan
-    case circle
-lessthan
-    case circle
-    case fill
-lessthan
-    case square
-lessthan
-    case square
-    case fill
-greaterthan
-greaterthan
-    case circle
-greaterthan
-    case circle
-    case fill
-greaterthan
-    case square
-greaterthan
-    case square
-    case fill
-chevron
-    case `left`
-    case forwardslash
-    case chevron
-    case right
-parentheses
-curlybraces
-curlybraces
-    case square
-curlybraces
-    case square
-    case fill
-ellipsis
-    case curlybraces
-number
-number
-    case circle
-number
-    case circle
-    case fill
-number
-    case square
-number
-    case square
-    case fill
-x
-    case squareroot
-xmark
-xmark
-    case circle
-xmark
-    case circle
-    case fill
-xmark
-    case square
-xmark
-    case square
-    case fill
-checkmark
-checkmark
-    case circle
-checkmark
-    case circle
-    case fill
-checkmark
-    case circle
-    case trianglebadge
+    case strikethrough
+    case shadow
+    case boldItalicUnderline
+    case boldUnderline
+    case view2d
+    case view3d
+    case characterCursorIbeam
+    case fx
+    case fCursive
+    case fCursiveCircle
+    case fCursiveCircleFill
+    case k
+    case sum
+    case percent
+    case function
+    case fn
+    case textformat123
+    case 123Rectangle
+    case 123RectangleFill
+    case characterTextbox
+    case aMagnify
+    case info
+    case infoCircle
+    case infoCircleFill
+    case at
+    case atCircle
+    case atCircleFill
+    case atBadgePlus
+    case atBadgeMinus
+    case questionmark
+    case questionmarkCircle
+    case questionmarkCircleFill
+    case questionmarkSquare
+    case questionmarkSquareFill
+    case questionmarkDiamond
+    case questionmarkDiamondFill
     case exclamationmark
-checkmark
-    case square
-checkmark
-    case square
-    case fill
-checkmark
-    case rectangle
-checkmark
-    case rectangle
-    case fill
-checkmark
-    case rectangle
-    case portrait
-checkmark
-    case rectangle
-    case portrait
-    case fill
-checkmark
-    case diamond
-checkmark
-    case diamond
-    case fill
-checkmark
-    case shield
-checkmark
-    case shield
-    case fill
-chevron
-    case left
-chevron
-    case `left`
-    case circle
-chevron
-    case `left`
-    case circle
-    case fill
-chevron
-    case `left`
-    case square
-chevron
-    case `left`
-    case square
-    case fill
-chevron
-    case backward
-chevron
-    case backward
-    case circle
-chevron
-    case backward
-    case circle
-    case fill
-chevron
-    case backward
-    case square
-chevron
-    case backward
-    case square
-    case fill
-chevron
-    case right
-chevron
-    case `right`
-    case circle
-chevron
-    case `right`
-    case circle
-    case fill
-chevron
-    case `right`
-    case square
-chevron
-    case `right`
-    case square
-    case fill
-chevron
-    case forward
-chevron
-    case forward
-    case circle
-chevron
-    case forward
-    case circle
-    case fill
-chevron
-    case forward
-    case square
-chevron
-    case forward
-    case square
-    case fill
-chevron
-    case `left`
-    case 2
-chevron
-    case backward
-    case 2
-chevron
-    case `right`
-    case 2
-chevron
-    case forward
-    case 2
-chevron
-    case up
-chevron
-    case up
-    case circle
-chevron
-    case up
-    case circle
-    case fill
-chevron
-    case up
-    case square
-chevron
-    case up
-    case square
-    case fill
-chevron
-    case down
-chevron
-    case down
-    case circle
-chevron
-    case down
-    case circle
-    case fill
-chevron
-    case down
-    case square
-chevron
-    case down
-    case square
-    case fill
-control
-projective
-chevron
-    case up
-    case chevron
-    case down
-chevron
-    case compact
-    case up
-chevron
-    case compact
-    case down
-chevron
-    case compact
-    case left
-chevron
-    case compact
-    case right
-arrow
-    case left
-arrow
-    case `left`
-    case circle
-arrow
-    case `left`
-    case circle
-    case fill
-arrow
-    case `left`
-    case square
-arrow
-    case `left`
-    case square
-    case fill
-arrow
-    case backward
-arrow
-    case backward
-    case circle
-arrow
-    case backward
-    case circle
-    case fill
-arrow
-    case backward
-    case square
-arrow
-    case backward
-    case square
-    case fill
-arrow
-    case right
-arrow
-    case `right`
-    case circle
-arrow
-    case `right`
-    case circle
-    case fill
-arrow
-    case `right`
-    case square
-arrow
-    case `right`
-    case square
-    case fill
-arrow
-    case forward
-arrow
-    case forward
-    case circle
-arrow
-    case forward
-    case circle
-    case fill
-arrow
-    case forward
-    case square
-arrow
-    case forward
-    case square
-    case fill
-arrow
-    case up
-arrow
-    case up
-    case circle
-arrow
-    case up
-    case circle
-    case fill
-arrow
-    case up
-    case square
-arrow
-    case up
-    case square
-    case fill
-arrow
-    case down
-arrow
-    case down
-    case circle
-arrow
-    case down
-    case circle
-    case fill
-arrow
-    case down
-    case square
-arrow
-    case down
-    case square
-    case fill
-arrow
-    case up
-    case left
-arrow
-    case up
-    case `left`
-    case circle
-arrow
-    case up
-    case `left`
-    case circle
-    case fill
-arrow
-    case up
-    case `left`
-    case square
-arrow
-    case up
-    case `left`
-    case square
-    case fill
-arrow
-    case up
-    case backward
-arrow
-    case up
-    case backward
-    case circle
-arrow
-    case up
-    case backward
-    case circle
-    case fill
-arrow
-    case up
-    case backward
-    case square
-arrow
-    case up
-    case backward
-    case square
-    case fill
-arrow
-    case up
-    case right
-arrow
-    case up
-    case `right`
-    case circle
-arrow
-    case up
-    case `right`
-    case circle
-    case fill
-arrow
-    case up
-    case `right`
-    case square
-arrow
-    case up
-    case `right`
-    case square
-    case fill
-arrow
-    case up
-    case forward
-arrow
-    case up
-    case forward
-    case circle
-arrow
-    case up
-    case forward
-    case circle
-    case fill
-arrow
-    case up
-    case forward
-    case square
-arrow
-    case up
-    case forward
-    case square
-    case fill
-arrow
-    case down
-    case left
-arrow
-    case down
-    case `left`
-    case circle
-arrow
-    case down
-    case `left`
-    case circle
-    case fill
-arrow
-    case down
-    case `left`
-    case square
-arrow
-    case down
-    case `left`
-    case square
-    case fill
-arrow
-    case down
-    case backward
-arrow
-    case down
-    case backward
-    case circle
-arrow
-    case down
-    case backward
-    case circle
-    case fill
-arrow
-    case down
-    case backward
-    case square
-arrow
-    case down
-    case backward
-    case square
-    case fill
-arrow
-    case down
-    case right
-arrow
-    case down
-    case `right`
-    case circle
-arrow
-    case down
-    case `right`
-    case circle
-    case fill
-arrow
-    case down
-    case `right`
-    case square
-arrow
-    case down
-    case `right`
-    case square
-    case fill
-arrow
-    case down
-    case forward
-arrow
-    case down
-    case forward
-    case circle
-arrow
-    case down
-    case forward
-    case circle
-    case fill
-arrow
-    case down
-    case forward
-    case square
-arrow
-    case down
-    case forward
-    case square
-    case fill
-arrow
-    case `left`
-    case arrow
-    case right
-arrow
-    case `left`
-    case arrow
-    case `right`
-    case circle
-arrow
-    case `left`
-    case arrow
-    case `right`
-    case circle
-    case fill
-arrow
-    case `left`
-    case arrow
-    case `right`
-    case square
-arrow
-    case `left`
-    case arrow
-    case `right`
-    case square
-    case fill
-arrow
-    case up
-    case arrow
-    case down
-arrow
-    case up
-    case arrow
-    case down
-    case circle
-arrow
-    case up
-    case arrow
-    case down
-    case circle
-    case fill
-arrow
-    case up
-    case arrow
-    case down
-    case square
-arrow
-    case up
-    case arrow
-    case down
-    case square
-    case fill
-arrow
-    case turn
-    case down
-    case left
-arrow
-    case turn
-    case up
-    case left
-arrow
-    case turn
-    case down
-    case right
-arrow
-    case turn
-    case up
-    case right
-arrow
-    case turn
-    case `right`
-    case up
-arrow
-    case turn
-    case `left`
-    case up
-arrow
-    case turn
-    case `right`
-    case down
-arrow
-    case turn
-    case `left`
-    case down
-arrow
-    case uturn
-    case left
-arrow
-    case uturn
-    case `left`
-    case circle
-arrow
-    case uturn
-    case `left`
-    case circle
-    case fill
-arrow
-    case uturn
-    case `left`
-    case circle
-    case badge
-    case ellipsis
-arrow
-    case uturn
-    case `left`
-    case square
-arrow
-    case uturn
-    case `left`
-    case square
-    case fill
-arrow
-    case uturn
-    case backward
-arrow
-    case uturn
-    case backward
-    case circle
-arrow
-    case uturn
-    case backward
-    case circle
-    case fill
-arrow
-    case uturn
-    case backward
-    case circle
-    case badge
-    case ellipsis
-arrow
-    case uturn
-    case backward
-    case square
-arrow
-    case uturn
-    case backward
-    case square
-    case fill
-arrow
-    case uturn
-    case right
-arrow
-    case uturn
-    case `right`
-    case circle
-arrow
-    case uturn
-    case `right`
-    case circle
-    case fill
-arrow
-    case uturn
-    case `right`
-    case square
-arrow
-    case uturn
-    case `right`
-    case square
-    case fill
-arrow
-    case uturn
-    case forward
-arrow
-    case uturn
-    case forward
-    case circle
-arrow
-    case uturn
-    case forward
-    case circle
-    case fill
-arrow
-    case uturn
-    case forward
-    case square
-arrow
-    case uturn
-    case forward
-    case square
-    case fill
-arrow
-    case uturn
-    case up
-arrow
-    case uturn
-    case up
-    case circle
-arrow
-    case uturn
-    case up
-    case circle
-    case fill
-arrow
-    case uturn
-    case up
-    case square
-arrow
-    case uturn
-    case up
-    case square
-    case fill
-arrow
-    case uturn
-    case down
-arrow
-    case uturn
-    case down
-    case circle
-arrow
-    case uturn
-    case down
-    case circle
-    case fill
-arrow
-    case uturn
-    case down
-    case square
-arrow
-    case uturn
-    case down
-    case square
-    case fill
-arrow
-    case up
-    case and
-    case down
-    case and
-    case arrow
-    case `left`
-    case and
-    case right
-arrow
-    case up
-    case `left`
-    case and
-    case down
-    case `right`
-    case and
-    case arrow
-    case up
-    case `right`
-    case and
-    case down
-    case left
-arrow
-    case `left`
-    case and
-    case right
-arrow
-    case `left`
-    case and
-    case `right`
-    case circle
-arrow
-    case `left`
-    case and
-    case `right`
-    case circle
-    case fill
-arrow
-    case `left`
-    case and
-    case `right`
-    case square
-arrow
-    case `left`
-    case and
-    case `right`
-    case square
-    case fill
-arrow
-    case up
-    case and
-    case down
-arrow
-    case up
-    case and
-    case down
-    case circle
-arrow
-    case up
-    case and
-    case down
-    case circle
-    case fill
-arrow
-    case up
-    case and
-    case down
-    case square
-arrow
-    case up
-    case and
-    case down
-    case square
-    case fill
-arrow
-    case up
-    case to
-    case line
-arrow
-    case up
-    case to
-    case line
-    case compact
-arrow
-    case up
-    case to
-    case line
-    case circle
-arrow
-    case up
-    case to
-    case line
-    case circle
-    case fill
-arrow
-    case down
-    case to
-    case line
-arrow
-    case down
-    case to
-    case line
-    case compact
-arrow
-    case down
-    case to
-    case line
-    case circle
-arrow
-    case down
-    case to
-    case line
-    case circle
-    case fill
-arrow
-    case `left`
-    case to
-    case line
-arrow
-    case `left`
-    case to
-    case line
-    case compact
-arrow
-    case `left`
-    case to
-    case line
-    case circle
-arrow
-    case `left`
-    case to
-    case line
-    case circle
-    case fill
-arrow
-    case backward
-    case to
-    case line
-arrow
-    case backward
-    case to
-    case line
-    case circle
-arrow
-    case backward
-    case to
-    case line
-    case circle
-    case fill
-arrow
-    case `right`
-    case to
-    case line
-arrow
-    case `right`
-    case to
-    case line
-    case compact
-arrow
-    case `right`
-    case to
-    case line
-    case circle
-arrow
-    case `right`
-    case to
-    case line
-    case circle
-    case fill
-arrow
-    case forward
-    case to
-    case line
-arrow
-    case forward
-    case to
-    case line
-    case circle
-arrow
-    case forward
-    case to
-    case line
-    case circle
-    case fill
-arrow
-    case clockwise
-arrow
-    case clockwise
-    case circle
-arrow
-    case clockwise
-    case circle
-    case fill
-arrow
-    case counterclockwise
-arrow
-    case counterclockwise
-    case circle
-arrow
-    case counterclockwise
-    case circle
-    case fill
-arrow
-    case up
-    case `left`
-    case and
-    case arrow
-    case down
-    case right
-arrow
-    case up
-    case `left`
-    case and
-    case arrow
-    case down
-    case `right`
-    case circle
-arrow
-    case up
-    case `left`
-    case and
-    case arrow
-    case down
-    case `right`
-    case circle
-    case fill
-arrow
-    case up
-    case backward
-    case and
-    case arrow
-    case down
-    case forward
-arrow
-    case up
-    case backward
-    case and
-    case arrow
-    case down
-    case forward
-    case circle
-arrow
-    case up
-    case backward
-    case and
-    case arrow
-    case down
-    case forward
-    case circle
-    case fill
-arrow
-    case down
-    case `right`
-    case and
-    case arrow
-    case up
-    case left
-arrow
-    case down
-    case `right`
-    case and
-    case arrow
-    case up
-    case `left`
-    case circle
-arrow
-    case down
-    case `right`
-    case and
-    case arrow
-    case up
-    case `left`
-    case circle
-    case fill
-arrow
-    case down
-    case forward
-    case and
-    case arrow
-    case up
-    case backward
-arrow
-    case down
-    case forward
-    case and
-    case arrow
-    case up
-    case backward
-    case circle
-arrow
-    case down
-    case forward
-    case and
-    case arrow
-    case up
-    case backward
-    case circle
-    case fill
-return
-return
-    case left
-return
-    case right
-arrow
-    case 2
-    case squarepath
-arrow
-    case triangle
-    case 2
-    case circlepath
-arrow
-    case triangle
-    case 2
-    case circlepath
-    case circle
-arrow
-    case triangle
-    case 2
-    case circlepath
-    case circle
-    case fill
-exclamationmark
-    case arrow
-    case triangle
-    case 2
-    case circlepath
-arrow
-    case triangle
-    case capsulepath
-arrow
-    case 3
-    case trianglepath
-arrow
-    case triangle
-    case turn
-    case up
-    case `right`
-    case diamond
-arrow
-    case triangle
-    case turn
-    case up
-    case `right`
-    case diamond
-    case fill
-arrow
-    case triangle
-    case turn
-    case up
-    case `right`
-    case circle
-arrow
-    case triangle
-    case turn
-    case up
-    case `right`
-    case circle
-    case fill
-arrow
-    case triangle
-    case merge
-arrow
-    case triangle
-    case swap
-arrow
-    case triangle
-    case branch
-arrow
-    case triangle
-    case pull
-arrowtriangle
-    case left
-arrowtriangle
-    case `left`
-    case fill
-arrowtriangle
-    case `left`
-    case circle
-arrowtriangle
-    case `left`
-    case circle
-    case fill
-arrowtriangle
-    case `left`
-    case square
-arrowtriangle
-    case `left`
-    case square
-    case fill
-arrowtriangle
-    case backward
-arrowtriangle
-    case backward
-    case fill
-arrowtriangle
-    case backward
-    case circle
-arrowtriangle
-    case backward
-    case circle
-    case fill
-arrowtriangle
-    case backward
-    case square
-arrowtriangle
-    case backward
-    case square
-    case fill
-arrowtriangle
-    case right
-arrowtriangle
-    case `right`
-    case fill
-arrowtriangle
-    case `right`
-    case circle
-arrowtriangle
-    case `right`
-    case circle
-    case fill
-arrowtriangle
-    case `right`
-    case square
-arrowtriangle
-    case `right`
-    case square
-    case fill
-arrowtriangle
-    case forward
-arrowtriangle
-    case forward
-    case fill
-arrowtriangle
-    case forward
-    case circle
-arrowtriangle
-    case forward
-    case circle
-    case fill
-arrowtriangle
-    case forward
-    case square
-arrowtriangle
-    case forward
-    case square
-    case fill
-arrowtriangle
-    case up
-arrowtriangle
-    case up
-    case fill
-arrowtriangle
-    case up
-    case circle
-arrowtriangle
-    case up
-    case circle
-    case fill
-arrowtriangle
-    case up
-    case square
-arrowtriangle
-    case up
-    case square
-    case fill
-arrowtriangle
-    case down
-arrowtriangle
-    case down
-    case fill
-arrowtriangle
-    case down
-    case circle
-arrowtriangle
-    case down
-    case circle
-    case fill
-arrowtriangle
-    case down
-    case square
-arrowtriangle
-    case down
-    case square
-    case fill
-slash
-    case circle
-slash
-    case circle
-    case fill
-asterisk
-asterisk
-    case circle
-asterisk
-    case circle
-    case fill
-a
-    case circle
-a
-    case circle
-    case fill
-a
-    case square
-a
-    case square
-    case fill
-b
-    case circle
-b
-    case circle
-    case fill
-b
-    case square
-b
-    case square
-    case fill
-c
-    case circle
-c
-    case circle
-    case fill
-c
-    case square
-c
-    case square
-    case fill
-d
-    case circle
-d
-    case circle
-    case fill
-d
-    case square
-d
-    case square
-    case fill
-e
-    case circle
-e
-    case circle
-    case fill
-e
-    case square
-e
-    case square
-    case fill
-f
-    case circle
-f
-    case circle
-    case fill
-f
-    case square
-f
-    case square
-    case fill
-g
-    case circle
-g
-    case circle
-    case fill
-g
-    case square
-g
-    case square
-    case fill
-h
-    case circle
-h
-    case circle
-    case fill
-h
-    case square
-h
-    case square
-    case fill
-i
-    case circle
-i
-    case circle
-    case fill
-i
-    case square
-i
-    case square
-    case fill
-j
-    case circle
-j
-    case circle
-    case fill
-j
-    case square
-j
-    case square
-    case fill
-k
-    case circle
-k
-    case circle
-    case fill
-k
-    case square
-k
-    case square
-    case fill
-l
-    case circle
-l
-    case circle
-    case fill
-l
-    case square
-l
-    case square
-    case fill
-m
-    case circle
-m
-    case circle
-    case fill
-m
-    case square
-m
-    case square
-    case fill
-n
-    case circle
-n
-    case circle
-    case fill
-n
-    case square
-n
-    case square
-    case fill
-o
-    case circle
-o
-    case circle
-    case fill
-o
-    case square
-o
-    case square
-    case fill
-p
-    case circle
-p
-    case circle
-    case fill
-p
-    case square
-p
-    case square
-    case fill
-q
-    case circle
-q
-    case circle
-    case fill
-q
-    case square
-q
-    case square
-    case fill
-r
-    case circle
-r
-    case circle
-    case fill
-r
-    case square
-r
-    case square
-    case fill
-s
-    case circle
-s
-    case circle
-    case fill
-s
-    case square
-s
-    case square
-    case fill
-t
-    case circle
-t
-    case circle
-    case fill
-t
-    case square
-t
-    case square
-    case fill
-u
-    case circle
-u
-    case circle
-    case fill
-u
-    case square
-u
-    case square
-    case fill
-v
-    case circle
-v
-    case circle
-    case fill
-v
-    case square
-v
-    case square
-    case fill
-w
-    case circle
-w
-    case circle
-    case fill
-w
-    case square
-w
-    case square
-    case fill
-x
-    case circle
-x
-    case circle
-    case fill
-x
-    case square
-x
-    case square
-    case fill
-y
-    case circle
-y
-    case circle
-    case fill
-y
-    case square
-y
-    case square
-    case fill
-z
-    case circle
-z
-    case circle
-    case fill
-z
-    case square
-z
-    case square
-    case fill
-dollarsign
-    case circle
-dollarsign
-    case circle
-    case fill
-dollarsign
-    case square
-dollarsign
-    case square
-    case fill
-centsign
-    case circle
-centsign
-    case circle
-    case fill
-centsign
-    case square
-centsign
-    case square
-    case fill
-yensign
-    case circle
-yensign
-    case circle
-    case fill
-yensign
-    case square
-yensign
-    case square
-    case fill
-sterlingsign
-    case circle
-sterlingsign
-    case circle
-    case fill
-sterlingsign
-    case square
-sterlingsign
-    case square
-    case fill
-francsign
-    case circle
-francsign
-    case circle
-    case fill
-francsign
-    case square
-francsign
-    case square
-    case fill
-florinsign
-    case circle
-florinsign
-    case circle
-    case fill
-florinsign
-    case square
-florinsign
-    case square
-    case fill
-turkishlirasign
-    case circle
-turkishlirasign
-    case circle
-    case fill
-turkishlirasign
-    case square
-turkishlirasign
-    case square
-    case fill
-rublesign
-    case circle
-rublesign
-    case circle
-    case fill
-rublesign
-    case square
-rublesign
-    case square
-    case fill
-eurosign
-    case circle
-eurosign
-    case circle
-    case fill
-eurosign
-    case square
-eurosign
-    case square
-    case fill
-dongsign
-    case circle
-dongsign
-    case circle
-    case fill
-dongsign
-    case square
-dongsign
-    case square
-    case fill
-indianrupeesign
-    case circle
-indianrupeesign
-    case circle
-    case fill
-indianrupeesign
-    case square
-indianrupeesign
-    case square
-    case fill
-tengesign
-    case circle
-tengesign
-    case circle
-    case fill
-tengesign
-    case square
-tengesign
-    case square
-    case fill
-pesetasign
-    case circle
-pesetasign
-    case circle
-    case fill
-pesetasign
-    case square
-pesetasign
-    case square
-    case fill
-pesosign
-    case circle
-pesosign
-    case circle
-    case fill
-pesosign
-    case square
-pesosign
-    case square
-    case fill
-kipsign
-    case circle
-kipsign
-    case circle
-    case fill
-kipsign
-    case square
-kipsign
-    case square
-    case fill
-wonsign
-    case circle
-wonsign
-    case circle
-    case fill
-wonsign
-    case square
-wonsign
-    case square
-    case fill
-lirasign
-    case circle
-lirasign
-    case circle
-    case fill
-lirasign
-    case square
-lirasign
-    case square
-    case fill
-australsign
-    case circle
-australsign
-    case circle
-    case fill
-australsign
-    case square
-australsign
-    case square
-    case fill
-hryvniasign
-    case circle
-hryvniasign
-    case circle
-    case fill
-hryvniasign
-    case square
-hryvniasign
-    case square
-    case fill
-nairasign
-    case circle
-nairasign
-    case circle
-    case fill
-nairasign
-    case square
-nairasign
-    case square
-    case fill
-guaranisign
-    case circle
-guaranisign
-    case circle
-    case fill
-guaranisign
-    case square
-guaranisign
-    case square
-    case fill
-coloncurrencysign
-    case circle
-coloncurrencysign
-    case circle
-    case fill
-coloncurrencysign
-    case square
-coloncurrencysign
-    case square
-    case fill
-cedisign
-    case circle
-cedisign
-    case circle
-    case fill
-cedisign
-    case square
-cedisign
-    case square
-    case fill
-cruzeirosign
-    case circle
-cruzeirosign
-    case circle
-    case fill
-cruzeirosign
-    case square
-cruzeirosign
-    case square
-    case fill
-tugriksign
-    case circle
-tugriksign
-    case circle
-    case fill
-tugriksign
-    case square
-tugriksign
-    case square
-    case fill
-millsign
-    case circle
-millsign
-    case circle
-    case fill
-millsign
-    case square
-millsign
-    case square
-    case fill
-shekelsign
-    case circle
-shekelsign
-    case circle
-    case fill
-shekelsign
-    case square
-shekelsign
-    case square
-    case fill
-manatsign
-    case circle
-manatsign
-    case circle
-    case fill
-manatsign
-    case square
-manatsign
-    case square
-    case fill
-rupeesign
-    case circle
-rupeesign
-    case circle
-    case fill
-rupeesign
-    case square
-rupeesign
-    case square
-    case fill
-bahtsign
-    case circle
-bahtsign
-    case circle
-    case fill
-bahtsign
-    case square
-bahtsign
-    case square
-    case fill
-larisign
-    case circle
-larisign
-    case circle
-    case fill
-larisign
-    case square
-larisign
-    case square
-    case fill
-bitcoinsign
-    case circle
-bitcoinsign
-    case circle
-    case fill
-bitcoinsign
-    case square
-bitcoinsign
-    case square
-    case fill
-brazilianrealsign
-    case circle
-brazilianrealsign
-    case circle
-    case fill
-brazilianrealsign
-    case square
-brazilianrealsign
-    case square
-    case fill
-0
-    case circle
-0
-    case circle
-    case fill
-0
-    case square
-0
-    case square
-    case fill
-1
-    case circle
-1
-    case circle
-    case fill
-1
-    case square
-1
-    case square
-    case fill
-2
-    case circle
-2
-    case circle
-    case fill
-2
-    case square
-2
-    case square
-    case fill
-3
-    case circle
-3
-    case circle
-    case fill
-3
-    case square
-3
-    case square
-    case fill
-4
-    case circle
-4
-    case circle
-    case fill
-4
-    case square
-4
-    case square
-    case fill
-4
-    case alt
-    case circle
-4
-    case alt
-    case circle
-    case fill
-4
-    case alt
-    case square
-4
-    case alt
-    case square
-    case fill
-5
-    case circle
-5
-    case circle
-    case fill
-5
-    case square
-5
-    case square
-    case fill
-6
-    case circle
-6
-    case circle
-    case fill
-6
-    case square
-6
-    case square
-    case fill
-6
-    case alt
-    case circle
-6
-    case alt
-    case circle
-    case fill
-6
-    case alt
-    case square
-6
-    case alt
-    case square
-    case fill
-7
-    case circle
-7
-    case circle
-    case fill
-7
-    case square
-7
-    case square
-    case fill
-8
-    case circle
-8
-    case circle
-    case fill
-8
-    case square
-8
-    case square
-    case fill
-9
-    case circle
-9
-    case circle
-    case fill
-9
-    case square
-9
-    case square
-    case fill
-9
-    case alt
-    case circle
-9
-    case alt
-    case circle
-    case fill
-9
-    case alt
-    case square
-9
-    case alt
-    case square
-    case fill
-00
-    case circle
-00
-    case circle
-    case fill
-00
-    case square
-00
-    case square
-    case fill
-01
-    case circle
-01
-    case circle
-    case fill
-01
-    case square
-01
-    case square
-    case fill
-02
-    case circle
-02
-    case circle
-    case fill
-02
-    case square
-02
-    case square
-    case fill
-03
-    case circle
-03
-    case circle
-    case fill
-03
-    case square
-03
-    case square
-    case fill
-04
-    case circle
-04
-    case circle
-    case fill
-04
-    case square
-04
-    case square
-    case fill
-05
-    case circle
-05
-    case circle
-    case fill
-05
-    case square
-05
-    case square
-    case fill
-06
-    case circle
-06
-    case circle
-    case fill
-06
-    case square
-06
-    case square
-    case fill
-07
-    case circle
-07
-    case circle
-    case fill
-07
-    case square
-07
-    case square
-    case fill
-08
-    case circle
-08
-    case circle
-    case fill
-08
-    case square
-08
-    case square
-    case fill
-09
-    case circle
-09
-    case circle
-    case fill
-09
-    case square
-09
-    case square
-    case fill
-10
-    case circle
-10
-    case circle
-    case fill
-10
-    case square
-10
-    case square
-    case fill
-11
-    case circle
-11
-    case circle
-    case fill
-11
-    case square
-11
-    case square
-    case fill
-12
-    case circle
-12
-    case circle
-    case fill
-12
-    case square
-12
-    case square
-    case fill
-13
-    case circle
-13
-    case circle
-    case fill
-13
-    case square
-13
-    case square
-    case fill
-14
-    case circle
-14
-    case circle
-    case fill
-14
-    case square
-14
-    case square
-    case fill
-15
-    case circle
-15
-    case circle
-    case fill
-15
-    case square
-15
-    case square
-    case fill
-16
-    case circle
-16
-    case circle
-    case fill
-16
-    case square
-16
-    case square
-    case fill
-17
-    case circle
-17
-    case circle
-    case fill
-17
-    case square
-17
-    case square
-    case fill
-18
-    case circle
-18
-    case circle
-    case fill
-18
-    case square
-18
-    case square
-    case fill
-19
-    case circle
-19
-    case circle
-    case fill
-19
-    case square
-19
-    case square
-    case fill
-20
-    case circle
-20
-    case circle
-    case fill
-20
-    case square
-20
-    case square
-    case fill
-21
-    case circle
-21
-    case circle
-    case fill
-21
-    case square
-21
-    case square
-    case fill
-22
-    case circle
-22
-    case circle
-    case fill
-22
-    case square
-22
-    case square
-    case fill
-23
-    case circle
-23
-    case circle
-    case fill
-23
-    case square
-23
-    case square
-    case fill
-24
-    case circle
-24
-    case circle
-    case fill
-24
-    case square
-24
-    case square
-    case fill
-25
-    case circle
-25
-    case circle
-    case fill
-25
-    case square
-25
-    case square
-    case fill
-26
-    case circle
-26
-    case circle
-    case fill
-26
-    case square
-26
-    case square
-    case fill
-27
-    case circle
-27
-    case circle
-    case fill
-27
-    case square
-27
-    case square
-    case fill
-28
-    case circle
-28
-    case circle
-    case fill
-28
-    case square
-28
-    case square
-    case fill
-29
-    case circle
-29
-    case circle
-    case fill
-29
-    case square
-29
-    case square
-    case fill
-30
-    case circle
-30
-    case circle
-    case fill
-30
-    case square
-30
-    case square
-    case fill
-31
-    case circle
-31
-    case circle
-    case fill
-31
-    case square
-31
-    case square
-    case fill
-32
-    case circle
-32
-    case circle
-    case fill
-32
-    case square
-32
-    case square
-    case fill
-33
-    case circle
-33
-    case circle
-    case fill
-33
-    case square
-33
-    case square
-    case fill
-34
-    case circle
-34
-    case circle
-    case fill
-34
-    case square
-34
-    case square
-    case fill
-35
-    case circle
-35
-    case circle
-    case fill
-35
-    case square
-35
-    case square
-    case fill
-36
-    case circle
-36
-    case circle
-    case fill
-36
-    case square
-36
-    case square
-    case fill
-37
-    case circle
-37
-    case circle
-    case fill
-37
-    case square
-37
-    case square
-    case fill
-38
-    case circle
-38
-    case circle
-    case fill
-38
-    case square
-38
-    case square
-    case fill
-39
-    case circle
-39
-    case circle
-    case fill
-39
-    case square
-39
-    case square
-    case fill
-40
-    case circle
-40
-    case circle
-    case fill
-40
-    case square
-40
-    case square
-    case fill
-41
-    case circle
-41
-    case circle
-    case fill
-41
-    case square
-41
-    case square
-    case fill
-42
-    case circle
-42
-    case circle
-    case fill
-42
-    case square
-42
-    case square
-    case fill
-43
-    case circle
-43
-    case circle
-    case fill
-43
-    case square
-43
-    case square
-    case fill
-44
-    case circle
-44
-    case circle
-    case fill
-44
-    case square
-44
-    case square
-    case fill
-45
-    case circle
-45
-    case circle
-    case fill
-45
-    case square
-45
-    case square
-    case fill
-46
-    case circle
-46
-    case circle
-    case fill
-46
-    case square
-46
-    case square
-    case fill
-47
-    case circle
-47
-    case circle
-    case fill
-47
-    case square
-47
-    case square
-    case fill
-48
-    case circle
-48
-    case circle
-    case fill
-48
-    case square
-48
-    case square
-    case fill
-49
-    case circle
-49
-    case circle
-    case fill
-49
-    case square
-49
-    case square
-    case fill
-50
-    case circle
-50
-    case circle
-    case fill
-50
-    case square
-50
-    case square
-    case fill
-applelogo
+    case exclamationmark2
+    case exclamationmark3
+    case exclamationmarkCircle
+    case exclamationmarkCircleFill
+    case exclamationmarkSquare
+    case exclamationmarkSquareFill
+    case exclamationmarkOctagon
+    case exclamationmarkOctagonFill
+    case exclamationmarkShield
+    case exclamationmarkShieldFill
+    case plus
+    case plusCircle
+    case plusCircleFill
+    case plusSquare
+    case plusSquareFill
+    case plusRectangle
+    case plusRectangleFill
+    case plusRectanglePortrait
+    case plusRectanglePortraitFill
+    case plusDiamond
+    case plusDiamondFill
+    case minus
+    case minusCircle
+    case minusCircleFill
+    case minusSquare
+    case minusSquareFill
+    case minusRectangle
+    case minusRectangleFill
+    case minusRectanglePortrait
+    case minusRectanglePortraitFill
+    case minusDiamond
+    case minusDiamondFill
+    case plusminus
+    case plusminusCircle
+    case plusminusCircleFill
+    case plusForwardslashMinus
+    case minusForwardslashPlus
+    case multiply
+    case multiplyCircle
+    case multiplyCircleFill
+    case multiplySquare
+    case multiplySquareFill
+    case xmarkRectangle
+    case xmarkRectangleFill
+    case xmarkRectanglePortrait
+    case xmarkRectanglePortraitFill
+    case xmarkDiamond
+    case xmarkDiamondFill
+    case xmarkShield
+    case xmarkShieldFill
+    case xmarkOctagon
+    case xmarkOctagonFill
+    case divide
+    case divideCircle
+    case divideCircleFill
+    case divideSquare
+    case divideSquareFill
+    case equal
+    case equalCircle
+    case equalCircleFill
+    case equalSquare
+    case equalSquareFill
+    case lessthan
+    case lessthanCircle
+    case lessthanCircleFill
+    case lessthanSquare
+    case lessthanSquareFill
+    case greaterthan
+    case greaterthanCircle
+    case greaterthanCircleFill
+    case greaterthanSquare
+    case greaterthanSquareFill
+    case chevronLeftForwardslashChevronRight
+    case parentheses
+    case curlybraces
+    case curlybracesSquare
+    case curlybracesSquareFill
+    case ellipsisCurlybraces
+    case number
+    case numberCircle
+    case numberCircleFill
+    case numberSquare
+    case numberSquareFill
+    case xSquareroot
+    case xmark
+    case xmarkCircle
+    case xmarkCircleFill
+    case xmarkSquare
+    case xmarkSquareFill
+    case checkmark
+    case checkmarkCircle
+    case checkmarkCircleFill
+    case checkmarkCircleTrianglebadgeExclamationmark
+    case checkmarkSquare
+    case checkmarkSquareFill
+    case checkmarkRectangle
+    case checkmarkRectangleFill
+    case checkmarkRectanglePortrait
+    case checkmarkRectanglePortraitFill
+    case checkmarkDiamond
+    case checkmarkDiamondFill
+    case checkmarkShield
+    case checkmarkShieldFill
+    case chevronLeft
+    case chevronLeftCircle
+    case chevronLeftCircleFill
+    case chevronLeftSquare
+    case chevronLeftSquareFill
+    case chevronBackward
+    case chevronBackwardCircle
+    case chevronBackwardCircleFill
+    case chevronBackwardSquare
+    case chevronBackwardSquareFill
+    case chevronRight
+    case chevronRightCircle
+    case chevronRightCircleFill
+    case chevronRightSquare
+    case chevronRightSquareFill
+    case chevronForward
+    case chevronForwardCircle
+    case chevronForwardCircleFill
+    case chevronForwardSquare
+    case chevronForwardSquareFill
+    case chevronLeft2
+    case chevronBackward2
+    case chevronRight2
+    case chevronForward2
+    case chevronUp
+    case chevronUpCircle
+    case chevronUpCircleFill
+    case chevronUpSquare
+    case chevronUpSquareFill
+    case chevronDown
+    case chevronDownCircle
+    case chevronDownCircleFill
+    case chevronDownSquare
+    case chevronDownSquareFill
+    case control
+    case projective
+    case chevronUpChevronDown
+    case chevronCompactUp
+    case chevronCompactDown
+    case chevronCompactLeft
+    case chevronCompactRight
+    case arrowLeft
+    case arrowLeftCircle
+    case arrowLeftCircleFill
+    case arrowLeftSquare
+    case arrowLeftSquareFill
+    case arrowBackward
+    case arrowBackwardCircle
+    case arrowBackwardCircleFill
+    case arrowBackwardSquare
+    case arrowBackwardSquareFill
+    case arrowRight
+    case arrowRightCircle
+    case arrowRightCircleFill
+    case arrowRightSquare
+    case arrowRightSquareFill
+    case arrowForward
+    case arrowForwardCircle
+    case arrowForwardCircleFill
+    case arrowForwardSquare
+    case arrowForwardSquareFill
+    case arrowUp
+    case arrowUpCircle
+    case arrowUpCircleFill
+    case arrowUpSquare
+    case arrowUpSquareFill
+    case arrowDown
+    case arrowDownCircle
+    case arrowDownCircleFill
+    case arrowDownSquare
+    case arrowDownSquareFill
+    case arrowUpLeft
+    case arrowUpLeftCircle
+    case arrowUpLeftCircleFill
+    case arrowUpLeftSquare
+    case arrowUpLeftSquareFill
+    case arrowUpBackward
+    case arrowUpBackwardCircle
+    case arrowUpBackwardCircleFill
+    case arrowUpBackwardSquare
+    case arrowUpBackwardSquareFill
+    case arrowUpRight
+    case arrowUpRightCircle
+    case arrowUpRightCircleFill
+    case arrowUpRightSquare
+    case arrowUpRightSquareFill
+    case arrowUpForward
+    case arrowUpForwardCircle
+    case arrowUpForwardCircleFill
+    case arrowUpForwardSquare
+    case arrowUpForwardSquareFill
+    case arrowDownLeft
+    case arrowDownLeftCircle
+    case arrowDownLeftCircleFill
+    case arrowDownLeftSquare
+    case arrowDownLeftSquareFill
+    case arrowDownBackward
+    case arrowDownBackwardCircle
+    case arrowDownBackwardCircleFill
+    case arrowDownBackwardSquare
+    case arrowDownBackwardSquareFill
+    case arrowDownRight
+    case arrowDownRightCircle
+    case arrowDownRightCircleFill
+    case arrowDownRightSquare
+    case arrowDownRightSquareFill
+    case arrowDownForward
+    case arrowDownForwardCircle
+    case arrowDownForwardCircleFill
+    case arrowDownForwardSquare
+    case arrowDownForwardSquareFill
+    case arrowLeftArrowRight
+    case arrowLeftArrowRightCircle
+    case arrowLeftArrowRightCircleFill
+    case arrowLeftArrowRightSquare
+    case arrowLeftArrowRightSquareFill
+    case arrowUpArrowDown
+    case arrowUpArrowDownCircle
+    case arrowUpArrowDownCircleFill
+    case arrowUpArrowDownSquare
+    case arrowUpArrowDownSquareFill
+    case arrowTurnDownLeft
+    case arrowTurnUpLeft
+    case arrowTurnDownRight
+    case arrowTurnUpRight
+    case arrowTurnRightUp
+    case arrowTurnLeftUp
+    case arrowTurnRightDown
+    case arrowTurnLeftDown
+    case arrowUturnLeft
+    case arrowUturnLeftCircle
+    case arrowUturnLeftCircleFill
+    case arrowUturnLeftCircleBadgeEllipsis
+    case arrowUturnLeftSquare
+    case arrowUturnLeftSquareFill
+    case arrowUturnBackward
+    case arrowUturnBackwardCircle
+    case arrowUturnBackwardCircleFill
+    case arrowUturnBackwardCircleBadgeEllipsis
+    case arrowUturnBackwardSquare
+    case arrowUturnBackwardSquareFill
+    case arrowUturnRight
+    case arrowUturnRightCircle
+    case arrowUturnRightCircleFill
+    case arrowUturnRightSquare
+    case arrowUturnRightSquareFill
+    case arrowUturnForward
+    case arrowUturnForwardCircle
+    case arrowUturnForwardCircleFill
+    case arrowUturnForwardSquare
+    case arrowUturnForwardSquareFill
+    case arrowUturnUp
+    case arrowUturnUpCircle
+    case arrowUturnUpCircleFill
+    case arrowUturnUpSquare
+    case arrowUturnUpSquareFill
+    case arrowUturnDown
+    case arrowUturnDownCircle
+    case arrowUturnDownCircleFill
+    case arrowUturnDownSquare
+    case arrowUturnDownSquareFill
+    case arrowUpAndDownAndArrowLeftAndRight
+    case arrowUpLeftAndDownRightAndArrowUpRightAndDownLeft
+    case arrowLeftAndRight
+    case arrowLeftAndRightCircle
+    case arrowLeftAndRightCircleFill
+    case arrowLeftAndRightSquare
+    case arrowLeftAndRightSquareFill
+    case arrowUpAndDown
+    case arrowUpAndDownCircle
+    case arrowUpAndDownCircleFill
+    case arrowUpAndDownSquare
+    case arrowUpAndDownSquareFill
+    case arrowUpToLine
+    case arrowUpToLineCompact
+    case arrowUpToLineCircle
+    case arrowUpToLineCircleFill
+    case arrowDownToLine
+    case arrowDownToLineCompact
+    case arrowDownToLineCircle
+    case arrowDownToLineCircleFill
+    case arrowLeftToLine
+    case arrowLeftToLineCompact
+    case arrowLeftToLineCircle
+    case arrowLeftToLineCircleFill
+    case arrowBackwardToLine
+    case arrowBackwardToLineCircle
+    case arrowBackwardToLineCircleFill
+    case arrowRightToLine
+    case arrowRightToLineCompact
+    case arrowRightToLineCircle
+    case arrowRightToLineCircleFill
+    case arrowForwardToLine
+    case arrowForwardToLineCircle
+    case arrowForwardToLineCircleFill
+    case arrowClockwise
+    case arrowClockwiseCircle
+    case arrowClockwiseCircleFill
+    case arrowCounterclockwise
+    case arrowCounterclockwiseCircle
+    case arrowCounterclockwiseCircleFill
+    case arrowUpLeftAndArrowDownRight
+    case arrowUpLeftAndArrowDownRightCircle
+    case arrowUpLeftAndArrowDownRightCircleFill
+    case arrowUpBackwardAndArrowDownForward
+    case arrowUpBackwardAndArrowDownForwardCircle
+    case arrowUpBackwardAndArrowDownForwardCircleFill
+    case arrowDownRightAndArrowUpLeft
+    case arrowDownRightAndArrowUpLeftCircle
+    case arrowDownRightAndArrowUpLeftCircleFill
+    case arrowDownForwardAndArrowUpBackward
+    case arrowDownForwardAndArrowUpBackwardCircle
+    case arrowDownForwardAndArrowUpBackwardCircleFill
+    case `return`
+    case returnLeft
+    case returnRight
+    case arrow2Squarepath
+    case arrowTriangle2Circlepath
+    case arrowTriangle2CirclepathCircle
+    case arrowTriangle2CirclepathCircleFill
+    case exclamationmarkArrowTriangle2Circlepath
+    case arrowTriangleCapsulepath
+    case arrow3Trianglepath
+    case arrowTriangleTurnUpRightDiamond
+    case arrowTriangleTurnUpRightDiamondFill
+    case arrowTriangleTurnUpRightCircle
+    case arrowTriangleTurnUpRightCircleFill
+    case arrowTriangleMerge
+    case arrowTriangleSwap
+    case arrowTriangleBranch
+    case arrowTrianglePull
+    case arrowtriangleLeft
+    case arrowtriangleLeftFill
+    case arrowtriangleLeftCircle
+    case arrowtriangleLeftCircleFill
+    case arrowtriangleLeftSquare
+    case arrowtriangleLeftSquareFill
+    case arrowtriangleBackward
+    case arrowtriangleBackwardFill
+    case arrowtriangleBackwardCircle
+    case arrowtriangleBackwardCircleFill
+    case arrowtriangleBackwardSquare
+    case arrowtriangleBackwardSquareFill
+    case arrowtriangleRight
+    case arrowtriangleRightFill
+    case arrowtriangleRightCircle
+    case arrowtriangleRightCircleFill
+    case arrowtriangleRightSquare
+    case arrowtriangleRightSquareFill
+    case arrowtriangleForward
+    case arrowtriangleForwardFill
+    case arrowtriangleForwardCircle
+    case arrowtriangleForwardCircleFill
+    case arrowtriangleForwardSquare
+    case arrowtriangleForwardSquareFill
+    case arrowtriangleUp
+    case arrowtriangleUpFill
+    case arrowtriangleUpCircle
+    case arrowtriangleUpCircleFill
+    case arrowtriangleUpSquare
+    case arrowtriangleUpSquareFill
+    case arrowtriangleDown
+    case arrowtriangleDownFill
+    case arrowtriangleDownCircle
+    case arrowtriangleDownCircleFill
+    case arrowtriangleDownSquare
+    case arrowtriangleDownSquareFill
+    case slashCircle
+    case slashCircleFill
+    case asterisk
+    case asteriskCircle
+    case asteriskCircleFill
+    case aCircle
+    case aCircleFill
+    case aSquare
+    case aSquareFill
+    case bCircle
+    case bCircleFill
+    case bSquare
+    case bSquareFill
+    case cCircle
+    case cCircleFill
+    case cSquare
+    case cSquareFill
+    case dCircle
+    case dCircleFill
+    case dSquare
+    case dSquareFill
+    case eCircle
+    case eCircleFill
+    case eSquare
+    case eSquareFill
+    case fCircle
+    case fCircleFill
+    case fSquare
+    case fSquareFill
+    case gCircle
+    case gCircleFill
+    case gSquare
+    case gSquareFill
+    case hCircle
+    case hCircleFill
+    case hSquare
+    case hSquareFill
+    case iCircle
+    case iCircleFill
+    case iSquare
+    case iSquareFill
+    case jCircle
+    case jCircleFill
+    case jSquare
+    case jSquareFill
+    case kCircle
+    case kCircleFill
+    case kSquare
+    case kSquareFill
+    case lCircle
+    case lCircleFill
+    case lSquare
+    case lSquareFill
+    case mCircle
+    case mCircleFill
+    case mSquare
+    case mSquareFill
+    case nCircle
+    case nCircleFill
+    case nSquare
+    case nSquareFill
+    case oCircle
+    case oCircleFill
+    case oSquare
+    case oSquareFill
+    case pCircle
+    case pCircleFill
+    case pSquare
+    case pSquareFill
+    case qCircle
+    case qCircleFill
+    case qSquare
+    case qSquareFill
+    case rCircle
+    case rCircleFill
+    case rSquare
+    case rSquareFill
+    case sCircle
+    case sCircleFill
+    case sSquare
+    case sSquareFill
+    case tCircle
+    case tCircleFill
+    case tSquare
+    case tSquareFill
+    case uCircle
+    case uCircleFill
+    case uSquare
+    case uSquareFill
+    case vCircle
+    case vCircleFill
+    case vSquare
+    case vSquareFill
+    case wCircle
+    case wCircleFill
+    case wSquare
+    case wSquareFill
+    case xCircle
+    case xCircleFill
+    case xSquare
+    case xSquareFill
+    case yCircle
+    case yCircleFill
+    case ySquare
+    case ySquareFill
+    case zCircle
+    case zCircleFill
+    case zSquare
+    case zSquareFill
+    case dollarsignCircle
+    case dollarsignCircleFill
+    case dollarsignSquare
+    case dollarsignSquareFill
+    case centsignCircle
+    case centsignCircleFill
+    case centsignSquare
+    case centsignSquareFill
+    case yensignCircle
+    case yensignCircleFill
+    case yensignSquare
+    case yensignSquareFill
+    case sterlingsignCircle
+    case sterlingsignCircleFill
+    case sterlingsignSquare
+    case sterlingsignSquareFill
+    case francsignCircle
+    case francsignCircleFill
+    case francsignSquare
+    case francsignSquareFill
+    case florinsignCircle
+    case florinsignCircleFill
+    case florinsignSquare
+    case florinsignSquareFill
+    case turkishlirasignCircle
+    case turkishlirasignCircleFill
+    case turkishlirasignSquare
+    case turkishlirasignSquareFill
+    case rublesignCircle
+    case rublesignCircleFill
+    case rublesignSquare
+    case rublesignSquareFill
+    case eurosignCircle
+    case eurosignCircleFill
+    case eurosignSquare
+    case eurosignSquareFill
+    case dongsignCircle
+    case dongsignCircleFill
+    case dongsignSquare
+    case dongsignSquareFill
+    case indianrupeesignCircle
+    case indianrupeesignCircleFill
+    case indianrupeesignSquare
+    case indianrupeesignSquareFill
+    case tengesignCircle
+    case tengesignCircleFill
+    case tengesignSquare
+    case tengesignSquareFill
+    case pesetasignCircle
+    case pesetasignCircleFill
+    case pesetasignSquare
+    case pesetasignSquareFill
+    case pesosignCircle
+    case pesosignCircleFill
+    case pesosignSquare
+    case pesosignSquareFill
+    case kipsignCircle
+    case kipsignCircleFill
+    case kipsignSquare
+    case kipsignSquareFill
+    case wonsignCircle
+    case wonsignCircleFill
+    case wonsignSquare
+    case wonsignSquareFill
+    case lirasignCircle
+    case lirasignCircleFill
+    case lirasignSquare
+    case lirasignSquareFill
+    case australsignCircle
+    case australsignCircleFill
+    case australsignSquare
+    case australsignSquareFill
+    case hryvniasignCircle
+    case hryvniasignCircleFill
+    case hryvniasignSquare
+    case hryvniasignSquareFill
+    case nairasignCircle
+    case nairasignCircleFill
+    case nairasignSquare
+    case nairasignSquareFill
+    case guaranisignCircle
+    case guaranisignCircleFill
+    case guaranisignSquare
+    case guaranisignSquareFill
+    case coloncurrencysignCircle
+    case coloncurrencysignCircleFill
+    case coloncurrencysignSquare
+    case coloncurrencysignSquareFill
+    case cedisignCircle
+    case cedisignCircleFill
+    case cedisignSquare
+    case cedisignSquareFill
+    case cruzeirosignCircle
+    case cruzeirosignCircleFill
+    case cruzeirosignSquare
+    case cruzeirosignSquareFill
+    case tugriksignCircle
+    case tugriksignCircleFill
+    case tugriksignSquare
+    case tugriksignSquareFill
+    case millsignCircle
+    case millsignCircleFill
+    case millsignSquare
+    case millsignSquareFill
+    case shekelsignCircle
+    case shekelsignCircleFill
+    case shekelsignSquare
+    case shekelsignSquareFill
+    case manatsignCircle
+    case manatsignCircleFill
+    case manatsignSquare
+    case manatsignSquareFill
+    case rupeesignCircle
+    case rupeesignCircleFill
+    case rupeesignSquare
+    case rupeesignSquareFill
+    case bahtsignCircle
+    case bahtsignCircleFill
+    case bahtsignSquare
+    case bahtsignSquareFill
+    case larisignCircle
+    case larisignCircleFill
+    case larisignSquare
+    case larisignSquareFill
+    case bitcoinsignCircle
+    case bitcoinsignCircleFill
+    case bitcoinsignSquare
+    case bitcoinsignSquareFill
+    case brazilianrealsignCircle
+    case brazilianrealsignCircleFill
+    case brazilianrealsignSquare
+    case brazilianrealsignSquareFill
+    case 0Circle
+    case 0CircleFill
+    case 0Square
+    case 0SquareFill
+    case 1Circle
+    case 1CircleFill
+    case 1Square
+    case 1SquareFill
+    case 2Circle
+    case 2CircleFill
+    case 2Square
+    case 2SquareFill
+    case 3Circle
+    case 3CircleFill
+    case 3Square
+    case 3SquareFill
+    case 4Circle
+    case 4CircleFill
+    case 4Square
+    case 4SquareFill
+    case 4AltCircle
+    case 4AltCircleFill
+    case 4AltSquare
+    case 4AltSquareFill
+    case 5Circle
+    case 5CircleFill
+    case 5Square
+    case 5SquareFill
+    case 6Circle
+    case 6CircleFill
+    case 6Square
+    case 6SquareFill
+    case 6AltCircle
+    case 6AltCircleFill
+    case 6AltSquare
+    case 6AltSquareFill
+    case 7Circle
+    case 7CircleFill
+    case 7Square
+    case 7SquareFill
+    case 8Circle
+    case 8CircleFill
+    case 8Square
+    case 8SquareFill
+    case 9Circle
+    case 9CircleFill
+    case 9Square
+    case 9SquareFill
+    case 9AltCircle
+    case 9AltCircleFill
+    case 9AltSquare
+    case 9AltSquareFill
+    case 00Circle
+    case 00CircleFill
+    case 00Square
+    case 00SquareFill
+    case 01Circle
+    case 01CircleFill
+    case 01Square
+    case 01SquareFill
+    case 02Circle
+    case 02CircleFill
+    case 02Square
+    case 02SquareFill
+    case 03Circle
+    case 03CircleFill
+    case 03Square
+    case 03SquareFill
+    case 04Circle
+    case 04CircleFill
+    case 04Square
+    case 04SquareFill
+    case 05Circle
+    case 05CircleFill
+    case 05Square
+    case 05SquareFill
+    case 06Circle
+    case 06CircleFill
+    case 06Square
+    case 06SquareFill
+    case 07Circle
+    case 07CircleFill
+    case 07Square
+    case 07SquareFill
+    case 08Circle
+    case 08CircleFill
+    case 08Square
+    case 08SquareFill
+    case 09Circle
+    case 09CircleFill
+    case 09Square
+    case 09SquareFill
+    case 10Circle
+    case 10CircleFill
+    case 10Square
+    case 10SquareFill
+    case 11Circle
+    case 11CircleFill
+    case 11Square
+    case 11SquareFill
+    case 12Circle
+    case 12CircleFill
+    case 12Square
+    case 12SquareFill
+    case 13Circle
+    case 13CircleFill
+    case 13Square
+    case 13SquareFill
+    case 14Circle
+    case 14CircleFill
+    case 14Square
+    case 14SquareFill
+    case 15Circle
+    case 15CircleFill
+    case 15Square
+    case 15SquareFill
+    case 16Circle
+    case 16CircleFill
+    case 16Square
+    case 16SquareFill
+    case 17Circle
+    case 17CircleFill
+    case 17Square
+    case 17SquareFill
+    case 18Circle
+    case 18CircleFill
+    case 18Square
+    case 18SquareFill
+    case 19Circle
+    case 19CircleFill
+    case 19Square
+    case 19SquareFill
+    case 20Circle
+    case 20CircleFill
+    case 20Square
+    case 20SquareFill
+    case 21Circle
+    case 21CircleFill
+    case 21Square
+    case 21SquareFill
+    case 22Circle
+    case 22CircleFill
+    case 22Square
+    case 22SquareFill
+    case 23Circle
+    case 23CircleFill
+    case 23Square
+    case 23SquareFill
+    case 24Circle
+    case 24CircleFill
+    case 24Square
+    case 24SquareFill
+    case 25Circle
+    case 25CircleFill
+    case 25Square
+    case 25SquareFill
+    case 26Circle
+    case 26CircleFill
+    case 26Square
+    case 26SquareFill
+    case 27Circle
+    case 27CircleFill
+    case 27Square
+    case 27SquareFill
+    case 28Circle
+    case 28CircleFill
+    case 28Square
+    case 28SquareFill
+    case 29Circle
+    case 29CircleFill
+    case 29Square
+    case 29SquareFill
+    case 30Circle
+    case 30CircleFill
+    case 30Square
+    case 30SquareFill
+    case 31Circle
+    case 31CircleFill
+    case 31Square
+    case 31SquareFill
+    case 32Circle
+    case 32CircleFill
+    case 32Square
+    case 32SquareFill
+    case 33Circle
+    case 33CircleFill
+    case 33Square
+    case 33SquareFill
+    case 34Circle
+    case 34CircleFill
+    case 34Square
+    case 34SquareFill
+    case 35Circle
+    case 35CircleFill
+    case 35Square
+    case 35SquareFill
+    case 36Circle
+    case 36CircleFill
+    case 36Square
+    case 36SquareFill
+    case 37Circle
+    case 37CircleFill
+    case 37Square
+    case 37SquareFill
+    case 38Circle
+    case 38CircleFill
+    case 38Square
+    case 38SquareFill
+    case 39Circle
+    case 39CircleFill
+    case 39Square
+    case 39SquareFill
+    case 40Circle
+    case 40CircleFill
+    case 40Square
+    case 40SquareFill
+    case 41Circle
+    case 41CircleFill
+    case 41Square
+    case 41SquareFill
+    case 42Circle
+    case 42CircleFill
+    case 42Square
+    case 42SquareFill
+    case 43Circle
+    case 43CircleFill
+    case 43Square
+    case 43SquareFill
+    case 44Circle
+    case 44CircleFill
+    case 44Square
+    case 44SquareFill
+    case 45Circle
+    case 45CircleFill
+    case 45Square
+    case 45SquareFill
+    case 46Circle
+    case 46CircleFill
+    case 46Square
+    case 46SquareFill
+    case 47Circle
+    case 47CircleFill
+    case 47Square
+    case 47SquareFill
+    case 48Circle
+    case 48CircleFill
+    case 48Square
+    case 48SquareFill
+    case 49Circle
+    case 49CircleFill
+    case 49Square
+    case 49SquareFill
+    case 50Circle
+    case 50CircleFill
+    case 50Square
+    case 50SquareFill
+    case applelogo
 }
