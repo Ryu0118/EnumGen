@@ -8,7 +8,7 @@
 import Foundation
 
 
-open class EnumGen<T> where T: Any {
+open class EnumGen {
     
     enum EnumGenError: LocalizedError {
         case invalidName
@@ -142,9 +142,9 @@ open class EnumGen<T> where T: Any {
     public let strings: [String]
     public let enumName: String
     public let fileURL: URL
-    public let enumType: T.Type?
+    public let enumType: Any.Type?
     
-    public init(strings: [String], enumName: String, enumType: T.Type? = nil, path: String = #file) throws {
+    public init(strings: [String], enumName: String, enumType: Any.Type? = nil, path: String = #file) throws {
         guard enumName != "" else { throw EnumGenError.invalidName }
         
         self.strings = strings
