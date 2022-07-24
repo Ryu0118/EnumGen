@@ -9,6 +9,6 @@ release:
 .PHONY: test
 test:
 	make release --no-print-directory
-	release/enumgen release/sfsymbols.txt --enum-name SFSymbols
+	release/enumgen release/sfsymbols.txt --enum-name SFSymbols --delimiter -
 	cat release/SFSymbols.swift
 	
