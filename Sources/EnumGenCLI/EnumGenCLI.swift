@@ -65,7 +65,7 @@ struct Enumgen: ParsableCommand {
         guard let original = original else { throw EnumGen.EnumGenError.invalidFilePath }
         
         if let associate = associate, associate.count == original.count {
-            let enumGen = try EnumGen(associate: Array(zip(original, associate)), enumName: enumName, enumType: String.self, path: currentDirectory)
+            let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: String.self, path: currentDirectory)
             try enumGen.generate()
         }
         else {

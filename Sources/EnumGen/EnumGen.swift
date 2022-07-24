@@ -218,10 +218,10 @@ open class EnumGen {
         
         associate?.forEach {
             if reservedWords.contains($0) {
-                enumString.addLine("case `\($0)` = \($1)", indentCount: 1)
+                enumString.addLine("case `\($0)` = \"\($1)\"", indentCount: 1)
             }
             else {
-                enumString.addLine("case \($0) = \($1)", indentCount: 1)
+                enumString.addLine("case \($0) = \"\($1)\"", indentCount: 1)
             }
         }
         
