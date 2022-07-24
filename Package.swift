@@ -7,7 +7,7 @@ let package = Package(
     name: "EnumGen",
     platforms: [
         .iOS(.v9),
-        .macOS(.v10_11),
+        .macOS(.v10_12),
         .tvOS(.v9),
         .watchOS(.v2),
     ],

@@ -4,7 +4,7 @@
 //
 //  Created by Ryu on 2022/07/24.
 //
-
+#if os(macOS) || os(Linux)
 import Foundation
 import EnumGen
 import ArgumentParser
@@ -26,12 +26,19 @@ struct Enumgen: ParsableCommand {
 
     mutating func run() throws {
         let currentDirectory = FileManager.default.currentDirectoryPath
-        if path.prefix(2) == "./" {
+        if path.hasPrefix("./"){
             path.removeFirst(2)
             let url = URL(fileURLWithPath: currentDirectory).appendingPathComponent(path)
             try createEnumFile(url: url)
         }
-        else if path.prefix(1) == "/" {
+        else if path.hasPrefix("~/") || path.hasPrefix("$HOME/") {
+            var components = path.components(separatedBy: "/")
+            components.removeFirst()
+            let fixed = components.joined(separator: "/")
+            let directory = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(fixed)
+            try createEnumFile(url: directory)
+        }
+        else if path.hasPrefix("/") {
             let url = URL(fileURLWithPath: path)
             guard !url.isDirectory else { throw EnumGen.EnumGenError.invalidFilePath }
             try createEnumFile(url: url)
@@ -75,3 +82,4 @@ struct Enumgen: ParsableCommand {
     }
     
 }
+#endif
