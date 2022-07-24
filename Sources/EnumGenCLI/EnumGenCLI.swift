@@ -49,9 +49,8 @@ struct Enumgen: ParsableCommand {
         
         guard let original = String(data: try Data(contentsOf: url), encoding: .utf8)?.components(separatedBy: separator) else { throw EnumGen.EnumGenError.invalidFilePath }
         
-        let associate = removeDelimiterAndChangeToLowerCamel(original, delimiter: delimiter ?? ".")
-        
-        if associate != original {
+        if let delimiter = delimiter {
+            let associate = removeDelimiterAndChangeToLowerCamel(original, delimiter: delimiter)
             let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: String.self, path: currentDirectory)
             try enumGen.generate()
         }
