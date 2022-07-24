@@ -8,16 +8,7 @@
 import Foundation
 
 extension String {
-    
-    mutating func indent(_ count: Int) {
-        if let _ = self.components(separatedBy: "\n").last {
-            self += "\n" + String(repeating: "    ", count: count)
-        }
-        else {
-            self += String(repeating: "    ", count: count)
-        }
-    }
-    
+
     mutating func newLine() {
         self += "\n"
     }

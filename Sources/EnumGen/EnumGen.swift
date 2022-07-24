@@ -160,7 +160,7 @@ open class EnumGen {
         let enumString = createEnumString()
         
         if FileManager.default.createFile(atPath: fileURL.path, contents: enumString.data(using: .utf8)) {
-            print("Creation of enum is completed.")
+            print("Creation of \(enumName) in \(fileURL.path) is completed")
         }
         else {
             throw EnumGenError.failedToCreateFile
