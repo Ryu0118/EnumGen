@@ -1,4 +1,4 @@
-BINARY_PATH = /Users/shibuya/Swift-Library/EnumGen/.build/x86_64-apple-macosx/release/EnumGenCLI
+BINARY_PATH = ./.build/x86_64-apple-macosx/release/EnumGenCLI
 
 .PHONY: release
 release:
