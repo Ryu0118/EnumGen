@@ -185,10 +185,8 @@ open class EnumGen {
             enumDefinition = "enum \(enumName) {"
         }
         
-        enumString.newLine()
-        enumString.addLine(importString)
-        enumString.newLine()
-        enumString.addLine(enumDefinition)
+        enumString.addLine(importString, newLineCount: 2)
+        enumString.addLine(enumDefinition, newLineCount: 2)
         
         strings.forEach {
             if reservedWords.contains($0) {
