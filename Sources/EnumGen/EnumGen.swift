@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 
 open class EnumGen<T> where T: Any {
