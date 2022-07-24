@@ -22,6 +22,8 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+SFSymbols.swift
+
 ## Obj-C/Swift specific
 *.hmap
 
