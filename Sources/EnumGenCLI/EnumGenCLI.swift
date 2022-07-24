@@ -18,6 +18,9 @@ struct Enumgen: ParsableCommand {
     @Option(name: .shortAndLong, help: "Name of enum type")
     var enumName: String?
     
+    @Option(name: .shortAndLong, help: "")
+    var delimiter: String?
+    
     @Argument(help: "The path (relative or absolute) of the file you want to convert to enum")
     var path: String
 
@@ -46,17 +49,7 @@ struct Enumgen: ParsableCommand {
         
         guard let original = String(data: try Data(contentsOf: url), encoding: .utf8)?.components(separatedBy: separator) else { throw EnumGen.EnumGenError.invalidFilePath }
         
-        let associate = original.map { caseName -> String in
-            guard caseName.contains(".") else { return caseName }
-            return caseName.components(separatedBy: ".").enumerated().map { index, string -> String in
-                guard index != 0 else { return string }
-                let lowercase = string.lowercased()
-                let initial = string.prefix(1).uppercased()
-                let dropped = lowercase.dropFirst()
-                return initial + dropped
-            }
-            .joined()
-        }
+        let associate = removeDelimiterAndChangeToLowerCamel(original, delimiter: delimiter ?? ".")
         
         if associate != original {
             let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: String.self, path: currentDirectory)
@@ -65,6 +58,20 @@ struct Enumgen: ParsableCommand {
         else {
             let enumGen = try EnumGen(strings: original, enumName: enumName, path: currentDirectory)
             try enumGen.generate()
+        }
+    }
+    
+    private func removeDelimiterAndChangeToLowerCamel(_ strings: [String], delimiter: String) -> [String] {
+        return strings.map { caseName -> String in
+            guard caseName.contains(delimiter) else { return caseName }
+            return caseName.components(separatedBy: delimiter).enumerated().map { index, string -> String in
+                guard index != 0 else { return string }
+                let lowercase = string.lowercased()
+                let initial = string.prefix(1).uppercased()
+                let dropped = lowercase.dropFirst()
+                return initial + dropped
+            }
+            .joined()
         }
     }
     
