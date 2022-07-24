@@ -141,11 +141,11 @@ open class EnumGen {
         "willSet"
     ]
     
-    public var strings: [String]?
+    public private(set) var strings: [String]?
+    public private(set) var associate: [(String, String)]?
     public let enumName: String
     public let fileURL: URL
     public let enumType: Any.Type?
-    public var associate: [(String, String)]?
     
     public init(strings: [String], enumName: String, enumType: Any.Type? = nil, path: String = #file) throws {
         guard enumName != "" else { throw EnumGenError.invalidName }
