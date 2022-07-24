@@ -43,8 +43,10 @@ struct Enumgen: ParsableCommand {
         let currentDirectory = FileManager.default.currentDirectoryPath
         let enumName = (enumName?.isEmpty ?? true) ? url.lastPathComponent : enumName ?? ""
         let separator = (separator?.isEmpty ?? true) ? "\n" : separator ?? "\n"
-        let original = String(data: try Data(contentsOf: url), encoding: .utf8)?.components(separatedBy: separator)
-        let associate = original?.map { caseName -> String in
+        
+        guard let original = String(data: try Data(contentsOf: url), encoding: .utf8)?.components(separatedBy: separator) else { throw EnumGen.EnumGenError.invalidFilePath }
+        
+        let associate = original.map { caseName -> String in
             guard caseName.contains(".") else { return caseName }
             return caseName.components(separatedBy: ".").enumerated().map { index, string -> String in
                 guard index != 0 else { return string }
@@ -56,9 +58,7 @@ struct Enumgen: ParsableCommand {
             .joined()
         }
         
-        guard let original = original else { throw EnumGen.EnumGenError.invalidFilePath }
-        
-        if let associate = associate, associate != original {
+        if associate != original {
             let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: String.self, path: currentDirectory)
             try enumGen.generate()
         }
