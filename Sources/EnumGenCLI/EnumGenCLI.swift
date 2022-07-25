@@ -18,7 +18,7 @@ struct Enumgen: ParsableCommand {
     @Option(name: .shortAndLong, help: "Name of enum type")
     var enumName: String?
     
-    @Option(name: .shortAndLong, help: "")
+    @Option(name: .shortAndLong, help: "If you want to recognize invalid_name as a case of enum, you can convert it to lower camel case by setting the value of the —delimiter option to \"_\" (like case invalidName)")
     var delimiter: String?
     
     @Argument(help: "The path (relative or absolute) of the file you want to convert to enum")
