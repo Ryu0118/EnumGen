@@ -54,7 +54,7 @@ struct Enumgen: ParsableCommand {
         
         if let delimiter = delimiter {
             let associate = removeDelimiterAndChangeToLowerCamel(original, delimiter: delimiter)
-            if associate {
+            if self.associate {
                 let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: String.self, path: currentDirectory)
                 try enumGen.generate()
             }
