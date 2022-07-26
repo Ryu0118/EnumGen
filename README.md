@@ -35,7 +35,7 @@ public enum LanguageCode: String {
 
 ## CLI Tool
 ```
-USAGE: enumgen [--separator <separator>] [--enum-name <enum-name>] [--delimiter <delimiter>] <path>
+USAGE: enumgen [--separator <separator>] [--enum-name <enum-name>] [--delimiter <delimiter>] [--raw-value] [--enum-type <enum-type>] <path>
 
 ARGUMENTS:
   <path>                  The path (relative or absolute) of the file you want to convert to enum
@@ -46,8 +46,15 @@ OPTIONS:
   -e, --enum-name <enum-name>
                           Name of enum type
   -d, --delimiter <delimiter>
-                          If you want to recognize invalid_name as a case of enum, you can convert it to lower camel case by setting the value of the —delimiter option to "_" (like case invalidName)
+                          If you want to recognize invalid_name as a case of enum, you can convert
+                          it to lower camel case by setting the value of the —delimiter option to
+                          "_" (like case invalidName)
+  --raw-value             Assign a value to each element (default: true)
+  -e, --enum-type <enum-type>
+                          Make enum inherit the specified type. Only integer literals, floating
+                          point numeric literals, and string literals can be inherited
   -h, --help              Show help information.
+
 ``` 
 ### Example1
 To change a txt file that lists the names of SFSymbols to enum,
