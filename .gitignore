@@ -22,6 +22,8 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+SFSymbols.swift
+
 ## Obj-C/Swift specific
 *.hmap
 
@@ -44,7 +46,8 @@ playground.xcworkspace
 #
 # Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
 # hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
+.swiftpm
+release/
 
 .build/
 
