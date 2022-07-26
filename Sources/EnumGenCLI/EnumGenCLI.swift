@@ -13,7 +13,7 @@ import ArgumentParser
 struct Enumgen: ParsableCommand {
     
     @Option(name: .shortAndLong, help: "Separator to convert text files to enum cases")
-    var separator: String?
+    var separator = "\n"
     
     @Option(name: .shortAndLong, help: "Name of enum type")
     var enumName: String?
@@ -21,29 +21,28 @@ struct Enumgen: ParsableCommand {
     @Option(name: .shortAndLong, help: "If you want to recognize invalid_name as a case of enum, you can convert it to lower camel case by setting the value of the —delimiter option to \"_\" (like case invalidName)")
     var delimiter: String?
     
+    @Flag(help: "Assign a value to each element")
+    var rawValue = false
+    
+    @Option(name: .long, help: "Make enum inherit the specified type. Only integer literals, floating point numeric literals, and string literals can be inherited")
+    var enumType = "String"
+    
     @Argument(help: "The path (relative or absolute) of the file you want to convert to enum")
     var path: String
 
     mutating func run() throws {
         let currentDirectory = FileManager.default.currentDirectoryPath
-        if path.hasPrefix("./"){
+        if path.hasPrefix("./"){ // relative path
             path.removeFirst(2)
             let url = URL(fileURLWithPath: currentDirectory).appendingPathComponent(path)
             try createEnumFile(url: url)
         }
-        else if path.hasPrefix("~/") || path.hasPrefix("$HOME/") {
-            var components = path.components(separatedBy: "/")
-            components.removeFirst()
-            let fixed = components.joined(separator: "/")
-            let directory = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(fixed)
-            try createEnumFile(url: directory)
-        }
-        else if path.hasPrefix("/") {
+        else if path.hasPrefix("/") { // absolute path
             let url = URL(fileURLWithPath: path)
             guard !url.isDirectory else { throw EnumGen.EnumGenError.invalidFilePath }
             try createEnumFile(url: url)
         }
-        else {
+        else { // relative path
             let url = URL(fileURLWithPath: currentDirectory).appendingPathComponent(path)
             try createEnumFile(url: url)
         }
@@ -51,18 +50,24 @@ struct Enumgen: ParsableCommand {
     
     private func createEnumFile(url: URL ) throws {
         let currentDirectory = FileManager.default.currentDirectoryPath
-        let enumName = (enumName?.isEmpty ?? true) ? url.lastPathComponent : enumName ?? ""
-        let separator = (separator?.isEmpty ?? true) ? "\n" : separator ?? "\n"
+        let fileName = url.lastPathComponent.components(separatedBy: ".").first ?? ""
+        let enumName = (enumName?.isEmpty ?? true) ? fileName : enumName ?? ""
         
         guard let original = String(data: try Data(contentsOf: url), encoding: .utf8)?.components(separatedBy: separator) else { throw EnumGen.EnumGenError.invalidFilePath }
         
         if let delimiter = delimiter {
             let associate = removeDelimiterAndChangeToLowerCamel(original, delimiter: delimiter)
-            let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: String.self, path: currentDirectory)
-            try enumGen.generate()
+            if self.rawValue {
+                let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: enumType, path: currentDirectory)
+                try enumGen.generate()
+            }
+            else {
+                let enumGen = try EnumGen(strings: associate, enumName: enumName, enumType: enumType, path: currentDirectory)
+                try enumGen.generate()
+            }
         }
         else {
-            let enumGen = try EnumGen(strings: original, enumName: enumName, path: currentDirectory)
+            let enumGen = try EnumGen(strings: original, enumName: enumName, enumType: enumName, path: currentDirectory)
             try enumGen.generate()
         }
     }

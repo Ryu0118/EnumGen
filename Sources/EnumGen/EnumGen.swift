@@ -145,9 +145,9 @@ open class EnumGen {
     public private(set) var associate: [(String, String)]?
     public let enumName: String
     public let fileURL: URL
-    public let enumType: Any.Type?
+    public let enumType: String?
     
-    public init(strings: [String], enumName: String, enumType: Any.Type? = nil, path: String = #file) throws {
+    public init(strings: [String], enumName: String, enumType: String? = nil, path: String = #file) throws {
         guard enumName != "" else { throw EnumGenError.invalidName }
         
         self.strings = strings
@@ -161,7 +161,7 @@ open class EnumGen {
             .appendingPathExtension("swift")
     }
     
-    public init(associate: [(String, String)], enumName: String, enumType: Any.Type, path: String = #file) throws {
+    public init(associate: [(String, String)], enumName: String, enumType: String, path: String = #file) throws {
         guard enumName != "" else { throw EnumGenError.invalidName }
         
         self.associate = associate
@@ -197,7 +197,7 @@ open class EnumGen {
         var enumDefinition: String
         
         if let type = enumType {
-            enumDefinition = "enum \(enumName): \(type.self) {"
+            enumDefinition = "enum \(enumName): \(type) {"
         }
         else {
             enumDefinition = "enum \(enumName) {"
