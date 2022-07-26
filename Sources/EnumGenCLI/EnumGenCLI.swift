@@ -13,19 +13,19 @@ import ArgumentParser
 struct Enumgen: ParsableCommand {
     
     @Option(name: .shortAndLong, help: "Separator to convert text files to enum cases")
-    var separator: String?
+    var separator = "\n"
     
     @Option(name: .shortAndLong, help: "Name of enum type")
     var enumName: String?
     
     @Option(name: .shortAndLong, help: "If you want to recognize invalid_name as a case of enum, you can convert it to lower camel case by setting the value of the —delimiter option to \"_\" (like case invalidName)")
-    var delimiter: String?
+    var delimiter = "."
     
     @Flag(help: "Assign a value to each element")
     var rawValue = true
     
     @Option(name: .shortAndLong, help: "Make enum inherit the specified type. Only integer literals, floating point numeric literals, and string literals can be inherited")
-    var enumType: String?
+    var enumType = "String"
     
     @Argument(help: "The path (relative or absolute) of the file you want to convert to enum")
     var path: String
@@ -50,8 +50,8 @@ struct Enumgen: ParsableCommand {
     
     private func createEnumFile(url: URL ) throws {
         let currentDirectory = FileManager.default.currentDirectoryPath
-        let enumName = (enumName?.isEmpty ?? true) ? url.lastPathComponent : enumName ?? ""
-        let separator = (separator?.isEmpty ?? true) ? "\n" : separator ?? "\n"
+        let fileName = url.lastPathComponent.components(separatedBy: ".").first ?? ""
+        let enumName = (enumName?.isEmpty ?? true) ? fileName : enumName ?? ""
         
         guard let original = String(data: try Data(contentsOf: url), encoding: .utf8)?.components(separatedBy: separator) else { throw EnumGen.EnumGenError.invalidFilePath }
         
