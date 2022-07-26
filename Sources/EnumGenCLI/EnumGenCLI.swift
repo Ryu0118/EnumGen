@@ -22,7 +22,10 @@ struct Enumgen: ParsableCommand {
     var delimiter: String?
     
     @Flag(help: "Assign a value to each element")
-    var associate = true
+    var rawValue = true
+    
+    @Option(name: .shortAndLong, help: "Make enum inherit the specified type. Only integer literals, floating point numeric literals, and string literals can be inherited")
+    var enumType: String?
     
     @Argument(help: "The path (relative or absolute) of the file you want to convert to enum")
     var path: String
@@ -54,17 +57,17 @@ struct Enumgen: ParsableCommand {
         
         if let delimiter = delimiter {
             let associate = removeDelimiterAndChangeToLowerCamel(original, delimiter: delimiter)
-            if self.associate {
-                let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: String.self, path: currentDirectory)
+            if self.rawValue {
+                let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: enumType ?? "String", path: currentDirectory)
                 try enumGen.generate()
             }
             else {
-                let enumGen = try EnumGen(strings: associate, enumName: enumName, path: currentDirectory)
+                let enumGen = try EnumGen(strings: associate, enumName: enumName, enumType: enumType, path: currentDirectory)
                 try enumGen.generate()
             }
         }
         else {
-            let enumGen = try EnumGen(strings: original, enumName: enumName, path: currentDirectory)
+            let enumGen = try EnumGen(strings: original, enumName: enumName, enumType: enumName, path: currentDirectory)
             try enumGen.generate()
         }
     }
