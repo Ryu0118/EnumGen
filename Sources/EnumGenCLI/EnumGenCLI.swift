@@ -21,6 +21,9 @@ struct Enumgen: ParsableCommand {
     @Option(name: .shortAndLong, help: "If you want to recognize invalid_name as a case of enum, you can convert it to lower camel case by setting the value of the —delimiter option to \"_\" (like case invalidName)")
     var delimiter: String?
     
+    @Flag(help: "Assign a value to each element")
+    var associate = true
+    
     @Argument(help: "The path (relative or absolute) of the file you want to convert to enum")
     var path: String
 
@@ -51,8 +54,14 @@ struct Enumgen: ParsableCommand {
         
         if let delimiter = delimiter {
             let associate = removeDelimiterAndChangeToLowerCamel(original, delimiter: delimiter)
-            let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: String.self, path: currentDirectory)
-            try enumGen.generate()
+            if associate {
+                let enumGen = try EnumGen(associate: Array(zip(associate, original)), enumName: enumName, enumType: String.self, path: currentDirectory)
+                try enumGen.generate()
+            }
+            else {
+                let enumGen = try EnumGen(strings: associate, enumName: enumName, path: currentDirectory)
+                try enumGen.generate()
+            }
         }
         else {
             let enumGen = try EnumGen(strings: original, enumName: enumName, path: currentDirectory)
