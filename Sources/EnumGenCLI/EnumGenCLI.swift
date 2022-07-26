@@ -26,24 +26,17 @@ struct Enumgen: ParsableCommand {
 
     mutating func run() throws {
         let currentDirectory = FileManager.default.currentDirectoryPath
-        if path.hasPrefix("./"){
+        if path.hasPrefix("./"){ // relative path
             path.removeFirst(2)
             let url = URL(fileURLWithPath: currentDirectory).appendingPathComponent(path)
             try createEnumFile(url: url)
         }
-        else if path.hasPrefix("~/") || path.hasPrefix("$HOME/") {
-            var components = path.components(separatedBy: "/")
-            components.removeFirst()
-            let fixed = components.joined(separator: "/")
-            let directory = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(fixed)
-            try createEnumFile(url: directory)
-        }
-        else if path.hasPrefix("/") {
+        else if path.hasPrefix("/") { // absolute path
             let url = URL(fileURLWithPath: path)
             guard !url.isDirectory else { throw EnumGen.EnumGenError.invalidFilePath }
             try createEnumFile(url: url)
         }
-        else {
+        else { // relative path
             let url = URL(fileURLWithPath: currentDirectory).appendingPathComponent(path)
             try createEnumFile(url: url)
         }
