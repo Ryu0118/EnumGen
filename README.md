@@ -5,7 +5,7 @@ EnumGen is a library and CLI tool that makes it easy to create enums from string
 ## Library
 Example
 ```Swift
-let generator = try EnumGen(strings: Locale.isoLanguageCodes, enumName: "LanguageCode", enumType: String.self)
+let generator = try EnumGen(strings: Locale.isoLanguageCodes, enumName: "LanguageCode", enumType: "String")
 try generator.generate()
 ```
 Result
@@ -30,23 +30,30 @@ public enum LanguageCode: String {
 | ---- | ---- | ---- |
 |  strings  |  String  |  Array of String types to be converted to enum  |
 |  enumName  |  String  |  Enum type name  |
-|  enumType  |  Any.Type? |  Types that enum inherits  |
+|  enumType  |  String? |  Types that enum inherits  |
 |  path  |  String  |  Absolute path to generate enum file. Default value is set to #path  |
 
 ## CLI Tool
 ```
-USAGE: enumgen [--separator <separator>] [--enum-name <enum-name>] [--delimiter <delimiter>] <path>
+USAGE: enumgen [--separator <separator>] [--enum-name <enum-name>] [--delimiter <delimiter>] [--raw-value] [--enum-type <enum-type>] <path>
 
 ARGUMENTS:
   <path>                  The path (relative or absolute) of the file you want to convert to enum
 
 OPTIONS:
   -s, --separator <separator>
-                          Separator to convert text files to enum cases
+                          Separator to convert text files to enum cases (default: 
+                          )
   -e, --enum-name <enum-name>
                           Name of enum type
   -d, --delimiter <delimiter>
-                          If you want to recognize invalid_name as a case of enum, you can convert it to lower camel case by setting the value of the —delimiter option to "_" (like case invalidName)
+                          If you want to recognize invalid_name as a case of enum, you can convert
+                          it to lower camel case by setting the value of the —delimiter option to
+                          "_" (like case invalidName)
+  --raw-value             Assign a value to each element
+  --enum-type <enum-type> Make enum inherit the specified type. Only integer literals, floating
+                          point numeric literals, and string literals can be inherited (default:
+                          String)
   -h, --help              Show help information.
 ``` 
 ### Example1
@@ -69,7 +76,7 @@ rectangle.portrait.and.arrow.right.fill
 ```
 then run this.
 ```
-$ enumgen sfsymbols.txt --enum-name SFSymbols --delimiter .
+$ enumgen sfsymbols.txt --raw-value --enum-name SFSymbols --delimiter .
 ````
 Result
 ```Swift
@@ -101,7 +108,7 @@ test.txt
 invalid_name,invalid_file,invalid_url
 ```
 ```
-$ enumgen test.txt --enum-name Test --separator , --delimiter _
+$ enumgen test.txt --raw-value --enum-name Test --separator , --delimiter _ 
 ```
 Result
 ```Swift
